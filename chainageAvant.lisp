@@ -2,7 +2,7 @@
 (defun ChainageAvantProf (but)
   (let (EC (BR *BR*) (BF *BF*) regleCourante)
     (loop ; on boucle
-      (if (presence but BF) ; si le but est présent dans la base de faits,
+      (if (member but BF) ; si le but est présent dans la base de faits,
         (return "Vérifiée !") ; on sort !
         (dolist (r BR) ; sinon on parcourt les règles dans la base de règles
           (when (declenchable? r BF); si une règle est déclenchable
@@ -27,7 +27,7 @@
 (defun ChainageAvantLarg (but)
   (let (EC (BR *BR*) (BF *BF*) regleCourante)
     (loop ; on boucle
-      (if (presence but BF) ; si le but est présent dans la base de faits,
+      (if (member but BF) ; si le but est présent dans la base de faits,
         (return "Vérifiée !") ; on sort !
         (dolist (r BR) ; sinon on parcourt les règles dans la base de règles
           (when (declenchable? r BF); si une règle est déclenchable
@@ -49,16 +49,13 @@
 
 
 ;;Fonctions outils
-(defun verifiee? (r faits)
-  (member r faits))
-
 (defun conclusion (r)
   (cadr r))
 
 (defun declenchable? (r faits)
   (let ((OK t))
     (dolist (p (car r) OK)
-      (if (not (presence p faits))
+      (if (not (member p faits))
         (setq OK nil)
       )
     )
