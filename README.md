@@ -43,12 +43,44 @@ notre système :
 
 L’exemple ci-dessus donne déjà quelques idées pour les règles que l’on pourrait implé-
 menter :
-1. `SI Niveau Utilisateur Python Très Bon ou Bon ALORS Proposer(Tkinter,Tk).`
-2. `SI Utilisateur connait Python ALORS demander niveau de programmation.`
-3. `SI Utilisateur veut-developper système-expert ALORS proposer LISP.`
+  1. `SI Niveau Utilisateur Python Très Bon ou Bon ALORS Proposer(Tkinter,Tk).`
+  2. `SI Utilisateur connait Python ALORS demander niveau de programmation.`
+  3. `SI Utilisateur veut-developper système-expert ALORS proposer LISP.`
 
 ###Contraintes et difficultés à prendre en compte
 
 La principale difficulté de notre projet sera de trouver un moyen de rendre accès in-
 teractif les échanges sous formes de questions avec le système. Une autre difficulté sera la
 représentation des connaissances et leur structuration sous LISP.
+
+###Liste de règles :
+
+On début on demande pour avoir le choix entre deux options : Calcul ou Dev
+
+*Calcul* ou *Dev*
+
+**Pour le calcul :**
+```
+SI (Calcul = Numerique ET License = OpenSource ET Prix = Gratuit) ALORS (Scilab Octave Julia)
+SI (Calcul = CalculNumerique ET Prix = Payant) ALORS (MathLab)
+SI (Calcul = CalculFormel) ALORS (XCAS ou MAPLE)
+SI (Calcul = MachineLearning) ALORS (Sci-kit)
+```
+**Pour le Dev :**
+```
+SI (Application = SiteWebSimple) ALORS (PHP MySQL)
+SI (Application = SiteWebResponsive) ALORS (PHP MySQL BootStrap JavaScript)
+SI (Application = SiteWebEfficace) ALORS (Django Ruby-on-Rails)
+SI (Application = Mobile ET Machine = Mac ET Cible = iPhone) ALORS (Swift)
+SI (Application = Mobile ET Cible = Android) ALORS (?)
+SI (SiteWeb = Efficace ET Python) ALORS (Django)
+SI (Application = SystemeExpert ET Parenthèse = Supporte) ALORS (LISP)
+SI (Application = Logiciel ET Precision = Solide) ALORS (C++ JAVA)
+SI (Application = Logiciel ET Precision = Solide ET Machine = Windows) ALORS (C#)
+SI (Application = Applet ET Precision = Simple) ALORS (Pygame Tkinter)
+SI (Application = Systeme) ALORS (Shell Tkinter)
+SI (Application = Jeu-Vidéo ET Precision = 3D) ALORS (C++ Unity3D)
+SI (Application = DIY ET Precision = NoInternet) ALORS (Arduino)
+SI (Application = DIY ET Precision = Internet) ALORS (Raspberry-Pi)
+SI (Application = SystemeEmbarque) ALORS (Assembleur)
+```
