@@ -41,8 +41,7 @@ notre système :
 
 ###Exemple de règle
 
-L’exemple ci-dessus donne déjà quelques idées pour les règles que l’on pourrait implé-
-menter :
+L’exemple ci-dessus donne déjà quelques idées pour les règles que l’on pourrait implémenter :
   1. `SI Niveau Utilisateur Python Très Bon ou Bon ALORS Proposer(Tkinter,Tk).`
   2. `SI Utilisateur connait Python ALORS demander niveau de programmation.`
   3. `SI Utilisateur veut-developper système-expert ALORS proposer LISP.`
