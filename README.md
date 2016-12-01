@@ -16,7 +16,7 @@ Pour cela, nous prendrons en compte de multiples critères tels que le domaine d
 ###Sources de connaissances sur le sujet
 Les sources d’expertise ne manquent pas : il existe de nombreux sites et ressources sur le Net qui donnent les avantages et inconvénients de tous les langages de programmation existants selon les cas d’utilisation. En voici quelques uns :
  - Wikipédia : Liste des langages de programmations par type : https://en.wikipedia.org/wiki/List_of_p
- - Learneroo : The Different Programming Languages : https://www.learneroo.com/modules/12/nodes/9
+ - Learneroo : The Different Programming Languages : https://www.learneroo.com/modules/12/nodes/94
  - https://program-ace.com/press-room/articles/10-most-popular-programming-languages-2016
 
 ###Exemple d’intéractions
