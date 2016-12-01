@@ -48,9 +48,7 @@ L’exemple ci-dessus donne déjà quelques idées pour les règles que l’on p
 
 ###Contraintes et difficultés à prendre en compte
 
-La principale difficulté de notre projet sera de trouver un moyen de rendre accès in-
-teractif les échanges sous formes de questions avec le système. Une autre difficulté sera la
-représentation des connaissances et leur structuration sous LISP.
+La principale difficulté de notre projet sera de trouver un moyen de rendre accès interactif les échanges sous formes de questions avec le système. Une autre difficulté sera la représentation des connaissances et leur structuration sous LISP.
 
 ###Liste de règles :
 
