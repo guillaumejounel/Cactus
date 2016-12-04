@@ -26,7 +26,7 @@
 		((Propositions EQ (PHP MySQL))))
 	(((Application EQ Mobile) (Machine EQ Mac))
 		((Propositions EQ (Swift)))) ;TODO : Choisir 1
-	(((Application EQ Mobile)(Machine EQ Mac)(Cible iPhone) (Budget > 100))
+	(((Application EQ Mobile)(Machine EQ Mac)(Cible EQ iPhone) (Budget > 100))
 		((Propositions EQ (Swift)))) ;TODO : Choisir 2
 	(((Application EQ Mobile) (Cible EQ Android))
 		((Propositions EQ (JAVA Android-Studio SDK-Android))))
