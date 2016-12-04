@@ -22,8 +22,6 @@
 		((Propositions EQ (Ruby-on-Rails))))
 	(((Application EQ SiteWebSimple))
 		((Propositions EQ (PHP MySQL))))
-	(((Application EQ SiteWebSimple))
-		((Propositions EQ (PHP MySQL))))
 	(((Application EQ Mobile) (Machine EQ Mac))
 		((Propositions EQ (Swift)))) ;TODO : Choisir 1
 	(((Application EQ Mobile)(Machine EQ Mac)(Cible EQ iPhone) (Budget > 100))
@@ -38,7 +36,7 @@
 		((Propositions EQ (LISP))))
 	(((Application EQ SystemeExpert) (Parenthèse EQ NonSupportee))
 		((Propositions EQ (Prolog))))
-	(((Application EQ Applet) (Precision EQ Simple))
+	(((Application EQ Applet) (Usage EQ Personnel))
 		((Propositions EQ (Pygame Tkinter))))
 	(((Application EQ Systeme) (Machine EQ Linux) (Precision EQ Interaction))
 		((Propositions EQ (C Shell Tkinter))))
