@@ -1,7 +1,7 @@
 ;;Proposition de moteur chaînage avant en largeur
 
-(defun go (moteur)
- ; permet de lancer le programme avec le moteur voulu
+(defun okgo ()
+ (ChainageAvantLarg)
 )
 
 (defun ChainageAvantLarg ()
@@ -19,4 +19,4 @@
 				(progn
 					(setq regleCourante (pop EC)) ; on choisit la dernière obtenue
 					(ajouter (conclusion regleCourante))) ; on ajoute son résultat à la base de faits
-				(poserQuestion)))))
+				(askQuestion)))))

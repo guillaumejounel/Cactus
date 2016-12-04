@@ -2,8 +2,8 @@
 	(let ((prop (caddr (assoc 'Propositions *faits*))))
 		(format t "~&------------------~&Voici les différentes technologies que je vous propose : ")
 		(dolist (x prop)
-			(format t "~& -» ~A : ~S" x (cdr (assoc x *technologies*)))))
-	'------------------)
+			(format t "~& -» ~A : ~S" x (cdr (assoc x *technologies*))))
+		(format t "~&------------------~&")))
 
 ;;Fonctions outils pour les règles
 (defun conclusion (r)
@@ -25,25 +25,27 @@
 			(premisses (car r))
 		)
 		(dolist (p premisses OK)
-			(if (not (funcall (operateur p) (valeur (assoc (objet p) *faits*)) (valeur p)))
-				(setq OK nil)))))
+			(if (and (numberp (valeur p)) (not (valeur (assoc (objet p) *faits*))))
+				(setq OK nil)
+				(if (not (funcall (operateur p) (valeur (assoc (objet p) *faits*)) (valeur p)))
+					(setq OK nil))))))
 
 
 ; (case (operateur p)
-; 	('=
+; 	('EQ
 ; 		(if (not (eq (valeur p) (valeur (assoc (objet p) *faits*))))
 ; 			(setq OK nil)))
 ; 	('>
-; 		(if (not (eq (valeur p) (valeur (assoc (objet p) *faits*))))
+; 		(if (not (> (valeur p) (valeur (assoc (objet p) *faits*))))
 ; 		(setq OK nil)))
 ; 	('>=
-; 		(if (not (eq (valeur p) (valeur (assoc (objet p) *faits*))))
+; 		(if (not (>= (valeur p) (valeur (assoc (objet p) *faits*))))
 ; 			(setq OK nil)))
 ; 	('<
-; 		(if (not (eq (valeur p) (valeur (assoc (objet p) *faits*))))
+; 		(if (not (< (valeur p) (valeur (assoc (objet p) *faits*))))
 ; 			(setq OK nil)))
 ; 	('<=
-; 		(if (not (eq (valeur p) (valeur (assoc (objet p) *faits*))))
+; 		(if (not (<= (valeur p) (valeur (assoc (objet p) *faits*))))
 ; 			(setq OK nil))))
 
 (defun ajouter (resultats)
