@@ -8,42 +8,42 @@ Popularité : 10*(Nombre de repository sur Github du langage)/(Nombre de reposit
 (tentative de critère quantitatif pour moteur 0+...)
 
 JavaScript	1234251	10,0
-Java	    1008122	8,17
-Ruby	    714471	5,79
-Python	    601862	4,88
-PHP	        522516	4,23
-CSS	        380858	3,09
-C++	        321684	2,61
-C	        290737	2,36
-C#	        250419	2,03
-HTML	    216354	1,75
+Java			1008122	8,17
+Ruby			714471	5,79
+Python			601862	4,88
+PHP					522516	4,23
+CSS					380858	3,09
+C++					321684	2,61
+C					290737	2,36
+C#					250419	2,03
+HTML			216354	1,75
 
 
-               | Popularité
+							 | Popularité
 -------------------------------------------------------------------------------------------
-C              |
-C++            |
-Python         |
-Django         |
-QtScript       |
-Numpy          |
-Sci-kit        |
-Ruby           |
-Ruby-on-Rails  |
-R              |
-MathLab        |
-Octave         |
-LISP           |
-Scheme         |
-Pascal         |
-Prolog         |
-Scala          |
-SQL            |
-PL/SQL         |
-PostGreSQL     |
-MySQL          |
-VBA            |
-Arduino        |
+C							|
+C++						|
+Python				 |
+Django				 |
+QtScript			 |
+Numpy					|
+Sci-kit				|
+Ruby					 |
+Ruby-on-Rails	|
+R							|
+MathLab				|
+Octave				 |
+LISP					 |
+Scheme				 |
+Pascal				 |
+Prolog				 |
+Scala					|
+SQL						|
+PL/SQL				 |
+PostGreSQL		 |
+MySQL					|
+VBA						|
+Arduino				|
 HTML
 JavaScript
 Json
