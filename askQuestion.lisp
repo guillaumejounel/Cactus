@@ -26,12 +26,20 @@
     ; - la liste des attributs dans la base de règles (prémisses)
     ;C'est-à-dire un attribut dont la valeur est inconnue.
     (if attribut
-      (until
-        (AND
-          ;liste les valeurs possibles de l'attribut et fait lire un choix à l'utilisateur
-          (not (format t "Spécifiez : ~S~&~S~%Votre choix : " attribut (delete-duplicates (AttValues attribut))))
-          (member (setq valeur (read)) (delete-duplicates (AttValues attribut)))
+      (if (numberp (car (AttValues attribut)))
+        (until
+          (AND
+            (not (format t "Spécifiez : ~S~&Votre choix (nombre) : " attribut))
+            (numberp (setq valeur (read)))
           ) ;Redemande tant que son choix n'est pas valide
+        )
+        (until
+          (AND
+            ;liste les valeurs possibles de l'attribut et fait lire un choix à l'utilisateur
+            (not (format t "Spécifiez : ~S~&~S~%Votre choix : " attribut (delete-duplicates (AttValues attribut))))
+            (member (setq valeur (read)) (delete-duplicates (AttValues attribut)))
+            ) ;Redemande tant que son choix n'est pas valide
+        )
       )
       (error "Sorry, something went wrong")
     )
