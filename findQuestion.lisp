@@ -1,28 +1,42 @@
-(defparameter *attFaits* nil)
-(defparameter *attRegles* nil)
-
 (defun listeAttFaits ()
   (loop for fait in *faits*
-    do (pushnew (objet fait) *attFaits*)
+    collect (objet fait)
   )
 )
 
 (defun listeAttRegles ()
   (loop for regle in *regles*
-    do (loop for premisse in (car regle)
-      do (pushnew (objet premisse) *attRegles*)
+    append (loop for premisse in (car regle)
+      collect (objet premisse)
     )
   )
 )
 
-(defun findQuestion ()
-  ;lister les attributs de la base de faits
-  ;lister les attributs de la base de regles
-  ;faire la différence entre les deux listes : ce sont les attributs qui restent inconnus
-  ;si la liste résultante est vide, échec, aucun langage correspondant
-  ;sinon
-  ;  lister les valeurs possibles du premier attribut
-  ;  faire lire un choix à l'utilisateur (while (and (print valeurs) (read member of valeurs)))
-  ;  tant que son choix n'appartient pas à la liste d'attributs, redemander
-  ;  ajouter l'attribut / valeur à la base de regles
+(defun AttValues (attribut)
+  (loop for regle in *regles*
+    if (assoc attribut (car regle))
+    collect (valeur (assoc attribut (car regle)))
+  )
+)
+
+(defun askQuestion ()
+  (let ((attribut (car (set-difference (listeAttRegles) (listeAttFaits))) valeur))
+    ;"attribut" est le premier élément de la différence entre :
+    ; - la liste des attributs dans la base de faits
+    ; - la liste des attributs dans la base de règles (prémisses)
+    ;C'est-à-dire un attribut dont la valeur est inconnue.
+    (if attribut
+      (until
+        (AND
+          ;liste les valeurs possibles de l'attribut et fait lire un choix à l'utilisateur
+          (not (format t "Spécifiez : ~S~&~S~%Votre choix : " attribut (delete-duplicates (AttValues attribut))))
+          (member (setq valeur (read)) (delete-duplicates (AttValues attribut)))
+          ) ;Redemande tant que son choix n'est pas valide
+      )
+      (error "Sorry, something went wrong")
+    )
+    (pushnew (list attribut 'EQ valeur) *faits*)
+    ;  ajouter l'attribut / valeur à la base de regles
+    ; TODO : Gérer le "EQ"
+  )
 )
