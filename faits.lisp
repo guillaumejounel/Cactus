@@ -1,5 +1,5 @@
 (defparameter *faits* '(
-	(Propositions = nil)
-	(Application = nil)
-	
+	(Propositions EQ nil)
+	(Application EQ nil)
+
 ))

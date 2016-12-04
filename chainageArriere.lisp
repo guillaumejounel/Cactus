@@ -8,7 +8,7 @@
 
 (defun candidates (but)
 	(let (res)
-		(dolist (x *BR* (reverse res)) ; on parcout la base de règle ; on renverra la liste res
+		(dolist (x *BR* (reverse res)) ; on parcourt la base de règle ; on renverra la liste res
 			(if (member but (last x)) ; si le but est présent dans les résultas d'une règle
 					(push (list (car x)) res) ; on ajoute l'indice de la règle à la liste res
 			)
@@ -20,11 +20,12 @@
 	(cadr (assoc regle *BR*)) ; retourne les prémisses d'une règle
 )
 
+(defun verifier (P)
 	(let ((OK nil) EC R)
 		(if (member p *BF*)
 			(setq OK t)
 			(progn
-				(setq EC (candidates p))
+				(setq EC (candidates P))
 				(while (and (not OK) EC)
 					(setq R (pop EC))
 					(setq OK (verifierRegle r))
