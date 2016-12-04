@@ -1,7 +1,18 @@
-(defvar *attributs* nil)
+(defparameter *attFaits* nil)
+(defparameter *attRegles* nil)
 
-(defun listeAttributs ()
+(defun listeAttFaits ()
+  (loop for fait in *faits*
+    do (pushnew (objet fait) *attFaits*)
+  )
+)
 
+(defun listeAttRegles ()
+  (loop for regle in *regles*
+    do (loop for premisse in (car regle)
+      do (pushnew (objet premisse) *attRegles*)
+    )
+  )
 )
 
 (defun findQuestion ()
