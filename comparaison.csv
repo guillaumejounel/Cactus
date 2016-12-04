@@ -1,0 +1,51 @@
+;Java;C#;Swift;Python;Ruby;JavaScript;PHP
+About name & original purpose;Named for Java Coffee, created for interactive TV;Named after C++ and the musical note. Microsoft's Java competitor;"Implies faster coding,
+""Objective-C without the C""";Named for Monty Python, created as a scripting language to bridge the gap between the shell and C;Named for the gemstone, created as a true object-oriented scripting language;Named after Java as a marketing ploy, created as a scripting language for Netscape browser in 10 days;Creator made it for his  own Personal Home Page and it evolved from there
+Appeared;1995;2000;2014;1991;1995;1995;1995
+"Language Principles
+(official or otherwise)";"Robust to catch errors  
+Secure  
+Portable to run anywhere  
+High performance  
+Multithreading  for concurrency  
+Dynamic  
+(See Design Goals of the Java)";"Strong type checking  
+Robust & durable   Programmer productivity  
+Source code portability and programmer portability  
+Internationalization  
+Run on hosted and embedded systems, distributed environments, large to small";"Builds on the best of C and Objective-C, without the constraints of C compatibility.
+
+Systems programming language that is as expressive and enjoyable as a scripting language.  
+Modern, functional, easy to experiment with, safe and powerful. ";"Readability counts.  
+Explicit is better than implicit.  
+Flat is better than nested.   Sparse is better than dense.   
+Special cases aren't special enough to break the rules. Although practicality beats purity.  
+Errors should never pass silently. Unless explicitly silenced.  
+There should be one - and preferably only one - obvious way to do it.  
+If the implementation is hard to explain, it's a bad idea.  ";"Make programmers happy
+Principle of least surprise 
+There's more than one way to do it
+Concise and succinct
+Helps get the job done
+We are the masters, computers are the slaves";"Scheme-like language using Java-syntax.
+
+HTML needed a 'scripting language', a programming language that was easy to use by amateurs and novices, where the code could be written directly in source form as part of the Web page markup. We aimed to provide a ""glue language"" for the Web designers and part time programmers who were building Web content from components such as images, plugins, and Java applets.";"""I have absolutely no idea how to write a programming language, I just kept adding the next logical step on the way.""
+
+PHP is an HTML-embedded scripting language. Much of its syntax is borrowed from C, Java and Perl with a couple of unique PHP-specific features thrown in. The goal of the language is to allow web developers to write dynamically generated pages quickly."
+Used for creating;Android apps, large websites;Windows apps, large websites (Unity games);iPhone and Mac apps;Math scripts, wesbites;Ruby on Rails websites;Anything that runs in a browser (and beyond);Applications built on older scripts like Wordpress 
+Used especially by;"Large companies
+(Banks, eCommerce, Google, etc.)";"Large companies
+(Microsoft, healthcare, etc.)";iPhone developers;Academics, startups, Google;"Startups
+(Airbnb, Github, Scribd, etc.)";All websites;Older companies, Facebook.
+Pro / Unique Feature;Well-optimized Java Virtual Machine for running code.;LINQ for easily querying and updating data. ;Easy to try out code with Interactive Playgrounds and REPL. ;List comprehensions for creating lists based on other lists.;Pass around Blocks of code to get stuff done concisely. ;Only language that runs in browser. ;Quick to set up server and web host. 
+Cons / Tradeoffs;Strict rules help catch errors but reduce flexibility and brevity. Requires more boilerplate code than others. Primitives.  ;Similar to Java. Integrates well with Windows,  but not yet as well with other platforms. ;May be harder to find answers when coding in a new language. Still has some issues with performance and bugs. ;Somewhat slow. Using whitespace looks nice, but may cause occasional issues. Language split between Python 2 and 3.;Slower run-time on a computer.  Multiple ways to do things can make reading code a little harder. ;Its flexibility sometimes leads to inconsistencies, bugs or surprises. E.g. there's one global namespace for all code.;Messy syntax and some inconsistencies and quirks. Makes it easy to create something quickly, but also to follow bad practices and leave security holes. 
+How language is executed;"Compiled to run on the Java Virtual Machine so you can ""Write once, run anywhere"".";Compiled to run on the Common Language Infrastructure (part of .NET platform) which is primarily used on Windows but will become more cross-platform.;Compile to run apps on the Mac and iPhone.;Commonly executed on CPython, the official Python implementation written in C. ;Commonly executed on MRI, the official Ruby implementation written in C. ;"Runs within any browser from source code; well-optimized for a scripting language.";Commonly executed on the official Zend PHP implementation. Facebook's newer HHVM compiler can execute PHP faster.
+"Jobs 
+(Indeed, AngelList)";"14,800
+900 (Android: 800)";"3,340
+150";"105
+150 ";"1,650
+1,120";"1,505
+340 (Rails: 1,020)";2,070 for both;"2,400
+690"
+Top Web Framework;Spring MVC;ASP.NET MVC;n/a;Django;Ruby on Rails;Node.js for server, many for front-end;Laravel, etc.
