@@ -1,7 +1,4 @@
-(defparameter *faits* '(
-	(Propositions EQ nil)
-	(Application EQ nil)
-))
+(defparameter *faits* nil)
 ; Objets utilisés :
 ; Application
 ; Propositions
