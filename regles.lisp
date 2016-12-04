@@ -1,6 +1,6 @@
 (defparameter *regles* '(
 	(((Propositions != nil))
-		((Action = AfficherPropositions)))
+		((Action = (afficherPropositions Propositions))))
 
 
 	;;; Propositions Finales
@@ -33,7 +33,7 @@
 	(((Application = Applet) (Precision = Simple))
 		((Propositions = (Pygame Tkinter))))
 	(((Application = Systeme) (Machine = Linux) (Precision = Interaction))
-		((Propositions = (Shell Tkinter))))
+		((Propositions = (C Shell Tkinter))))
 	(((Application = Jeu-Vidéo) (Precision = 3D))
 		((Propositions = (C++ Unity3D))))
 	(((Application = DIY))

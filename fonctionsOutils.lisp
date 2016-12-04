@@ -1,0 +1,7 @@
+(defun afficherPropositions (Propositions)
+	(format t "------------------~&Voici les différentes technologies que je vous propose : ")
+	(dolist (x Propositions)
+		(format t "~& -» ~A : ~S" x (cdr (assoc x *technologies*)))
+	)
+	(format t "~&------------------")
+)
