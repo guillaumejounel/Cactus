@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  4 DEC 2016 22:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  6 DEC 2016 17:18
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1646,7 +1646,7 @@ port.out.pyg" "../regles.lisp" )...executed.
 
 (./report.out.pyg
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 5.
+(Font)              <5> on input line 6.
 )
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
 t line 178.
@@ -1658,7 +1658,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
-Overfull \vbox (60.09656pt too high) has occurred while \output is active []
+Overfull \vbox (15.59657pt too high) has occurred while \output is active []
 
 
 
@@ -1679,7 +1679,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-Overfull \vbox (1100.69641pt too high) has occurred while \output is active []
+Overfull \vbox (941.19641pt too high) has occurred while \output is active []
 
 
 
@@ -1715,7 +1715,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-Overfull \vbox (337.74643pt too high) has occurred while \output is active []
+Overfull \vbox (250.74643pt too high) has occurred while \output is active []
 
 
 
@@ -1745,7 +1745,7 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 Here is how much of TeX's memory you used:
  24946 strings out of 495003
  439410 string characters out of 6181405
- 605794 words of memory out of 5000000
+ 602794 words of memory out of 5000000
  27595 multiletter control sequences out of 15000+600000
  76944 words of font info for 77 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1763,7 +1763,7 @@ live/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/lm/lmtk10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtti10.
 pfb>
-Output written on report.pdf (12 pages, 225958 bytes).
+Output written on report.pdf (12 pages, 225751 bytes).
 PDF statistics:
  182 PDF objects out of 1000 (max. 8388607)
  153 compressed objects within 2 object streams
