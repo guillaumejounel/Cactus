@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  6 DEC 2016 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  7 DEC 2016 17:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -969,17 +969,67 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \WF@everypar=\toks41
 Package: wrapfig 2003/01/31  v 3.6
 )
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count165
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+\skiptotal=\skip60
+\skiplinenumber=\skip61
+\skiprule=\skip62
+\skiphlne=\skip63
+\skiptext=\skip64
+\skiplength=\skip65
+\algomargin=\skip66
+\skipalgocfslide=\skip67
+\algowidth=\dimen183
+\inoutsize=\dimen184
+\inoutindent=\dimen185
+\interspacetitleruled=\dimen186
+\interspacealgoruled=\dimen187
+\interspacetitleboxruled=\dimen188
+\algocf@inoutbox=\box63
+\algocf@inputbox=\box64
+\AlCapSkip=\skip68
+\AlCapHSkip=\skip69
+\algoskipindent=\skip70
+\algocf@nlbox=\box65
+\algocf@hangingbox=\box66
+\algocf@untilbox=\box67
+\algocf@skipuntil=\skip71
+\algocf@capbox=\box68
+\algoheightruledefault=\skip72
+\algoheightrule=\skip73
+\algotitleheightruledefault=\skip74
+\algotitleheightrule=\skip75
+\c@algocfline=\count166
+\c@algocfproc=\count167
+\c@algocf=\count168
+\algocf@algoframe=\box69
+\algocf@algobox=\box70
+) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks42
-\pgfutil@tempdima=\dimen183
-\pgfutil@tempdimb=\dimen184
+\pgfutil@tempdima=\dimen189
+\pgfutil@tempdimb=\dimen190
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box63
+\pgfutil@abb=\box71
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -994,20 +1044,20 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
-\pgf@x=\dimen185
-\pgf@y=\dimen186
-\pgf@xa=\dimen187
-\pgf@ya=\dimen188
-\pgf@xb=\dimen189
-\pgf@yb=\dimen190
-\pgf@xc=\dimen191
-\pgf@yc=\dimen192
+\pgf@x=\dimen191
+\pgf@y=\dimen192
+\pgf@xa=\dimen193
+\pgf@ya=\dimen194
+\pgf@xb=\dimen195
+\pgf@yb=\dimen196
+\pgf@xc=\dimen197
+\pgf@yc=\dimen198
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count165
-\c@pgf@countb=\count166
-\c@pgf@countc=\count167
-\c@pgf@countd=\count168
+\c@pgf@counta=\count169
+\c@pgf@countb=\count170
+\c@pgf@countc=\count171
+\c@pgf@countd=\count172
 \t@pgf@toka=\toks43
 \t@pgf@tokb=\toks44
 \t@pgf@tokc=\toks45
@@ -1027,8 +1077,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count169
-\pgfsyssoftpath@bigbuffer@items=\count170
+\pgfsyssoftpath@smallbuffer@items=\count173
+\pgfsyssoftpath@bigbuffer@items=\count174
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -1041,52 +1091,52 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen193
-\pgf@picmaxx=\dimen194
-\pgf@picminy=\dimen195
-\pgf@picmaxy=\dimen196
-\pgf@pathminx=\dimen197
-\pgf@pathmaxx=\dimen198
-\pgf@pathminy=\dimen199
-\pgf@pathmaxy=\dimen200
-\pgf@xx=\dimen201
-\pgf@xy=\dimen202
-\pgf@yx=\dimen203
-\pgf@yy=\dimen204
-\pgf@zx=\dimen205
-\pgf@zy=\dimen206
+\pgf@picminx=\dimen199
+\pgf@picmaxx=\dimen200
+\pgf@picminy=\dimen201
+\pgf@picmaxy=\dimen202
+\pgf@pathminx=\dimen203
+\pgf@pathmaxx=\dimen204
+\pgf@pathminy=\dimen205
+\pgf@pathmaxy=\dimen206
+\pgf@xx=\dimen207
+\pgf@xy=\dimen208
+\pgf@yx=\dimen209
+\pgf@yy=\dimen210
+\pgf@zx=\dimen211
+\pgf@zy=\dimen212
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen207
-\pgf@path@lasty=\dimen208
+\pgf@path@lastx=\dimen213
+\pgf@path@lasty=\dimen214
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen209
-\pgf@shorten@start@additional=\dimen210
+\pgf@shorten@end@additional=\dimen215
+\pgf@shorten@start@additional=\dimen216
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box64
-\pgf@hbox=\box65
-\pgf@layerbox@main=\box66
-\pgf@picture@serial@count=\count171
+\pgfpic=\box72
+\pgf@hbox=\box73
+\pgf@layerbox@main=\box74
+\pgf@picture@serial@count=\count175
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen211
+\pgflinewidth=\dimen217
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen212
-\pgf@pt@y=\dimen213
-\pgf@pt@temp=\dimen214
+\pgf@pt@x=\dimen218
+\pgf@pt@y=\dimen219
+\pgf@pt@temp=\dimen220
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -1102,12 +1152,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen215
+\pgfarrowsep=\dimen221
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen216
-\pgf@sys@shading@range@num=\count172
+\pgf@max=\dimen222
+\pgf@sys@shading@range@num=\count176
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -1115,7 +1165,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box67
+\pgfexternal@startupbox=\box75
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -1131,15 +1181,15 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box68
+\pgfnodeparttextbox=\box76
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen217
-\pgf@nodesepend=\dimen218
+\pgf@nodesepstart=\dimen223
+\pgf@nodesepend=\dimen224
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -1153,8 +1203,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen219
-\pgffor@skip=\dimen220
+\pgffor@iter=\dimen225
+\pgffor@skip=\dimen226
 \pgffor@stack=\toks46
 \pgffor@toks=\toks47
 ))
@@ -1164,31 +1214,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count173
-\pgfplotmarksize=\dimen221
+\pgf@plot@mark@count=\count177
+\pgfplotmarksize=\dimen227
 )
-\tikz@lastx=\dimen222
-\tikz@lasty=\dimen223
-\tikz@lastxsaved=\dimen224
-\tikz@lastysaved=\dimen225
-\tikzleveldistance=\dimen226
-\tikzsiblingdistance=\dimen227
-\tikz@figbox=\box69
-\tikz@figbox@bg=\box70
-\tikz@tempbox=\box71
-\tikz@tempbox@bg=\box72
-\tikztreelevel=\count174
-\tikznumberofchildren=\count175
-\tikznumberofcurrentchild=\count176
-\tikz@fig@count=\count177
+\tikz@lastx=\dimen228
+\tikz@lasty=\dimen229
+\tikz@lastxsaved=\dimen230
+\tikz@lastysaved=\dimen231
+\tikzleveldistance=\dimen232
+\tikzsiblingdistance=\dimen233
+\tikz@figbox=\box77
+\tikz@figbox@bg=\box78
+\tikz@tempbox=\box79
+\tikz@tempbox@bg=\box80
+\tikztreelevel=\count178
+\tikznumberofchildren=\count179
+\tikznumberofcurrentchild=\count180
+\tikz@fig@count=\count181
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count178
-\pgfmatrixcurrentcolumn=\count179
-\pgf@matrix@numberofcolumns=\count180
+\pgfmatrixcurrentrow=\count182
+\pgfmatrixcurrentcolumn=\count183
+\pgf@matrix@numberofcolumns=\count184
 )
-\tikz@expandcount=\count181
+\tikz@expandcount=\count185
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -1206,14 +1256,12 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count182
+\FV@CodeLineNo=\count186
 \FV@InFile=\read2
-\FV@TabBox=\box73
-\c@FancyVerbLine=\count183
-\FV@StepNumber=\count184
+\FV@TabBox=\box81
+\c@FancyVerbLine=\count187
+\FV@StepNumber=\count188
 \FV@OutFile=\write4
-) (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
@@ -1229,68 +1277,68 @@ runsystem(rm -- "report.w18")...executed.
 
 ) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count185
+\etb@tempcnta=\count189
 ) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write5
-\integerpart=\count186
-\decimalpart=\count187
+\integerpart=\count190
+\decimalpart=\count191
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count188
+\linenopenalty=\count192
 \output=\toks48
-\linenoprevgraf=\count189
-\linenumbersep=\dimen228
-\linenumberwidth=\dimen229
-\c@linenumber=\count190
-\c@pagewiselinenumber=\count191
-\c@LN@truepage=\count192
-\c@internallinenumber=\count193
-\c@internallinenumbers=\count194
-\quotelinenumbersep=\dimen230
-\bframerule=\dimen231
-\bframesep=\dimen232
-\bframebox=\box74
+\linenoprevgraf=\count193
+\linenumbersep=\dimen256
+\linenumberwidth=\dimen257
+\c@linenumber=\count194
+\c@pagewiselinenumber=\count195
+\c@LN@truepage=\count196
+\c@internallinenumber=\count197
+\c@internallinenumbers=\count198
+\quotelinenumbersep=\dimen258
+\bframerule=\dimen259
+\bframesep=\dimen260
+\bframebox=\box82
 LaTeX Info: Redefining \\ on input line 3056.
 )
 \minted@appexistsfile=\read3
-\FV@BreakIndent=\dimen233
-\FV@BreakSymbolSepLeft=\dimen256
-\FV@BreakSymbolSepRight=\dimen257
-\FV@BreakSymbolIndentLeft=\dimen258
+\FV@BreakIndent=\dimen261
+\FV@BreakSymbolSepLeft=\dimen262
+\FV@BreakSymbolSepRight=\dimen263
+\FV@BreakSymbolIndentLeft=\dimen264
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 688.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\FV@BreakSymbolIndentRight=\dimen259
-\c@FancyVerbLineBreakLast=\count195
-\FV@LineBox=\box75
-\FV@LineIndentBox=\box76
-\minted@bgbox=\box77
+\FV@BreakSymbolIndentRight=\dimen265
+\c@FancyVerbLineBreakLast=\count199
+\FV@LineBox=\box83
+\FV@LineIndentBox=\box84
+\minted@bgbox=\box85
 \minted@code=\write6
-\c@minted@FancyVerbLineTemp=\count196
+\c@minted@FancyVerbLineTemp=\count200
 \@float@every@listing=\toks49
-\c@listing=\count197
+\c@listing=\count201
 )
 runsystem(pygmentize -S default -f latex -P commandprefix=PYGdefault > "report.
 out.pyg")...executed.
 
  (./report.out.pyg)
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip60
-\f@ncyO@elh=\skip61
-\f@ncyO@erh=\skip62
-\f@ncyO@olh=\skip63
-\f@ncyO@orh=\skip64
-\f@ncyO@elf=\skip65
-\f@ncyO@erf=\skip66
-\f@ncyO@olf=\skip67
-\f@ncyO@orf=\skip68
+\fancy@headwidth=\skip76
+\f@ncyO@elh=\skip77
+\f@ncyO@erh=\skip78
+\f@ncyO@olh=\skip79
+\f@ncyO@orh=\skip80
+\f@ncyO@elf=\skip81
+\f@ncyO@erf=\skip82
+\f@ncyO@olf=\skip83
+\f@ncyO@orf=\skip84
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -1330,16 +1378,16 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen260
-\Hy@linkcounter=\count198
-\Hy@pagecounter=\count199
+\@linkdim=\dimen266
+\Hy@linkcounter=\count202
+\Hy@pagecounter=\count203
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count200
+\Hy@SavedSpaceFactor=\count204
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1351,17 +1399,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count201
+\c@Hy@tempcnt=\count205
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen261
-\Fld@menulength=\count202
-\Field@Width=\dimen262
-\Fld@charsize=\dimen263
+\XeTeXLinkMargin=\dimen267
+\Fld@menulength=\count206
+\Field@Width=\dimen268
+\Fld@charsize=\dimen269
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -1371,24 +1419,24 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count203
-\c@Item=\count204
-\c@Hfootnote=\count205
+\Hy@abspage=\count207
+\c@Item=\count208
+\c@Hfootnote=\count209
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count206
-\c@bookmark@seq@number=\count207
+\Fld@listcount=\count210
+\c@bookmark@seq@number=\count211
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip69
+\Hy@SectionHShift=\skip85
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2015/08/16 v0.5c Insert pages of external PDF documents (AM)
@@ -1396,8 +1444,8 @@ Package: pdfpages 2015/08/16 v0.5c Insert pages of external PDF documents (AM)
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 )
-\AM@pagewidth=\dimen264
-\AM@pageheight=\dimen265
+\AM@pagewidth=\dimen270
+\AM@pageheight=\dimen271
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2015/08/16 v0.5c Pdfpages driver for pdfTeX (AM)
@@ -1410,10 +1458,10 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
-\AM@pagebox=\box78
+\AM@pagebox=\box86
 \AM@toc@title=\toks50
-\c@AM@survey=\count208
-\AM@templatesizebox=\box79
+\c@AM@survey=\count212
+\AM@templatesizebox=\box87
 )
 runsystem(which "pygmentize" && touch "report.aex")...executed.
 
@@ -1422,48 +1470,48 @@ runsystem(rm "report.aex")...executed.
  (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 61.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \degres on input line 61.
-LaTeX Info: Redefining \dots on input line 61.
-LaTeX Info: Redefining \up on input line 61.
+LaTeX Info: Redefining \degres on input line 66.
+LaTeX Info: Redefining \dots on input line 66.
+LaTeX Info: Redefining \up on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count209
-\scratchdimen=\dimen266
-\scratchbox=\box80
-\nofMPsegments=\count210
-\nofMParguments=\count211
+\scratchcounter=\count213
+\scratchdimen=\dimen272
+\scratchbox=\box88
+\nofMPsegments=\count214
+\nofMParguments=\count215
 \everyMPshowfont=\toks51
-\MPscratchCnt=\count212
-\MPscratchDim=\dimen267
-\MPnumerator=\count213
-\makeMPintoPDFobject=\count214
+\MPscratchCnt=\count216
+\MPscratchDim=\dimen273
+\MPnumerator=\count217
+\makeMPintoPDFobject=\count218
 \everyMPtoPDFconversion=\toks52
 )
 *geometry* driver: auto-detecting
@@ -1474,14 +1522,14 @@ LaTeX Info: Redefining \up on input line 61.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
 * v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=426.79135pt
+* \textwidth=483.69687pt
 * \textheight=731.23584pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -1505,8 +1553,8 @@ runsystem(pygmentize -S default -f latex -P commandprefix=PYG > "report.out.pyg
 ")...executed.
 
  (./report.out.pyg)
-\AtBeginShipoutBox=\box81
-Package hyperref Info: Link coloring OFF on input line 61.
+\AtBeginShipoutBox=\box89
+Package hyperref Info: Link coloring OFF on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1514,55 +1562,55 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count215
+\c@section@level=\count219
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 66.
+LaTeX Info: Redefining \pageref on input line 66.
+LaTeX Info: Redefining \nameref on input line 66.
 
 (./report.out) (./report.out)
 \@outlinefile=\write7
 \openout7 = `report.out'.
 
- <UTC_logo.png, id=43, 501.875pt x 175.65625pt>
+ <UTC_logo.png, id=59, 501.875pt x 175.65625pt>
 File: UTC_logo.png Graphic file (type png)
 
 <use UTC_logo.png>
-Package pdftex.def Info: UTC_logo.png used on input line 77.
+Package pdftex.def Info: UTC_logo.png used on input line 82.
 (pdftex.def)             Requested size: 301.12732pt x 105.39455pt.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 91.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 96.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 91.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 96.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 91.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 96.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 91.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 96.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 91.
+(Font)              <17.28> on input line 96.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 91.
+(Font)              <12> on input line 96.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 91.
-LaTeX Font Info:    Try loading font information for U+msa on input line 91.
+(Font)              <10> on input line 96.
+LaTeX Font Info:    Try loading font information for U+msa on input line 96.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 91.
+LaTeX Font Info:    Try loading font information for U+msb on input line 96.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1606,27 +1654,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
-Overfull \hbox (4.43687pt too wide) in paragraph at lines 126--127
-\T1/lmr/m/n/12 d'application (calcul numérique, intelligence artificielle...), 
-l'expérience de l'utilisateur
+Overfull \hbox (26.38434pt too wide) in paragraph at lines 131--132
+\T1/lmr/m/n/12 (calcul numérique, intelligence artificielle...), l'expérience d
+e l'utilisateur ou encore les caractéristiques
  []
 
 
-Overfull \hbox (31.25824pt too wide) in paragraph at lines 130--131
-\T1/lmr/m/n/12 sur le Net qui donnent les avantages et inconvénients de tous le
-s langages de programmation
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
+
  []
 
 
-Overfull \hbox (27.40596pt too wide) in paragraph at lines 132--133
-[]\T1/lmtt/m/n/12 https://en.wikipedia.org/wiki/List_of_programming_languages_b
-y_type[] \T1/lmr/m/n/12 ; 
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
  []
 
 
-Overfull \hbox (3.6586pt too wide) in paragraph at lines 165--166
-\T1/lmtt/m/n/12 (Usage = Personnel) et (Niveau-Python = Bon) ALORS (Technologie
-s
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
  []
 
 
@@ -1636,20 +1686,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
-Overfull \hbox (22.18361pt too wide) in paragraph at lines 167--168
-[]\T1/lmtt/m/n/12 SI (Catégorie = Application) ET (Type-application = Système-E
-xpert)
- []
-
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "../regles.lisp" )...executed.
 
-(./report.out.pyg
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 6.
-)
+ (./report.out.pyg)
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
-t line 178.
+t line 182.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1658,7 +1700,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
-Overfull \vbox (15.59657pt too high) has occurred while \output is active []
+Overfull \vbox (433.6961pt too high) has occurred while \output is active []
 
 
 
@@ -1671,7 +1713,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "../technologies.lisp" )...executed.
 
- (./report.out.pyg)
+ (./report.out.pyg
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 4.
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1679,7 +1724,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-Overfull \vbox (941.19641pt too high) has occurred while \output is active []
+Overfull \vbox (825.19646pt too high) has occurred while \output is active []
 
 
 
@@ -1689,17 +1734,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Overfull \hbox (19.10223pt too wide) in paragraph at lines 203--204
-[]\T1/lmr/m/n/12 Nous utiliserons cette base de connaissances dans la fonction 
-\T1/lmtt/m/n/12 afficherPropositions
- []
-
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
-port.out.pyg" "../fonctionsOutils.lisp" )...executed.
+port.out.pyg" "../chainageAvantLarg.lisp" )...executed.
 
-(./report.out.pyg
+ (./report.out.pyg
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 3.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 4.
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1708,6 +1748,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../fonctionsOutilsRegles.lisp" )...executed.
+
+ (./report.out.pyg)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1715,9 +1759,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-Overfull \vbox (250.74643pt too high) has occurred while \output is active []
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../fonctionsOutilsFaits.lisp" )...executed.
 
+ (./report.out.pyg)
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 255.
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../askQuestion.lisp" )...executed.
 
+ (./report.out.pyg)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1732,41 +1783,101 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [12]
+Overfull \vbox (133.41318pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+Overfull \hbox (25.43202pt too wide) in paragraph at lines 264--264
+[]\T1/lmr/bx/n/14.4 Afficher les propositions du système : fonction \T1/lmtt/b/
+n/14.4 afficherPropositions 
+ []
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../afficherPropositions.lisp" )...executed.
+
+(./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14] <sujet.pdf, id=168, 597.55246pt x 845.07718pt>
+File: sujet.pdf Graphic file (type pdf)
+ <use sujet.pdf>
+Package pdftex.def Info: sujet.pdf used on input line 277.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: sujet.pdf Graphic file (type pdf)
+
+<use sujet.pdf>
+Package pdftex.def Info: sujet.pdf used on input line 277.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+ <sujet.pdf, id=171, page=1, 597.55246pt x 845.07718pt>
+File: sujet.pdf Graphic file (type pdf)
+
+<use sujet.pdf, page 1>
+Package pdftex.def Info: sujet.pdf, page1 used on input line 277.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: sujet.pdf Graphic file (type pdf)
+ <use sujet.pdf, page 1>
+Package pdftex.def Info: sujet.pdf, page1 used on input line 277.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: sujet.pdf Graphic file (type pdf)
+ <use sujet.pdf, page 1>
+Package pdftex.def Info: sujet.pdf, page1 used on input line 277.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: sujet.pdf Graphic file (type pdf)
+
+<use sujet.pdf, page 1>
+Package pdftex.def Info: sujet.pdf, page1 used on input line 277.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: sujet.pdf Graphic file (type pdf)
+ <use sujet.pdf, page 1>
+Package pdftex.def Info: sujet.pdf, page1 used on input line 277.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [15 <./sujet.pdf>]
 runsystem(rm "report.out.pyg")...executed.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 216.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 216.
- (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 216.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 216.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
+
+(./report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 278.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 5B8CE5785742A6B95DF3585C2D11673A;620.
+(rerunfilecheck)             Checksum: 2615765473A20BF2DC5D9F4FF440955B;965.
  ) 
 Here is how much of TeX's memory you used:
- 24946 strings out of 495003
- 439410 string characters out of 6181405
- 602794 words of memory out of 5000000
- 27595 multiletter control sequences out of 15000+600000
- 76944 words of font info for 77 fonts, out of 8000000 for 9000
+ 26285 strings out of 495003
+ 458439 string characters out of 6181405
+ 644267 words of memory out of 5000000
+ 28908 multiletter control sequences out of 15000+600000
+ 77455 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 54i,15n,64p,853b,648s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/t
-exlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/f
-onts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
+ 54i,20n,64p,853b,650s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texli
+ve/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/f
+onts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
 lm/lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/lm/lmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/lm/lmtk10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtti10.
-pfb>
-Output written on report.pdf (12 pages, 225751 bytes).
+usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/lm/lmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr6.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/lm/lmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/lm/lmtk10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
+Output written on report.pdf (15 pages, 375597 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 153 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 90 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 224 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
