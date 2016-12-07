@@ -1,0 +1,7 @@
+# Fichiers LaTeX de compilation
+*.aux
+*.out
+*.lol
+*.gz
+*.toc
+*.log
