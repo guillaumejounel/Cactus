@@ -18,5 +18,5 @@
   ; fait : triplet de la forme (objet opérateur valeur)
   (dolist (triplet resultats)
     (if (assoc (objet triplet) *faits*) ; si l'objet est déjà présent dans la base
-      (setf (caddr (assoc (objet triplet) *faits*)) (caddr triplet)) ; on remplace sa valeurs
+      (setf (caddr (assoc (objet triplet) *faits*)) (caddr triplet)) ; on remplace sa valeur
       (push triplet *faits*)))) ; sinon on rajoute triplet à la base de faits

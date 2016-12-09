@@ -45,14 +45,14 @@
 
 
 \newminted{console}{mathescape,
-			   
+
                breaklines = true,
                numbersep=5pt,
                frame=lines,
                framesep=2mm}
 
 \newminted{lisp}{mathescape,
-			   
+
                breaklines = true,
                numbersep=5pt,
                frame=lines,
@@ -122,14 +122,14 @@ Tous les programmeurs sont un jour confrontés au problème suivant :
 \begin{quotation}
 \centering
 « \textit{Quels de programmation et technologies sont les plus adaptés pour le projet que je souhaite développer dans mon cadre d'utilisation ?} »
-    
+
 \end{quotation}
 
 
     Pour pallier à ce problème, nous allons concevoir un système expert qui propose différentes possibilités les plus adaptées selon l'usage.
-    
+
     Pour cela, nous prendrons en compte de multiples critères tels que le domaine d'application (calcul numérique, intelligence artificielle...), l'expérience de l'utilisateur ou encore les caractéristiques de sa machine (Linux, MacOS...).
-    
+
 \subsection{Sources de connaissances sur le sujet}
 
     Les sources d'expertise ne manquent pas : il existe de nombreux sites et ressources sur le Net qui donnent les avantages et inconvénients de tous les langages de programmation existants selon les cas d'utilisation. En voici quelques uns :
@@ -139,14 +139,14 @@ Tous les programmeurs sont un jour confrontés au problème suivant :
         \item WhoIsHostingThis: What Code Should You Learn?\\ \href{http://www.whoishostingthis.com/blog/2014/09/04/learn-to-code/}{\texttt{http://www.whoishostingthis.com/blog/2014/09/04/learn-to-code/}}.
     \end{itemize}
 
-	
+
 \section{Architecture}
 
 \subsection{Rappels sur l'architecture}
 Rappelons rapidement l'architecture d'un système expert.
 Un système expert est constitué de trois parties principales dissociées les unes des autres : une \textit{base de faits}, une \textit{base de règles}, et un \textit{moteur d'inférences}.\\
 
-La base de faits est une base d'informations qui comprend les faits initiaux mais aussi déduits au cours du programme.\\
+La base de faits est une base d'informations qui comprend les faits initiaux et déduits au cours du programme.\\
 
 La base de règles contient les différentes règles (connaissances implicites de l'expert rendues explicites pour être représentées informatiquement) utilisées pour déduire d'autres faits.\\
 
@@ -160,26 +160,31 @@ Le chaînage arrière examine les règles à exécuter pour arriver à un certai
 
 \subsection{Base de faits}
 
-Nous avons implémenté nos faits selon la forme suivante :
+Puisqu'il s'agit de concevoir un système expert d'ordre $0+$, nous avons choisi d'implémenter nos faits selon la forme suivante :
 
 \begin{quotation}
-	\texttt{(objet EQ valeur)}
+	\mintinline{lisp}{(objet EQ valeur)}
 \end{quotation}
 
-La base de faits est stockée dans une variable globale \texttt{*faits*} initialement vide : elle se remplira au cours de l'exécution du système.
+La base de faits est stockée dans une variable globale \mintinline{lisp}{*faits*} initialement vide : elle se remplira au cours de l'exécution du système.
 
 \subsection{Base de règles}
-Nous avons décidé d'implémenter notre base de règle de cette façon : 
+Nous avons décidé d'implémenter notre base de règle de cette façon :
 
-\begin{verbatim}
+\begin{minted}{lisp}
 	(((Premisse1 operateur valeur)...(PremisseN operateur valeur))
   	  ((Resultat1 operateur valeur)...(Resultat1M operateur valeur)))
-\end{verbatim}
+\end{minted}
+où $\mintinline{lisp}{operateur} \in \{\mintinline{lisp}{=},\mintinline{lisp}{<},\mintinline{lisp}{>},\mintinline{lisp}{EQ}\} $.
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,lastline=29]{lisp}{../regles.lisp}
+\end{listing}
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos]{lisp}{../regles.lisp}
-	\caption{Base de règles \texttt{*regles*}}
+	\inputminted[breaklines=true,linenos,firstline=30]{lisp}{../regles.lisp}
+	\caption{Base de règles \mintinline{lisp}{*regles*}}
 \end{listing}
 
 \subsection{Base de connaissances}
@@ -188,16 +193,22 @@ Pour donner les informations concernant les technologies choisies par \textit{Ca
 Les éléments des cette base sont représentés sous la forme de liste pointée ainsi :
 
 \begin{quotation}
-	\texttt{(technologie . "La description de la technologie")}
+	\mintinline{lisp}{(technologie . "La description de la technologie")}
 \end{quotation}
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos]{lisp}{../technologies.lisp}
-	\caption{Base de connaissances \texttt{*technologies*}}
+	\inputminted[breaklines=true,linenos,lastline=26]{lisp}{../technologies.lisp}
+	\caption{Base de connaissances \mintinline{lisp}{*technologies*}}
 \end{listing}
 
-Nous utiliserons cette base de connaissances dans la fonction \texttt{afficherPropositions} que nous détaillerons plus bas : l'idée est d'avoir un petit descriptif des technologies proposées pour comprendre en quoi elles sont pertinentes.
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=27]{lisp}{../technologies.lisp}
+	\caption{Base de connaissances \mintinline{lisp}{*technologies*}}
+\end{listing}
+
+Nous utiliserons cette base de connaissances dans la fonction \mintinline{lisp}{afficherPropositions} que nous détaillerons plus bas : l'idée est d'avoir un petit descriptif des technologies proposées pour comprendre en quoi elles sont pertinentes.
 
 
 \section{Fonctionnement du système}
@@ -220,14 +231,14 @@ Voici un algorithme itératif pour le chaînage avant.
 			}{
 			{\bf poser une question}}\;
 		}
-	}		
+	}
 
 {\bf afficher les propositions} \;
 }
 \caption{Chaînage Avant \label{algoChainageAvant}}
 \end{algorithm}
 
-On remarquera que le système s'arrêtera dès que des propositions auront été inférées par le moteur. 
+On remarquera que le système s'arrêtera dès que des propositions auront été inférées par le moteur.
 
 
 Nous l'avons implémenté sous LISP de cette façon :
@@ -240,11 +251,14 @@ Nous l'avons implémenté sous LISP de cette façon :
 
 \subsection{Fonctions outils}
 
+Afin d'abstraire les raisonnements nous avons mis au points des fonctions outils. \mintinline{lisp}{conclusion()}, \mintinline{lisp}{declenchable?()} et \mintinline{lisp}{ajouter()} sont celles mises en place pour les règles.
 \begin{listing}[H]
 	\centering
 	\inputminted[breaklines=true,linenos]{lisp}{../fonctionsOutilsRegles.lisp}
 	\caption{Fonctions outils pour les règles}
 \end{listing}
+
+\mintinline{lisp}{objet()}, \mintinline{lisp}{operateur()} et \mintinline{lisp}{valeur()} sont celles mises en place pour les faits.
 
 \begin{listing}[H]
 	\centering
@@ -252,23 +266,32 @@ Nous l'avons implémenté sous LISP de cette façon :
 	\caption{Fonctions outils pour les faits}
 \end{listing}
 
-\subsection{Poser une question : fonction \texttt{askQuestion}}
+\subsection{Poser une question : fonction \mintinline{lisp}{askQuestion}}
+
+Une possibilité lorsque le système n'arrive plus à tirer de conclusions et de poser des questions à l'utilisateur pour apporter de nouveaux faits. C'est ici le rôle réalisé par la fonction \mintinline{lisp}{askQuestion}.
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos]{lisp}{../askQuestion.lisp}
-	\caption{Fonction \texttt{askQuestion} permettant de récupérer des informations}
+	\inputminted[breaklines=true,linenos, firstline = 22]{lisp}{../askQuestion.lisp}
+	\caption{Fonction \mintinline{lisp}{askQuestion} permettant de récupérer des informations}
 \end{listing}
 
+Nous utilisons d'autres fonctions pour réaliser certaines tâches.
 
-\subsection{Afficher les propositions du système : fonction \texttt{afficherPropositions}}
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos, lastline = 21]{lisp}{../askQuestion.lisp}
+	\caption{Fonctions outils pour \mintinline{lisp}{askQuestion}}
+\end{listing}
 
-	C'est dans cette fonction que nous utilisons la base de connaissances \texttt{**technologies**}.
+\subsection{Afficher les propositions du système : fonction \mintinline{lisp}{afficherPropositions}}
+
+	C'est dans cette fonction que nous utilisons la base de connaissances \mintinline{lisp}{**technologies**}.
 
 \begin{listing}[H]
 	\centering
 	\inputminted[breaklines=true,linenos]{lisp}{../afficherPropositions.lisp}
-	\caption{Fonction \texttt{afficherPropositions} qui affiche les propositions du système expert}
+	\caption{Fonction \mintinline{lisp}{afficherPropositions} qui affiche les propositions du système expert}
 \end{listing}
 
 
@@ -276,4 +299,3 @@ Nous l'avons implémenté sous LISP de cette façon :
 \newpage
 \includepdf[pages=1]{sujet.pdf}
 \end{document}
-	
