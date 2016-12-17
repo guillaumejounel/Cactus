@@ -6,9 +6,9 @@
 \contentsline {subsection}{\numberline {2.1}Rappels sur l'architecture}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Base de faits}{5}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Base de r\IeC {\`e}gles}{5}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Base de connaissances}{7}{subsection.2.4}
-\contentsline {section}{\numberline {3}Fonctionnement du syst\IeC {\`e}me}{10}{section.3}
-\contentsline {subsection}{\numberline {3.1}Cha\IeC {\^\i }nage avant}{10}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Fonctions outils}{11}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Poser une question : fonction \mintinline {lisp}{askQuestion}}{12}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Afficher les propositions du syst\IeC {\`e}me : fonction \mintinline {lisp}{afficherPropositions}}{14}{subsection.3.4}
+\contentsline {subsection}{\numberline {2.4}Base de connaissances}{8}{subsection.2.4}
+\contentsline {section}{\numberline {3}Fonctionnement du syst\IeC {\`e}me}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Cha\IeC {\^\i }nage avant en largeur}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Fonctions outils}{12}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Poser une question : fonction \mintinline {lisp}{askQuestion()}}{13}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Afficher les propositions du syst\IeC {\`e}me : fonction \mintinline {lisp}{afficherPropositions()}}{14}{subsection.3.4}

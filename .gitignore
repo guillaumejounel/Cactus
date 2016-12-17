@@ -1,7 +1,7 @@
 # Fichiers LaTeX de compilation
-./report/*.aux
-./report/*.out
-./report/*.lol
-./report/*.gz
-./report/*.toc
-./report/*.log
+*.aux
+*.out
+*.lol
+*.gz
+*.toc
+*.log

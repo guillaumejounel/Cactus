@@ -1,23 +1,16 @@
 (defun listeAttFaits ()
   (loop for fait in *faits*
-    collect (objet fait)
-  )
-)
+    collect (objet fait)))
 
 (defun listeAttRegles ()
   (loop for regle in *regles*
     append (loop for premisse in (car regle)
-      collect (objet premisse)
-    )
-  )
-)
+      collect (objet premisse))))
 
 (defun AttValues (attribut)
   (loop for regle in *regles*
     if (assoc attribut (car regle))
-    collect (valeur (assoc attribut (car regle)))
-  )
-)
+    collect (valeur (assoc attribut (car regle)))))
 
 (defun askQuestion ()
   (let ((attribut (car (set-difference (listeAttRegles) (listeAttFaits))) valeur))

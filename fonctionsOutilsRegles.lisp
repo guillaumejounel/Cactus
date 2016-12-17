@@ -5,8 +5,7 @@
 (defun declenchable? (r)
   (let (
       (OK t)
-      (premisses (car r))
-    )
+      (premisses (car r))    )
     (dolist (p premisses OK)
       (if (and (numberp (valeur p)) (not (valeur (assoc (objet p) *faits*))))
         (setq OK nil)

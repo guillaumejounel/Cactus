@@ -150,13 +150,23 @@ La base de faits est une base d'informations qui comprend les faits initiaux et 
 
 La base de règles contient les différentes règles (connaissances implicites de l'expert rendues explicites pour être représentées informatiquement) utilisées pour déduire d'autres faits.\\
 
-Les inférences au cours du processus sont réalisées par le moteur d'inférences. C'est lui qui fait le lien entre les deux précédentes bases. Il exécute les règles contenues dans la base de règles au regard des faits présents dans la base de faits ; les règles étant déclenchables en fonction des faits avérés. À la fait de l'exécution d'une règle, le résultat retourné qui est aussi un fait est stocké dans la base de faits.\\
+Les inférences au cours du processus sont réalisées par le moteur d'inférences. C'est lui qui fait le lien entre les deux précédentes bases. Il exécute les règles contenues dans la base de règles au regard des faits présents dans la base de faits ; les règles étant déclenchables en fonction des faits avérés. À la fin de l'exécution d'une règle, le résultat retourné qui est aussi un fait est stocké dans la base de faits.\\
 
 Il existe de type de fonctionnement pour les moteurs d'inférences : le \textit{chaînage avant} et le \textit{chaînage arrière}.
 
 Le chaînage avant consiste à regarder les faits présents et à choisir une règle qui peut être exécutée : on cherche les résultats que l'on peut obtenir en se basant sur les résultats déjà obtenus.
 
 Le chaînage arrière examine les règles à exécuter pour arriver à un certain fait : on cherche un moyen d'arriver à un certain résultat.
+
+
+	Il s'agit ici de construire un système expert d'ordre $0+$ -- que nous avons choisi d'appeler \textit{Cactus} --, c'est à dire un système expert manipulant des faits qui ne sont non pas des propositions booléennes mais des \textit{triplets} comportant trois parties :
+	\begin{enumerate}
+		\item un objet, qui est le nom du concept que l'on veut modéliser dans le fait ;
+		\item une valeur, qui permet de quantifier l'objet ;
+		\item un opérateur, qui permet de préciser la valeur de l'objet
+	\end{enumerate}
+	
+	Ainsi \mintinline{lisp}{(temperature >= 30)} et \mintinline{lisp}{(saison EQ été)} sont des faits vus sous l'angle d'un système-expert d'ordre $0+$ dont les objets, les opérateurs et les valeurs sont respectivement 	\mintinline{lisp}{temperature} et \mintinline{lisp}{saison}, \mintinline{lisp}{>=} et \mintinline{lisp}{EQ}, et \mintinline{lisp}{30} et \mintinline{lisp}{été}.
 
 \subsection{Base de faits}
 
@@ -166,7 +176,7 @@ Puisqu'il s'agit de concevoir un système expert d'ordre $0+$, nous avons choisi
 	\mintinline{lisp}{(objet EQ valeur)}
 \end{quotation}
 
-La base de faits est stockée dans une variable globale \mintinline{lisp}{*faits*} initialement vide : elle se remplira au cours de l'exécution du système.
+La base de faits est stockée dans une variable globale \mintinline{lisp}{*faits*} initialement vide : elle se remplira au cours de l'exécution du système. Il s'agira d'une liste de triplets.
 
 \subsection{Base de règles}
 Nous avons décidé d'implémenter notre base de règle de cette façon :
@@ -208,12 +218,19 @@ Les éléments des cette base sont représentés sous la forme de liste pointée
 	\caption{Base de connaissances \mintinline{lisp}{*technologies*}}
 \end{listing}
 
-Nous utiliserons cette base de connaissances dans la fonction \mintinline{lisp}{afficherPropositions} que nous détaillerons plus bas : l'idée est d'avoir un petit descriptif des technologies proposées pour comprendre en quoi elles sont pertinentes.
+Nous utiliserons cette base de connaissances dans la fonction \mintinline{lisp}{afficherPropositions()} que nous détaillerons plus bas : l'idée est d'avoir un petit descriptif des technologies proposées pour comprendre en quoi elles sont pertinentes.
 
 
 \section{Fonctionnement du système}
 
-\subsection{Chaînage avant}
+Comme nous l'avons évoqué au début, il existe plusieurs moyens de réaliser le moteur d'inférence : le chaînage avant et le chaînage arrière. De même pour chacune de ces façons de procéder, on peut choisir de parcourir l'arbre de déduction en profondeur ou en largeur.
+
+\subsection{Chaînage avant en largeur}
+
+Nous avons réalisé un moteur d'inférence en chaînage avant et en profondeur d'abord. Le chaînage avant a pour avantage d'être facilement implémentable et ne repose pas sur la recherche d'une réponse particulière contrairement au chaînage arrière dont l'algorithme peut se construire sur la recherche d'un but spécifique (comme nous avons pu le voir en TD avec les fonctions \texttt{verifier()} et \texttt{verifierET()} dans le cas du chaînage arrière en profondeur d'abord).
+
+Nous avons préféré opérer par un parcours en largeur car cela permet de balayer et d'exploiter possiblement plus de faits.
+
 
 Voici un algorithme itératif pour le chaînage avant.
 \begin{algorithm}
@@ -235,10 +252,10 @@ Voici un algorithme itératif pour le chaînage avant.
 
 {\bf afficher les propositions} \;
 }
-\caption{Chaînage Avant \label{algoChainageAvant}}
+\caption{Chaînage avant en largeur \label{algoChainageAvant}}
 \end{algorithm}
 
-On remarquera que le système s'arrêtera dès que des propositions auront été inférées par le moteur.
+Cet algorithme permet de poser des questions à l'utilisateur lorsque le système ne peut plus inférer. L'utilisateur sera amené a préciser des valeurs d'objets pour que le moteur puisse ainsi construire de nouveaux faits. On remarquera que le système s'arrêtera dès que des propositions auront été inférées par le moteur.
 
 
 Nous l'avons implémenté sous LISP de cette façon :
@@ -248,6 +265,8 @@ Nous l'avons implémenté sous LISP de cette façon :
 	\inputminted[breaklines=true,linenos]{lisp}{../chainageAvantLarg.lisp}
 	\caption{Moteur de chainage avant}
 \end{listing}
+
+On remarquera l'importance des lignes 10 et 14 pour le parcours en largeur : l'ajout ligne 10 de \mintinline{lisp}{r} en fin de l'ensemble contraint \mintinline{lisp}{EC} et l'exécution ligne 14 de la règle en tête de \mintinline{lisp}{EC} permettent d'ordonner les règles afin que les premières ajoutées soient les premières utilisées. On utilise ainsi \textit{une structure de file} (aussi appelée FIFO pour "\textit{First In, First Out}").
 
 \subsection{Fonctions outils}
 
@@ -266,32 +285,32 @@ Afin d'abstraire les raisonnements nous avons mis au points des fonctions outils
 	\caption{Fonctions outils pour les faits}
 \end{listing}
 
-\subsection{Poser une question : fonction \mintinline{lisp}{askQuestion}}
+\subsection{Poser une question : fonction \mintinline{lisp}{askQuestion()}}
 
-Une possibilité lorsque le système n'arrive plus à tirer de conclusions et de poser des questions à l'utilisateur pour apporter de nouveaux faits. C'est ici le rôle réalisé par la fonction \mintinline{lisp}{askQuestion}.
+Une possibilité lorsque le système n'arrive plus à tirer de conclusions et de poser des questions à l'utilisateur pour apporter de nouveaux faits. C'est ici le rôle réalisé par la fonction \mintinline{lisp}{askQuestion()}.
 
 \begin{listing}[H]
 	\centering
 	\inputminted[breaklines=true,linenos, firstline = 22]{lisp}{../askQuestion.lisp}
-	\caption{Fonction \mintinline{lisp}{askQuestion} permettant de récupérer des informations}
+	\caption{Fonction \mintinline{lisp}{askQuestion()} permettant de récupérer des informations}
 \end{listing}
 
 Nous utilisons d'autres fonctions pour réaliser certaines tâches.
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos, lastline = 21]{lisp}{../askQuestion.lisp}
-	\caption{Fonctions outils pour \mintinline{lisp}{askQuestion}}
+	\inputminted[breaklines=true,linenos, lastline = 13]{lisp}{../askQuestion.lisp}
+	\caption{Fonctions outils pour \mintinline{lisp}{askQuestion()}}
 \end{listing}
 
-\subsection{Afficher les propositions du système : fonction \mintinline{lisp}{afficherPropositions}}
+\subsection{Afficher les propositions du système : fonction \mintinline{lisp}{afficherPropositions()}}
 
 	C'est dans cette fonction que nous utilisons la base de connaissances \mintinline{lisp}{**technologies**}.
 
 \begin{listing}[H]
 	\centering
 	\inputminted[breaklines=true,linenos]{lisp}{../afficherPropositions.lisp}
-	\caption{Fonction \mintinline{lisp}{afficherPropositions} qui affiche les propositions du système expert}
+	\caption{Fonction \mintinline{lisp}{afficherPropositions()} qui affiche les propositions du système expert}
 \end{listing}
 
 
