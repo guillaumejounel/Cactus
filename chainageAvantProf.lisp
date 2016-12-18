@@ -1,4 +1,4 @@
-(defun chainageAvantLarg () ; Moteur chaînage avant en largeur
+(defun chainageAvantProf () ; Moteur chaînage avant en profondeur
   (let (EC regleCourante)
     (loop ; on boucle
       (if (valeur (assoc 'Propositions *faits*)) ; si le but est présent dans la base de faits avec une valeur non nulle
@@ -7,7 +7,7 @@
           (return nil)) ; et on arrête
         (dolist (r *regles*) ; sinon on parcourt les règles dans la base de règles
           (when (declenchable? r); si une règle est déclenchable
-            (setq EC (append EC (list r))) ; on l'ajoute à l'ensemble contraint EN FIN
+            (push r EC) ; on l'ajoute à l'ensemble contraint EN TÊTE
             (setq *regles* (remove r *regles* :test 'equal))))) ; on l'enlève de la base de règles
       (if EC ; si on peut encore déclencher des règles
         (progn

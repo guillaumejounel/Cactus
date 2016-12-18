@@ -1,5 +1,5 @@
 ;; Fonctions outils pour les faits (triplets)
-(defun objet (triplet)
+(defun attribut (triplet)
   (car triplet))
 
 (defun operateur (triplet)

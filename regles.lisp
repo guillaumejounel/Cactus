@@ -1,7 +1,4 @@
 (defparameter *regles* '(
-  ; Regles construites de la fonctions suivantes :
-  ; (((Premisse1 operateur valeur)...(PremisseN operateur valeur))
-  ;    ((Resultat1 operateur valeur)...(Resultat1M operateur valeur)))
 
   ; Site web
   (((Application EQ Site-Web-Simple))
@@ -34,7 +31,7 @@
     ((Propositions EQ (C#))))
 
   ; Calcul-Numerique
-  (((Application EQ Calcul-Numerique) (Utilisation Individuel) (Budget > 100))
+  (((Application EQ Calcul-Numerique) (Utilisation Individuelle) (Budget > 100))
     ((Propositions EQ (Matlab))))
   (((Application EQ Calcul-Numerique) (Budget < 100))
     ((Propositions EQ (Scilab Julia ))))
