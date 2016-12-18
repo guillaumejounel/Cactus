@@ -3,16 +3,12 @@
   ; Site web
   (((Application EQ Site-Web-Simple))
     ((Propositions EQ (PHP MySQL))))
-  (((Application EQ Site-Web-Simple))
-    ((Propositions EQ (PHP MySQL))))
   (((Application EQ Site-Web-Responsive))
     ((Propositions EQ (PHP MySQL BootStrap JavaScript))))
   (((Application EQ Site-Web-Efficace))
     ((Propositions EQ (Django))))
   (((Application EQ Site-Web-Efficace))
     ((Propositions EQ (Ruby-on-Rails))))
-  (((Application EQ Site-Web-Simple))
-    ((Propositions EQ (PHP MySQL))))
   (((Application EQ API))
     ((Propositions EQ (Django Django-Rest-Framework))))
 
@@ -31,7 +27,7 @@
     ((Propositions EQ (C#))))
 
   ; Calcul-Numerique
-  (((Application EQ Calcul-Numerique) (Utilisation Individuelle) (Budget > 100))
+  (((Application EQ Calcul-Numerique) (Usage EQ Individuel) (Budget > 100))
     ((Propositions EQ (Matlab))))
   (((Application EQ Calcul-Numerique) (Budget < 100))
     ((Propositions EQ (Scilab Julia ))))

@@ -7,7 +7,7 @@
   ; Renvoie t si la règle est déclenchable ; nil sinon
   (let (
       (OK t)
-      (premisses (car r))
+      (premisses (car r)))
     (dolist (p premisses OK) ; pour chaque premisses de r
        ; si l'attribut a une valeur numérique mais n'est pas présent dans les faits
       (if (and (numberp (valeur p)) (not (valeur (assoc (attribut p) *faits*))))
