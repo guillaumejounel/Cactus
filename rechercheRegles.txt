@@ -74,3 +74,82 @@ Piet
 WhiteSpace
 Brainfuck
 LOLCODE
+
+
+
+; Comparaison entre ces technologies NoSQL :
+; Cassandra, MongoDB,CouchDB,Redis,Riak,HBase,CouchBase,Neo4J,HyperTable,
+; ElasticSearch, Accumulo, VoltDB, Scalaris
+
+Comparison Of NoSQL Databases HBase, Cassandra & MongoDB:
+
+HBase:
+
+Key characteristics:
+·         Distributed and scalable big data store
+·         Strong consistency
+·         Built on top of Hadoop HDFS
+·         CP on CAP
+
+Good for:
+·         Optimized for read
+·         Well suited for range based scan
+·         Strict consistency
+·         Fast read and write with scalability
+
+Not good for:
+·         Classic transactional applications or even relational analytics
+·         Applications need full table scan
+·         Data to be aggregated, rolled up, analyzed cross rows
+
+Usage Case: Facebook message
+
+Cassandra:
+
+Key characteristics:
+·         High availability
+·         Incremental scalability
+·         Eventually consistent
+·         Trade-offs between consistency and latency
+·         Minimal administration
+·         No SPF (Single point of failure) – all nodes are the same in Cassandra
+·         AP on CAP
+
+Good for:
+·         Simple setup, maintenance code
+·         Fast random read/write
+·         Flexible parsing/wide column requirement
+·         No multiple secondary index needed
+
+Not good for:
+·         Secondary index
+·         Relational data
+·         Transactional operations (Rollback, Commit)
+·         Primary & Financial record
+·         Stringent and authorization needed on data
+·         Dynamic queries/searching  on column data
+·         Low latency
+
+Usage Case: Twitter, Travel portal
+MongoDB:
+
+Key characteristics:
+·         Schemas to change as applications evolve (Schema-free)
+·         Full index support for high performance
+·         Replication and failover for high availability
+·         Auto Sharding for easy Scalability
+·         Rich document based queries for easy readability
+·         Master-slave model
+·         CP on CAP
+
+Good for:
+·         RDBMS replacement for web applications
+·         Semi-structured content management
+·         Real-time analytics and high-speed logging, caching and high scalability
+·         Web 2.0, Media, SAAS, Gaming
+
+Not good for:
+·         Highly transactional system
+·         Applications with traditional database requirements such as foreign key constraints
+
+Usage Case: Craigslist, Foursquare

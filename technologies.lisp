@@ -48,8 +48,6 @@
   (Maple . "Logiciel de calcul formel ; propriétaire et payant.")
   (Sage . "Se veut être ''une alternative viable libre et open source à Magma, Maple, Mathematica et Matlab''.")
   (Perl . "Un langage de programmation simple à apprendre. Utile pour déterminer des expressions régulières")
-  (LolCat . "LOL U RLY NEEDIT")
-  (Piet . "ou l'art de coder.")
   (Shell . "Interpréteur de commandes : l'interface entre l'OS et l'utilisateur")
   )
 )

@@ -62,10 +62,16 @@
   (((Application EQ Systeme-Embarque))
     ((Propositions EQ (Assembleur Shell C))))
 
+  ;Dataware
+  (((Application EQ Dataware) (QuantiteDonnee > 100000))
+    ((Paradigme EQ NoSQL)))
+  (((Application EQ Dataware) (QuantiteDonnee < 100001))
+    ((Paradigme EQ Relationnel)))
+
   ;Autre
-  (((Application EQ RegEx))
+  (((Application EQ Expression-Reguliere))
     ((Propositions EQ (Perl JavaScript))))
 
   (((Application EQ Apprentissage))
-    ((Propositions EQ (Perl))))
+    ((Propositions EQ (Perl Go))))
 ))
