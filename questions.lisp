@@ -8,6 +8,7 @@
   (Usage . "De quel usage avez-vous besoin ?")
   (Parenthese . "Supportez-vous les parenthèses dans vos scripts ?")
   (QuantiteDonnee . "Votre projet nécessite-t-il de traiter beaucoup de données ?")
+  (Visiteurs . "Précisez le nombre de visiteurs attendus :")
 )
 )
 
