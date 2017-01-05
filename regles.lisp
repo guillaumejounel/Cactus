@@ -1,16 +1,14 @@
 (defparameter *regles* '(
 
   ; Site web
-  (((Application EQ Site-Web-Simple))
+  (((Application EQ Site-Web)(Precision EQ Simple))
     ((Propositions EQ (PHP MySQL))))
-  (((Application EQ Site-Web-Responsive))
+  (((Application EQ Site-Web) (Precision EQ Responsive))
     ((Propositions EQ (PHP MySQL BootStrap JavaScript))))
-  (((Application EQ Site-Web-Efficace))
+  (((Application EQ Site-Web) (Precision EQ Efficace) (RoRvsDjango EQ Configurable))
     ((Propositions EQ (Django))))
-  (((Application EQ Site-Web-Efficace))
+  (((Application EQ Site-Web) (Precision EQ Efficace) (RoRvsDjango EQ Populaire))
     ((Propositions EQ (Ruby-on-Rails))))
-  (((Application EQ API))
-    ((Propositions EQ (Django Django-Rest-Framework))))
 
   ; Application Mobile
   (((Application EQ Mobile)(Machine EQ Mac)(Cible EQ iPhone) (Budget > 100))
@@ -22,9 +20,9 @@
 
   ; Logiciel
   (((Application EQ Logiciel) (Precision EQ Complexe))
-    ((Propositions EQ (C++ JAVA))))
+    ((Propositions EQ (C++ JAVA Git))))
   (((Application EQ Logiciel) (Precision EQ Complexe) (Machine EQ Windows))
-    ((Propositions EQ (C#))))
+    ((Propositions EQ (C# Git))))
 
   ; Calcul-Numerique
   (((Application EQ Calcul-Numerique) (Usage EQ Individuel) (Budget > 100))
@@ -101,10 +99,16 @@
     ((Paradigme EQ NoSQL)))
   (((Application EQ Dataware) (QuantiteDonnee < 100001))
     ((Paradigme EQ Relationnel)))
+
   (((Application EQ Dataware) (Paradigme EQ Relationnel) (AccesLecture > 1000))
     ((Propositions EQ PLSQL)))
   (((Application EQ Dataware) (Paradigme EQ Relationnel) (AccesLecture < 1001))
     ((Propositions EQ PostGreSQL)))
+
+  (((Application EQ Dataware) (Paradigme EQ NoSQL) (Orientation EQ Document))
+    ((Propositions EQ MangoDB)))
+  (((Application EQ Dataware) (Paradigme EQ NoSQL) (Orientation EQ Graphe))
+    ((Propositions EQ Neo4J)))
 
   ;RegExp
   (((Application EQ Expression-Reguliere))
