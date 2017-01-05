@@ -56,7 +56,7 @@
   (Swift . "Le dernier langage de programmation d'Apple pour développer des applications iPhone et Mac")
   (Objective-C . "L'ancien langage de programmation d'Apple pour développer des applications iPhone et Mac")
   (C# . "Le langage de programmation orientée objet de Microsoft. Il révèle tout son potentiel s'il est utilisé conjointement au framework .NET. Intéressant uniquement si la développement se fait dans un envirronement Microsoft.")
-  (Java . "Le langage de programmation orientée objet")
+  (Java . "Le langage de programmation orienté objet")
   (C++ . "Inspiré du C, il en reprend beaucoup de spécificités et est orienté programmation objet. C'est un langage très plebiscité pour la création de logiciel complexe.")
 
   (Neo4J . "Technologie NoSQL : données représentées sous forme de graphes.")

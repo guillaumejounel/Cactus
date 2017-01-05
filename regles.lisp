@@ -49,6 +49,18 @@
     ((Propositions EQ (C++ Unity3D OpenGL))))
   (((Application EQ Jeu-Video) (Precision EQ RPG-2D))
     ((Propositions EQ (RPG-Maker))))
+  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Mac) (Budget < 35))
+    ((Propositions EQ (SpriteKit Swift Pygame))))
+  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Mac) (Budget > 34))
+    ((Propositions EQ (C++ Unity3D OpenGL))))
+  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Windows) (Budget < 35))
+    ((Propositions EQ (Pygame))))
+  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Windows) (Budget > 34))
+    ((Propositions EQ (Pygame))))
+  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Linux) (Budget < 35))
+    ((Propositions EQ (C++ Unity3D OpenGL))))
+  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Linux) (Budget > 34))
+    ((Propositions EQ (C++ Unity3D OpenGL))))
 
   ;DIY
   (((Application EQ DIY))
@@ -61,6 +73,14 @@
     ((Propositions EQ (C Shell Tkinter))))
   (((Application EQ Systeme-Embarque))
     ((Propositions EQ (Assembleur Shell C))))
+
+  ;Système Multi-agents
+  (((Application EQ SMA) (Precision SimulationDeFoule))
+    ((Propositions EQ (MASSIVE))))
+  (((Application EQ SMA) (Precision Trading))
+    ((Propositions EQ (MetaTrader4))))
+  (((Application EQ SMA) (Precision Autre))
+    ((Propositions EQ (JADE Java))))
 
   ;Dataware
   (((Application EQ Dataware) (QuantiteDonnee > 100000))
