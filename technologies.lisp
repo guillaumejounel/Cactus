@@ -22,7 +22,6 @@
   (Sage . "Se veut être ''une alternative viable libre et open source à Magma, Maple, Mathematica et Matlab''. C'est un langage de calcul formel.")
 
   (LISP . "Le langage de programmation pour intellience artificielle symbolique le plus populaire de tous. Il est minimaliste et permet d'implémenter de nombreuses choses.")
-  (Scheme . "A COMPLETER")
   (Prolog . "Un langage de programmation français (Cocorico !), il est utilisé en Intelligence Artificielle.")
   (OWL-Lite . "Langage de représentation des connaissances construit sur le modèle de données de RDF. Basé sur la logique de description, Web Ontology Language (OWL) permet de définir des ontologies web structurées. OWL-Lite en est sa version la plus simple, pour les utilisateurs ayant besoin d'une hiérarchie de classification et de contraintes simples.")
   (OWL-DL . "Langage de représentation des connaissances construit sur le modèle de données de RDF. Basé sur la logique de description, Web Ontology Language (OWL) permet de définir des ontologies web structurées. OWL-DL en est une version intermédiaire décidable qui permet une expressivité maximale avec une garantie de calcul.")
@@ -62,15 +61,14 @@
 
   (Neo4J . "Technologie NoSQL : données représentées sous forme de graphes.")
   (MongoDB . "Technologie NoSQL : données non structurées stockées sous le formalisme JSON")
-  (Cansadra . "Technologie NoSQL : A COMPLETER")
 
   (LaTeX . "Langage et un système de composition de documents. Utilisé pour la rédaction de documents scientifique. Beaucoup de bibliothèque (package)")
-  (MD . "Une extension de fichier (MD pour 'Markdown Documentation') surtout utilisée pour rédiger des documentations. Les fichiers MD sont facilement interprétable et leur synthaxe est simple d'usage")
+  (MD . "Une extension de fichier (MD pour 'Markdown Documentation') surtout utilisée pour rédiger des documentations. Les fichiers MD sont facilement interprétable et leur syntaxe est simple d'usage")
 
   (Fortran . "Vieux langage de programmation utilisé pour le calcul scientifique")
   (Go . "Langage de programmation de Google ; se veut efficace et simple d'apprentissage.")
   (Perl . "Un langage de programmation simple à apprendre. Utile pour déterminer des expressions régulières")
-  (Pascal . "Un langage de programmation ancien; sa synthaxe est simple ce qui lui donne un bon atout pédagogique.")
+  (Pascal . "Un langage de programmation ancien; sa &xe est simple ce qui lui donne un bon atout pédagogique.")
   (Scala . "acronyme de ''Scalable Language'' ; langage péblicité pour des applications nécessitant de gérer de nombreuses tâches en parallèles.")
   )
 )
