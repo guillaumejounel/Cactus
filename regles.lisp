@@ -27,13 +27,13 @@
   ; Calcul-Numerique
   (((Application EQ Calcul-Numerique) (Usage EQ Individuel) (Budget > 100))
     ((Propositions EQ (Matlab))))
-  (((Application EQ Calcul-Numerique) (Budget < 100))
-    ((Propositions EQ (Scilab Julia Python MathPlotLib Numpy))))
-  (((Application EQ Calcul-Numerique) (Usage EQ Individuel) (Budget > 100))
-    ((Propositions EQ (Matlab))))
+  (((Application EQ Calcul-Numerique) (Budget < 100) (ManipulationMatrice EQ OUI))
+    ((Propositions EQ (Octave Scilab Julia Fortran))))
+  (((Application EQ Calcul-Numerique) (Budget < 100) (ManipulationMatrice EQ NON))
+    ((Propositions EQ (Python MathPlotLib Numpy))))
 
   ; Machine-Learning
-  (((Application EQ Machine-Learning) (Precision EQ Prototypage-Rapide) (Budget < 101) (ManipulationMatrice EQ Oui))
+  (((Application EQ Machine-Learning) (Precision EQ Prototypage-Rapide) (Budget < 101) (ManipulationMatrice EQ OUI))
     ((Propositions EQ (Octave))))
   (((Application EQ Machine-Learning) (Precision EQ Prototypage-Rapide) (Budget < 101) (ManipulationMatrice EQ NON))
     ((Propositions EQ (Python Sci-kit MathPlotLib Numpy))))
@@ -116,7 +116,7 @@
 
 
   ; Rédaction
-  (((Application EQ Rédaction) (Precision EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ Oui))
+  (((Application EQ Rédaction) (Precision EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ OUI))
     ((Propositions EQ (Git MD Etherpad))))
 
   (((Application EQ Rédaction) (Precision EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ PasForcement))
@@ -125,7 +125,7 @@
   (((Application EQ Rédaction) (Precision EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ PasForcement))
     ((Propositions EQ (GoogleDoc Word))))
 
-  (((Application EQ Rédaction) (Precision EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ Oui))
+  (((Application EQ Rédaction) (Precision EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ OUI))
     ((Propositions EQ (LaTeX))))
 
   (((Application EQ Rédaction) (Precision EQ Complexe) (Usage EQ Collaboratif))
@@ -138,5 +138,5 @@
     ((Propositions EQ (Git LaTeX))))
 
   (((Application EQ Apprentissage))
-    ((Propositions EQ (Perl Go))))
+    ((Propositions EQ (Perl Go Pascal))))
 ))
