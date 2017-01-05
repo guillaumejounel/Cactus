@@ -1,6 +1,11 @@
+(defun technologiesAssociee (attribut)
+  (if (cdr (assoc attribut *technologies*))
+    (cdr (assoc attribut *technologies*))
+    attribut))
+
 (defun afficherPropositions ()
   (let ((prop (caddr (assoc 'Propositions *faits*))) (overlay '------------------))
     (format t "~&~A~&Voici les différentes technologies que je vous propose : " overlay)
     (dolist (x prop)
-      (format t "~& -» ~A : ~S" x (cdr (assoc x *technologies*))))
+      (format t "~& -» ~A : ~S" x (technologiesAssociee attribut)))
     (format t "~&~A~&" overlay)))

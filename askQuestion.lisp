@@ -35,8 +35,6 @@
             (not (format t "------~&~S~%------~%~%~S~%~%Votre choix : " (questionAssociee attribut) (delete-duplicates (AttValues attribut))))
             (member (setq valeur (read)) (delete-duplicates (AttValues attribut))))))
             ; Redemande tant que son choix n'est pas valide
-      (error "Nous n'avons rien pu trouver"))
+      (error "Nous n'avons rien pu trouver."))
     (sleep 1)
     (pushnew (list attribut 'EQ valeur) *faits*)))
-    ; ajouter l'attribut / valeur à la base de regles
-    ; TODO : Gérer le "EQ"

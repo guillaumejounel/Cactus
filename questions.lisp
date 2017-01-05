@@ -10,3 +10,5 @@
   (QuantiteDonnee . "Votre projet nécessite-t-il de traiter beaucoup de données ?")
 )
 )
+
+; (delete-duplicates (set-difference (listeAttRegles) (listeAttFaits)))

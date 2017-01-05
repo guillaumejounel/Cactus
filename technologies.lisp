@@ -32,7 +32,7 @@
   (JADE . "JAVA Agent DEvelopment (JADE) est une plateforme de programmation multi-agent implémentée en Java.")
 
   (SQL . "Le standard des bases de données relationnelles : c'est à la fois un langage et une technologies d'implémenation de BDD ; connait plusieurs variantes d'implémentations.")
-    (PL/SQL . "Variante propriétaire d'Oracle ; permet d'implémenter des bases de données relationnelles-objet et dispose de fonctions et fonctionnalités supplémentaires.
+    (PLSQL . "Variante propriétaire d'Oracle ; permet d'implémenter des bases de données relationnelles-objet et dispose de fonctions et fonctionnalités supplémentaires.
     Les bases de données relationnelles-objet sont très efficaces lorsqu'il s'agit de construire des bases de données dont l'accès en lecture est très fréquent.")
     (PostGreSQL . "Variantes libre d'implémentation de SQL la plus populaire. Elle reste la plus plebiscitée car elle est très robuste en terme d'implémentation et veille à suivre de très près les standard SQL.")
     (MySQL . "Variantes libre d'implémentation de SQL, simple d'utilisation mais aussi moins bien structurée.")
@@ -63,7 +63,11 @@
   (MongoDB . "Technologie NoSQL : données non structurées stockées sous le formalisme JSON")
 
   (LaTeX . "Langage et un système de composition de documents. Utilisé pour la rédaction de documents scientifique. Beaucoup de bibliothèque (package)")
+  (Git . "Logiciel de versionnage libre ; très puissant pour travailler sur des projets à plusieurs ; permet de minimiser les collisions entre versions.")
+  (Word . "Logiciel propriétaire WYSIWYG de Microsoft. Le plus populaire pour la rédaction du document")
+  (GoogleDoc . "Solution en ligne de Google. Permet des rédactions de documents à plusieurs très interactive. Nécessite d'être connecté à Internet."
   (MD . "Une extension de fichier (MD pour 'Markdown Documentation') surtout utilisée pour rédiger des documentations. Les fichiers MD sont facilement interprétable et leur syntaxe est simple d'usage")
+  (Etherpad . "Solution libre à GoogleDoc ; est perfectible mais fait le travail.")
 
   (Fortran . "Vieux langage de programmation utilisé pour le calcul scientifique")
   (Go . "Langage de programmation de Google ; se veut efficace et simple d'apprentissage.")

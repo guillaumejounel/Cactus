@@ -21,16 +21,30 @@
     ((Propositions EQ (JAVA Android-Studio SDK-Android))))
 
   ; Logiciel
-  (((Application EQ Logiciel) (Precision EQ Solide))
+  (((Application EQ Logiciel) (Precision EQ Complexe))
     ((Propositions EQ (C++ JAVA))))
-  (((Application EQ Logiciel) (Precision EQ Solide) (Machine EQ Windows))
+  (((Application EQ Logiciel) (Precision EQ Complexe) (Machine EQ Windows))
     ((Propositions EQ (C#))))
 
   ; Calcul-Numerique
   (((Application EQ Calcul-Numerique) (Usage EQ Individuel) (Budget > 100))
     ((Propositions EQ (Matlab))))
   (((Application EQ Calcul-Numerique) (Budget < 100))
-    ((Propositions EQ (Scilab Julia ))))
+    ((Propositions EQ (Scilab Julia Python MathPlotLib Numpy))))
+  (((Application EQ Calcul-Numerique) (Usage EQ Individuel) (Budget > 100))
+    ((Propositions EQ (Matlab))))
+
+  ; Machine-Learning
+  (((Application EQ Machine-Learning) (Precision EQ Prototypage-Rapide) (Budget < 101) (ManipulationMatrice EQ Oui))
+    ((Propositions EQ (Octave))))
+  (((Application EQ Machine-Learning) (Precision EQ Prototypage-Rapide) (Budget < 101) (ManipulationMatrice EQ NON))
+    ((Propositions EQ (Python Sci-kit MathPlotLib Numpy))))
+  (((Application EQ Machine-Learning) (Precision EQ Prototypage-Rapide) (Budget > 100))
+    ((Propositions EQ (Matlab))))
+  (((Application EQ Machine-Learning) (Precision EQ Modele-Complexe) (Budget < 101))
+    ((Propositions EQ (R))))
+  (((Application EQ Machine-Learning) (Precision EQ Modele-Complexe) (Budget > 100))
+    ((Propositions EQ (Matlab))))
 
   ; Système-expert
   (((Application EQ Systeme-Expert) (Parenthese EQ Supportee))
@@ -50,7 +64,7 @@
   (((Application EQ Jeu-Video) (Precision EQ RPG-2D))
     ((Propositions EQ (RPG-Maker))))
 
-  ;DIY
+  ; DIY
   (((Application EQ DIY))
     ((Propositions EQ (Arduino))))
   (((Application EQ DIY) (Precision EQ Internet))
@@ -67,10 +81,37 @@
     ((Paradigme EQ NoSQL)))
   (((Application EQ Dataware) (QuantiteDonnee < 100001))
     ((Paradigme EQ Relationnel)))
+  (((Application EQ Dataware) (Paradigme EQ Relationnel) (AccesLecture > 1000))
+    ((Propositions EQ PLSQL)))
+  (((Application EQ Dataware) (Paradigme EQ Relationnel) (AccesLecture < 1001))
+    ((Propositions EQ PostGreSQL)))
 
-  ;Autre
+  ;RegExp
   (((Application EQ Expression-Reguliere))
     ((Propositions EQ (Perl JavaScript))))
+
+
+  ; Rédaction
+  (((Application EQ Rédaction) (Precision EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ Oui))
+    ((Propositions EQ (Git MD Etherpad))))
+
+  (((Application EQ Rédaction) (Precision EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ PasForcement))
+    ((Propositions EQ (GoogleDoc))))
+
+  (((Application EQ Rédaction) (Precision EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ PasForcement))
+    ((Propositions EQ (GoogleDoc Word))))
+
+  (((Application EQ Rédaction) (Precision EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ Oui))
+    ((Propositions EQ (LaTeX))))
+
+  (((Application EQ Rédaction) (Precision EQ Complexe) (Usage EQ Collaboratif))
+    ((Propositions EQ (Git LaTeX ShareLatex Overleaf))))
+
+  (((Application EQ Rédaction) (Precision EQ Scientifique) (Usage EQ Individuel))
+    ((Propositions EQ (LaTeX))))
+
+  (((Application EQ Rédaction) (Precision EQ Scientifique) (Usage EQ Collaboratif))
+    ((Propositions EQ (Git LaTeX))))
 
   (((Application EQ Apprentissage))
     ((Propositions EQ (Perl Go))))
