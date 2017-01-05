@@ -18,9 +18,9 @@
 
 (defun chargement()
   (format t "~%~%")
-  (dotimes (x 50)
-    (sleep 0.1)
-    (format t "="))
+  (dotimes (x 20)
+    (sleep (- 0.2 (* 0.01 x)))
+    (format t "=="))
   (format t "~%~s" *cactus*)
   (format t "~%~%"))
 
