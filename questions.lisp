@@ -1,15 +1,31 @@
 (defparameter *questions*
 '(
   (Application . "Quel type d'applications voulez-vous developper ou solliciter ?")
+  (PrecisionSite . "Précisez l'usage que vous voulez faire de votre site :")
+  (PrecisionSMA . "Précisez l'usage que vous voulez faire de votre système multi-agent :")
+  (PrecisionSysteme . "Précisez ce que vous souhaitez faire en programmation système :")
+  (PrecisionMachineLearning . "Précisez ce que vous voulez faire en machine learning :")
+  (PrecisionLogiciel . "Précisez l'usage que vous voulez faire de votre application :")
+  (PrecisionJeu . "Précisez l'usage que vous voulez faire de votre application :")
+  (PrecisionRedaction . "Dans quel cadre s'inscrit cette rédaction ?")
   (Machine . "Sur quel système d'explotation travaillez-vous ?")
   (Cible . "Pour quel système developpez-vous ?")
   (Budget . "Quel budget avez-vous ? Entrez un chiffre.")
-  (Precision . "Précisez l'usage que vous voulez faire de votre application :")
   (Usage . "De quel usage avez-vous besoin ?")
   (Parenthese . "Supportez-vous les parenthèses dans vos scripts ?")
   (QuantiteDonnee . "Votre projet nécessite-t-il de traiter beaucoup de données ?")
   (Visiteurs . "Précisez le nombre de visiteurs attendus :")
+  (LogicielLibre . "Êtes-vous un fervant défenseur du logicel libre ?")
+  (Orientation . "Préfèreriez-vous que votre base de données soit orientée selon :")
+  (AccesLecture . "Combien d'accès en lecture se feront sur vos données ? Donnez le nombre d'accès aux données par heure.")
+  (Paradigme . "De quel paradigme de stockage de données s'agit-il ?")
+  (AccesAInternet . "Votre système aura-t-il besoin d'avoir accès à internet ?")
+  (ManipulationMatrice . "Aurez-vous besoin de manipuler des matrices ?")
+  (RoRvsDjango . "Préferez-vous une solution populaire ou configurable ?")
+  (Interaction-Dynamique ."Le design du site devra-t-il être dynamique ?")
+
 )
 )
+
 
 ; (delete-duplicates (set-difference (listeAttRegles) (listeAttFaits)))
