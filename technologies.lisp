@@ -21,11 +21,17 @@
 
   (Maple . "Logiciel de calcul formel ; propriétaire et payant.")
   (Sage . "Se veut être ''une alternative viable libre et open source à Magma, Maple, Mathematica et Matlab''.")
-  
+
   (LISP . "(((((((((((((((((((((LE FAMEUX)))))))))))))))))))))")
   (Scheme . "A COMPLETER")
   (Prolog . "Un langage de programmation français (Cocorico !), il est utilisé en Intelligence Artificielle.")
+  (OWL-Lite . "Langage de représentation des connaissances construit sur le modèle de données de RDF. Basé sur la logique de description, Web Ontology Language (OWL) permet de définir des ontologies web structurées. OWL-Lite en est sa version la plus simple, pour les utilisateurs ayant besoin d'une hiérarchie de classification et de contraintes simples.")
+  (OWL-DL . "Langage de représentation des connaissances construit sur le modèle de données de RDF. Basé sur la logique de description, Web Ontology Language (OWL) permet de définir des ontologies web structurées. OWL-DL en est une version intermédiaire décidable qui permet une expressivité maximale avec une garantie de calcul.")
+  (OWL-Full . "Langage de représentation des connaissances construit sur le modèle de données de RDF. Basé sur la logique de description, Web Ontology Language (OWL) permet de définir des ontologies web structurées. OWL-Full en est sa version la plus libre, indécidable, permettant une expressivité maximale mais sans garantie de calcul.")
 
+  (MASSIVE . "Logiciel utilisant les Systèmes Multi-agents (SMA) dans le but de simuler des foules. Il est très utilisé dans les industries du cinéma et du jeu vidéo, notamment dans la trilogie Seigneur des Anneaux ainsi que dans la série Games of Thrones.")
+  (MetaTrader4 . "Logiciel utilisant les Systèmes Multi-agents (SMA) dans le domaine de la finance afin d'effectuer du trading automatique.")
+  (JADE . "JAVA Agent DEvelopment (JADE) est une plateforme de programmation multi-agent implémentée en Java.")
 
   (SQL . "Le standard des bases de données relationnelles : c'est à la fois un langage et une technologies d'implémenation de BDD ; connait plusieurs variantes d'implémentations")
     (PL/SQL . "Variante propriétaire d'Oracle ; permet d'implémenter des bases de données relationnelles-objet et dispose de fonctions et fonctionnalités supplémentaires.")
