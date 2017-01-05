@@ -12,6 +12,11 @@
     if (assoc attribut (car regle))
     collect (valeur (assoc attribut (car regle)))))
 
+(defun questionAssociee (attribut)
+  (if (cdr (assoc attribut *questions*))
+    (cdr (assoc attribut *questions*))
+    attribut))
+
 (defun askQuestion ()
   (let ((attribut (car (set-difference (listeAttRegles) (listeAttFaits))) valeur))
     ; "attribut" est le premier élément de la différence entre :
@@ -22,15 +27,16 @@
       (if (numberp (car (AttValues attribut))) ; la valeur de celui-ci est-elle un nombre ?
         (until
           (AND
-            (not (format t "Spécifiez : ~S~&Votre choix (nombre) : " attribut))
+            (not (format t "------~&~S~%------~%Votre choix (nombre) : " (questionAssociee attribut)))
             (numberp (setq valeur (read))))) ; Redemande tant que son choix n'est pas valide
         (until
           (AND
             ; liste les valeurs possibles de l'attribut et fait lire un choix à l'utilisateur
-            (not (format t "Spécifiez : ~S~&~S~%Votre choix : " attribut (delete-duplicates (AttValues attribut))))
+            (not (format t "------~&~S~%------~%~%~S~%~%Votre choix : " (questionAssociee attribut) (delete-duplicates (AttValues attribut))))
             (member (setq valeur (read)) (delete-duplicates (AttValues attribut))))))
             ; Redemande tant que son choix n'est pas valide
-      (error "Sorry, something went wrong"))
+      (error "Nous n'avons rien pu trouver"))
+    (sleep 1)
     (pushnew (list attribut 'EQ valeur) *faits*)))
     ; ajouter l'attribut / valeur à la base de regles
     ; TODO : Gérer le "EQ"
