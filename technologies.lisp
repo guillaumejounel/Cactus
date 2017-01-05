@@ -8,8 +8,8 @@
     (Tkinter . "Bibliothèque Python : permet de créer des interfaces graphiques.")
     (PyGame . "Bibliothèque Python : permet de créer des petits jeux et applications graphiques.")
     (Django . "FrameWork de développement web Python : très bien construit et extremement efficace une fois maîtrisé 'Django : the web framework for perfectionists with deadlines'.")
-    (Numpy . "Bibliothèque python : boîte à outils scientifiques."
-    (MathPlotLib . "Bibliothèque python : utile pour la visualisation de données (tracé de courbes, de surfaces, de nuages de points...).")
+    (Numpy . "Bibliothèque python : boîte à outils scientifiques.")
+    (MathPlotLib . "Bibliothèque python : utile pour la visualisation de données tracé de courbes, de surfaces, de nuages de points....")
     (Sci-kit . "Bibliothèque python : dispose de beaucoup d'implémentation d'algorithme de machine learning.")
 
   (R . "Utilisé dans les domaines scientifiques (particulièrement en statistiques et data-mining).")
@@ -65,7 +65,7 @@
   (LaTeX . "Langage et un système de composition de documents. Utilisé pour la rédaction de documents scientifique. Beaucoup de bibliothèque (package)")
   (Git . "Logiciel de versionnage libre ; très puissant pour travailler sur des projets à plusieurs ; permet de minimiser les collisions entre versions.")
   (Word . "Logiciel propriétaire WYSIWYG de Microsoft. Le plus populaire pour la rédaction du document")
-  (GoogleDoc . "Solution en ligne de Google. Permet des rédactions de documents à plusieurs très interactive. Nécessite d'être connecté à Internet."
+  (GoogleDoc . "Solution en ligne de Google. Permet des rédactions de documents à plusieurs très interactive. Nécessite d'être connecté à Internet.")
   (MD . "Une extension de fichier (MD pour 'Markdown Documentation') surtout utilisée pour rédiger des documentations. Les fichiers MD sont facilement interprétable et leur syntaxe est simple d'usage")
   (Etherpad . "Solution libre à GoogleDoc ; est perfectible mais fait le travail.")
 

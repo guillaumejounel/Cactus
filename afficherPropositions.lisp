@@ -7,5 +7,5 @@
   (let ((prop (caddr (assoc 'Propositions *faits*))) (overlay '------------------))
     (format t "~&~A~&Voici les différentes technologies que je vous propose : " overlay)
     (dolist (x prop)
-      (format t "~& -» ~A : ~S" x (technologiesAssociee attribut)))
+      (format t "~& -» ~A : ~S" x (technologiesAssociee x)))
     (format t "~&~A~&" overlay)))

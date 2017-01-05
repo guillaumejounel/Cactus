@@ -1,14 +1,16 @@
 (defparameter *regles* '(
 
   ; Site web
-  (((Application EQ Site-Web)(Precision EQ Simple))
-    ((Propositions EQ (PHP MySQL))))
-  (((Application EQ Site-Web) (Precision EQ Responsive))
-    ((Propositions EQ (PHP MySQL BootStrap JavaScript))))
-  (((Application EQ Site-Web) (Precision EQ Efficace) (RoRvsDjango EQ Configurable))
-    ((Propositions EQ (Django))))
-  (((Application EQ Site-Web) (Precision EQ Efficace) (RoRvsDjango EQ Populaire))
-    ((Propositions EQ (Ruby-on-Rails))))
+  (((Application EQ Site-Web) (PrecisionSite EQ Simple) (Interaction-Dynamique EQ OUI))
+    ((Propositions EQ (HTML PHP MySQL JavaScript))))
+  (((Application EQ Site-Web) (PrecisionSite EQ Simple) (Interaction-Dynamique EQ NON))
+    ((Propositions EQ (HTML PHP MySQL))))
+  (((Application EQ Site-Web) (PrecisionSite EQ Responsive))
+    ((Propositions EQ (HTML PHP MySQL BootStrap JavaScript))))
+  (((Application EQ Site-Web) (PrecisionSite EQ Efficace) (RoRvsDjango EQ Configurable))
+    ((Propositions EQ (HTML Django))))
+  (((Application EQ Site-Web) (PrecisionSite EQ Efficace) (RoRvsDjango EQ Populaire))
+    ((Propositions EQ (HTML Ruby-on-Rails))))
 
   ; Application Mobile
   (((Application EQ Mobile)(Machine EQ Mac)(Cible EQ iPhone) (Budget > 100))
@@ -19,9 +21,9 @@
     ((Propositions EQ (JAVA Android-Studio SDK-Android))))
 
   ; Logiciel
-  (((Application EQ Logiciel) (Precision EQ Complexe))
+  (((Application EQ Logiciel) (PrecisionLogiciel EQ Complexe))
     ((Propositions EQ (C++ JAVA Git))))
-  (((Application EQ Logiciel) (Precision EQ Complexe) (Machine EQ Windows))
+  (((Application EQ Logiciel) (PrecisionLogiciel EQ Complexe) (Machine EQ Windows))
     ((Propositions EQ (C# Git))))
 
   ; Calcul-Numerique
@@ -33,15 +35,15 @@
     ((Propositions EQ (Python MathPlotLib Numpy))))
 
   ; Machine-Learning
-  (((Application EQ Machine-Learning) (Precision EQ Prototypage-Rapide) (Budget < 101) (ManipulationMatrice EQ OUI))
+  (((Application EQ Machine-Learning) (PrecisionML EQ Prototypage-Rapide) (Budget < 101) (ManipulationMatrice EQ OUI))
     ((Propositions EQ (Octave))))
-  (((Application EQ Machine-Learning) (Precision EQ Prototypage-Rapide) (Budget < 101) (ManipulationMatrice EQ NON))
+  (((Application EQ Machine-Learning) (PrecisionML EQ Prototypage-Rapide) (Budget < 101) (ManipulationMatrice EQ NON))
     ((Propositions EQ (Python Sci-kit MathPlotLib Numpy))))
-  (((Application EQ Machine-Learning) (Precision EQ Prototypage-Rapide) (Budget > 100))
+  (((Application EQ Machine-Learning) (PrecisionML EQ Prototypage-Rapide) (Budget > 100))
     ((Propositions EQ (Matlab))))
-  (((Application EQ Machine-Learning) (Precision EQ Modele-Complexe) (Budget < 101))
+  (((Application EQ Machine-Learning) (PrecisionML EQ Modele-Complexe) (Budget < 101))
     ((Propositions EQ (R))))
-  (((Application EQ Machine-Learning) (Precision EQ Modele-Complexe) (Budget > 100))
+  (((Application EQ Machine-Learning) (PrecisionML EQ Modele-Complexe) (Budget > 100))
     ((Propositions EQ (Matlab))))
 
   ; Système-expert
@@ -57,41 +59,41 @@
     ((Propositions EQ (Pygame Tkinter))))
 
   ; Jeu-Video
-  (((Application EQ Jeu-Video) (Precision EQ 3D))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 3D))
     ((Propositions EQ (C++ Unity3D OpenGL))))
-  (((Application EQ Jeu-Video) (Precision EQ RPG-2D))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ RPG-2D))
     ((Propositions EQ (RPG-Maker))))
-  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Mac) (Budget < 35))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Mac) (Budget < 35))
     ((Propositions EQ (SpriteKit Swift Pygame))))
-  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Mac) (Budget > 34))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Mac) (Budget > 34))
     ((Propositions EQ (C++ Unity3D OpenGL))))
-  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Windows) (Budget < 35))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Windows) (Budget < 35))
     ((Propositions EQ (Pygame))))
-  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Windows) (Budget > 34))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Windows) (Budget > 34))
     ((Propositions EQ (Pygame))))
-  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Linux) (Budget < 35))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Linux) (Budget < 35))
     ((Propositions EQ (C++ Unity3D OpenGL))))
-  (((Application EQ Jeu-Video) (Precision EQ 2D) (Cible EQ Linux) (Budget > 34))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Linux) (Budget > 34))
     ((Propositions EQ (C++ Unity3D OpenGL))))
 
   ; DIY
-  (((Application EQ DIY))
+  (((Application EQ DIY) (AccesAInternet EQ OUI))
     ((Propositions EQ (Arduino))))
-  (((Application EQ DIY) (Precision EQ Internet))
+  (((Application EQ DIY) (AccesAInternet EQ OUI))
     ((Propositions EQ (Raspberry-Pi))))
 
   ;Système Embarqué
-  (((Application EQ Systeme) (Machine EQ Linux) (Precision EQ Interaction))
+  (((Application EQ Systeme) (Machine EQ Linux) (PrecisionSysteme EQ Interaction))
     ((Propositions EQ (C Shell Tkinter))))
   (((Application EQ Systeme-Embarque))
     ((Propositions EQ (Assembleur Shell C))))
 
   ;Système Multi-agents
-  (((Application EQ SMA) (Precision SimulationDeFoule))
+  (((Application EQ SMA) (PrecisionSMA EQ SimulationDeFoule))
     ((Propositions EQ (MASSIVE))))
-  (((Application EQ SMA) (Precision Trading))
+  (((Application EQ SMA) (PrecisionSMA EQ Trading))
     ((Propositions EQ (MetaTrader4))))
-  (((Application EQ SMA) (Precision Autre))
+  (((Application EQ SMA) (PrecisionSMA EQ Autre))
     ((Propositions EQ (JADE Java))))
 
   ;Dataware
@@ -116,27 +118,22 @@
 
 
   ; Rédaction
-  (((Application EQ Rédaction) (Precision EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ OUI))
+  (((Application EQ Rédaction) (PrecisionRedaction EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ OUI))
     ((Propositions EQ (Git MD Etherpad))))
-
-  (((Application EQ Rédaction) (Precision EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ PasForcement))
+  (((Application EQ Rédaction) (PrecisionRedaction EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ PasForcement))
     ((Propositions EQ (GoogleDoc))))
-
-  (((Application EQ Rédaction) (Precision EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ PasForcement))
+  (((Application EQ Rédaction) (PrecisionRedaction EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ PasForcement))
     ((Propositions EQ (GoogleDoc Word))))
-
-  (((Application EQ Rédaction) (Precision EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ OUI))
+  (((Application EQ Rédaction) (PrecisionRedaction EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ OUI))
     ((Propositions EQ (LaTeX))))
-
-  (((Application EQ Rédaction) (Precision EQ Complexe) (Usage EQ Collaboratif))
+  (((Application EQ Rédaction) (PrecisionRedaction EQ Complexe) (Usage EQ Collaboratif))
     ((Propositions EQ (Git LaTeX ShareLatex Overleaf))))
-
-  (((Application EQ Rédaction) (Precision EQ Scientifique) (Usage EQ Individuel))
+  (((Application EQ Rédaction) (PrecisionRedaction EQ Scientifique) (Usage EQ Individuel))
     ((Propositions EQ (LaTeX))))
-
-  (((Application EQ Rédaction) (Precision EQ Scientifique) (Usage EQ Collaboratif))
+  (((Application EQ Rédaction) (PrecisionRedaction EQ Scientifique) (Usage EQ Collaboratif))
     ((Propositions EQ (Git LaTeX))))
 
+  ; Apprentissage
   (((Application EQ Apprentissage))
     ((Propositions EQ (Perl Go Pascal))))
 ))
