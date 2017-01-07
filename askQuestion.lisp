@@ -1,21 +1,28 @@
 (defun listeAttFaits ()
+  ; retourne la liste des attributs
+  ; présents dans la base de faits
   (loop for fait in *faits*
     collect (attribut fait)))
 
 (defun listeAttRegles ()
+  ; retourne la liste des attributs
+  ; présents dans la base de règles
   (loop for regle in *regles*
     append (loop for premisse in (car regle)
       collect (attribut premisse))))
 
 (defun AttValues (attribut)
+  ; retourne la liste des valeurs
+  ; qu'un attribut peut prendre
   (loop for regle in *regles*
     if (assoc attribut (car regle))
     collect (valeur (assoc attribut (car regle)))))
 
 (defun questionAssociee (attribut)
-  (if (cdr (assoc attribut *questions*))
-    (cdr (assoc attribut *questions*))
-    attribut))
+  ; retourne la question associée
+  ; à un attribut dans la base *questions*
+  ; ou celui-ci si cette dernière n'est pas présente
+  (or (cdr (assoc attribut *questions*)) attribut))
 
 (defun askQuestion ()
   (let ((attribut (car (set-difference (listeAttRegles) (listeAttFaits))) valeur))

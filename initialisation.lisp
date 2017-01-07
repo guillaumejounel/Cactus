@@ -1,4 +1,4 @@
-(defun init (choix)
+(defun init (choix moteur)
   (let (path)
   (if (= choix 1)
     (setq path "~/Cloud/WORK/UTC/GI01/IA01/Cactus/")
@@ -15,8 +15,6 @@
   (load (concatenate 'string path "intro.lisp"))
   (defparameter *faits* nil)
   (intro)
-  (ChainageAvantLarg)
-))
-
-;examples:
-;(init "~/Cloud/WORK/UTC/GI01/IA01/Cactus/")
+  (if (= moteur 1)
+    (ChainageAvantLarg)
+    (ChainageAvantProf))))

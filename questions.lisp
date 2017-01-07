@@ -22,10 +22,7 @@
   (AccesAInternet . "Votre système aura-t-il besoin d'avoir accès à internet ?")
   (ManipulationMatrice . "Aurez-vous besoin de manipuler des matrices ?")
   (RoRvsDjango . "Préferez-vous une solution populaire ou configurable ?")
-  (Interaction-Dynamique ."Le design du site devra-t-il être dynamique ?")
-
-)
-)
+  (Interaction-Dynamique ."Le design du site devra-t-il être dynamique ?")))
 
 
 ; (delete-duplicates (set-difference (listeAttRegles) (listeAttFaits)))

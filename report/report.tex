@@ -178,7 +178,7 @@ Puisqu'il s'agit de concevoir un système expert d'ordre $0+$, nous avons choisi
 
 La base de faits est stockée dans une variable globale \mintinline{lisp}{*faits*} initialement vide : elle se remplira au cours de l'exécution du système. Il s'agira d'une liste de triplets.\\
 
-Voici quelques attributs que nous utiliserons pour modéliser les faits :
+Voici quelques exemples d'attributs que nous utiliserons pour modéliser les faits :
 
 \begin{table}[H]
 		\label{exempleAttributs}
@@ -220,7 +220,7 @@ où $\mintinline{lisp}{operateur} \in \{\mintinline{lisp}{=},\mintinline{lisp}{<
 	\caption{Base de règles \mintinline{lisp}{*regles*}}
 \end{listing}
 
-\subsection{Base de connaissances}
+\subsection{Bases de connaissances}
 Pour donner les informations concernant les technologies choisies par \textit{Cactus} nous avons décider d'implémenter une base de connaissances. Celle-ci contient pour chaque technologie une brève description de celle-ci.
 
 Les éléments des cette base sont représentés sous la forme de \textit{liste pointée} ainsi :
@@ -242,6 +242,15 @@ Les éléments des cette base sont représentés sous la forme de \textit{liste 
 \end{listing}
 
 Nous utiliserons cette base de connaissances dans la fonction \mintinline{lisp}{afficherPropositions()} que nous détaillerons plus bas : l'idée est d'avoir un petit descriptif des technologies proposées pour comprendre en quoi elles sont pertinentes.
+
+De même, nous avons définie une base de connaissances \mintinline{lisp}{*questions*} pour les questions à poser : l'idée est d'avoir une question adaptée pour chaque attribut lorsque l'on veut connaître la valeur du fait associé. Les éléments de cette base sont aussi représentés sous forme de liste pointée.
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=27]{lisp}{../questions.lisp}
+	\caption{Base de connaissances \mintinline{lisp}{*questions*}}
+\end{listing}
+
 
 
 \section{Fonctionnement du système}
@@ -307,7 +316,7 @@ Ce qui fait la différence ici se trouve à la ligne 10 : on ajoute cette fois-c
 
 \subsection{Fonctions outils}
 
-Afin d'abstraire les raisonnements nous avons mis au point des fonctions outils. \mintinline{lisp}{conclusion()}, \mintinline{lisp}{declenchable?()} et \mintinline{lisp}{ajouter()} sont celles mises en place pour les règles.
+Afin d'abstraire les raisonnements, nous avons mis au point des fonctions outils. \mintinline{lisp}{conclusion()}, \mintinline{lisp}{declenchable?()} et \mintinline{lisp}{ajouter()} sont celles mises en place pour les règles.
 \begin{listing}[H]
 	\centering
 	\inputminted[breaklines=true,linenos]{lisp}{../fonctionsOutilsRegles.lisp}
@@ -354,6 +363,14 @@ Nous utilisons d'autres fonctions pour réaliser certaines tâches.
 	\inputminted[breaklines=true,linenos]{lisp}{../afficherPropositions.lisp}
 	\caption{Fonction \mintinline{lisp}{afficherPropositions()} qui affiche les propositions du système expert}
 \end{listing}
+
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos]{lisp}{../afficherPropositions.lisp}
+	\caption{Fonction \mintinline{lisp}{descriptionTechno()} : retourne la description d'une technologie}
+\end{listing}
+
 
 
 \[ \star \quad \star \quad \star \]

@@ -117,20 +117,20 @@
     ((Propositions EQ (Perl JavaScript))))
 
 
-  ; Rédaction
-  (((Application EQ Rédaction) (PrecisionRedaction EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ OUI))
+  ; Redaction
+  (((Application EQ Redaction) (PrecisionRedaction EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ OUI))
     ((Propositions EQ (Git MD Etherpad))))
-  (((Application EQ Rédaction) (PrecisionRedaction EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ PasForcement))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ PasForcement))
     ((Propositions EQ (GoogleDoc))))
-  (((Application EQ Rédaction) (PrecisionRedaction EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ PasForcement))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ PasForcement))
     ((Propositions EQ (GoogleDoc Word))))
-  (((Application EQ Rédaction) (PrecisionRedaction EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ OUI))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ OUI))
     ((Propositions EQ (LaTeX))))
-  (((Application EQ Rédaction) (PrecisionRedaction EQ Complexe) (Usage EQ Collaboratif))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Complexe) (Usage EQ Collaboratif))
     ((Propositions EQ (Git LaTeX ShareLatex Overleaf))))
-  (((Application EQ Rédaction) (PrecisionRedaction EQ Scientifique) (Usage EQ Individuel))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Scientifique) (Usage EQ Individuel))
     ((Propositions EQ (LaTeX))))
-  (((Application EQ Rédaction) (PrecisionRedaction EQ Scientifique) (Usage EQ Collaboratif))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Scientifique) (Usage EQ Collaboratif))
     ((Propositions EQ (Git LaTeX))))
 
   ; Apprentissage

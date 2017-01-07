@@ -1,4 +1,3 @@
-;;Fonctions outils pour les règles
 (defun conclusion (r)
   ; Renvoie les conclusions d'une règle
   (cadr r))

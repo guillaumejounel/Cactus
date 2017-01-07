@@ -1,5 +1,5 @@
 # Cactus
-##Expert system allowing you to find the best programming language matching you needs.
+## An expert system allowing you to find the best programming language matching your needs.
 ----------
 ###Problématique
 Tous les programmeurs sont un jour confrontés au problème suivant :
