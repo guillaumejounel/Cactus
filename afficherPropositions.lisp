@@ -5,6 +5,7 @@
   (or (cdr (assoc techno *technologies*)) techno))
 
 (defun afficherPropositions ()
+  ; Affichage final des propositions
   (let ((prop (caddr (assoc 'Propositions *faits*))) (overlay '------------------))
     (format t "~&~A~&Voici les différentes technologies que je vous propose : " overlay)
     (dolist (x prop)
