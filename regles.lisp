@@ -71,8 +71,23 @@
   (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Jeu-video))
     ((Application EQ Jeu-video)))
 
+  (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Mobile))
+    ((Application EQ Mobile)))
+
   (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Machine-Learning))
     ((Application EQ Machine-Learning)))
+
+  (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Systeme))
+    ((Application EQ Systeme)))
+
+  (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Systeme-Embarque))
+    ((Application EQ Systeme-Embarque)))
+
+  (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Systeme-Expert))
+    ((Application EQ Systeme-Expert)))
+
+  (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ DIY))
+    ((Application EQ DIY)))
 
   ; Site web
   (((Application EQ Site-Web) (PrecisionSite EQ Simple) (Interaction-Dynamique EQ OUI))

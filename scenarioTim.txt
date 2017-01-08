@@ -1,0 +1,56 @@
+------
+"Que souhaitez-vous faire ? "
+------
+
+"
+ -» RESOUDREPROBMATH : Je souhaite résoudre un problème mathématique.
+ -» MODELISER : Je souhaite modéliser un problème.
+ -» DECOUVRIR : Je souhaite découvrir des choses.
+ -» MISEENFORMEINFOS : Je souhaite mettre en forme de l'information.
+ -» DEJAIDEEDEV : J'ai déjà une idée d'un projet à développer."
+
+Votre choix : dejaideedev
+------
+"Quel est votre projet ?"
+------
+
+"
+ -» SITE-WEB : Je veux faire un site-web.
+ -» LOGICIEL : Je veux développer un logiciel.
+ -» APPLET : Je veux faire une petite application.
+ -» JEU-VIDEO : Je veux dévelloper un jeu-vidéo !
+ -» MOBILE : Je veux développer des applications smartphone.
+ -» MACHINE-LEARNING : Je préfère des méthodes d'apprentissage statistiques.
+ -» SYSTEME : Je souhaite définir des processus dans le système et/ou parametrer au mieux ma machine, planifier des tâches ...
+ -» SYSTEME-EMBARQUE : Je veux programmer un système embarqué.
+ -» SYSTEME-EXPERT : Je veux faire un système-expert.
+ -» DIY : Je veux bricoler un truc electronique."
+
+Votre choix : mobile
+------
+"Pour quel système developpez-vous ?"
+------
+
+"
+ -» IPHONE : Je veux développer des app iPhone.
+ -» ANDROID : Je veux développer des app Android."
+
+Votre choix : iphone
+------
+"Sur quel système d'explotation travaillez-vous ?"
+------
+
+"
+ -» MAC : Je travaille sur un Mac.
+ -» WINDOWS : Un environnement Windows.
+ -» LINUX : Un environnement Linux."
+
+Votre choix : mac
+------
+"Quel budget avez-vous ? Entrez un chiffre."
+------
+Votre choix (nombre) : 120
+------------------
+Voici les différentes technologies que je vous propose :
+ -» SWIFT : "Le dernier langage de programmation d'Apple pour développer des applications iPhone et Mac"
+------------------

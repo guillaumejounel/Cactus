@@ -13,7 +13,7 @@
   (load (concatenate 'string path "askQuestion.lisp"))
   (load (concatenate 'string path "afficherPropositions.lisp"))
   (load (concatenate 'string path "intro.lisp"))
-  (load (concatenate 'string path "descriptions.lisp"))
+  (load (concatenate 'string path "valeurs.lisp"))
   (defparameter *faits* nil)
   (if introduction
     (intro))
