@@ -166,7 +166,10 @@
 
 
   ; Jeu-Video
-  (((Application EQ Jeu-Video) (PrecisionJeu EQ 3D))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 3D) (Budget < 35))
+    ((Propositions EQ (Impossible))))
+
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 3D) (Budget > 34))
     ((Propositions EQ (C++ Unity3D OpenGL))))
 
   (((Application EQ Jeu-Video) (PrecisionJeu EQ RPG-2D))
