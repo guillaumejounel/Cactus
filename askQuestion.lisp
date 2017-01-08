@@ -1,3 +1,26 @@
+(defun askQuestion ()
+  (let ((attribut (car (set-difference (listeAttRegles) (listeAttFaits))) valeur))
+    ; "attribut" est le premier élément de la différence entre :
+    ; - la liste des attributs dans la base de faits
+    ; - la liste des attributs dans la base de règles (prémisses)
+    ; C'est-à-dire un attribut dont la valeur est inconnue.
+    (if attribut
+      (if (numberp (car (AttValues attribut))) ; la valeur de celui-ci est-elle un nombre ?
+        (until
+          (AND
+            (not (format t "------~&~S~%------~%Votre choix (nombre) : " (questionAssociee attribut)))
+            (numberp (setq valeur (read))))) ; Redemande tant que son choix n'est pas valide
+        (until
+          (AND
+            ; liste les valeurs possibles de l'attribut et fait lire un choix à l'utilisateur
+            (not (format t "------~&~S~%------~%~%~S~%~%Votre choix : " (questionAssociee attribut) (afficherchoix (delete-duplicates (AttValues attribut)))))
+            (member (setq valeur (read)) (delete-duplicates (AttValues attribut))))))
+            ; Redemande tant que son choix n'est pas valide
+      (error "Nous n'avons rien pu trouver."))
+    (sleep 1)
+    (pushnew (list attribut 'EQ valeur) *faits*)))
+
+
 (defun listeAttFaits ()
   ; retourne la liste des attributs
   ; présents dans la base de faits
@@ -49,28 +72,6 @@
 
 (defun descriptionAttribut (attribut)
   ; retourne la description associée
-  ; à un attribut dans la base *descriptions*
+  ; à un attribut dans la base *valeurs*
   ; ou celle-ci si cette dernière n'est pas présente
-  (or (cdr (assoc attribut *descriptions*)) (symbol-name attribut)))
-
-(defun askQuestion ()
-  (let ((attribut (car (set-difference (listeAttRegles) (listeAttFaits))) valeur))
-    ; "attribut" est le premier élément de la différence entre :
-    ; - la liste des attributs dans la base de faits
-    ; - la liste des attributs dans la base de règles (prémisses)
-    ; C'est-à-dire un attribut dont la valeur est inconnue.
-    (if attribut
-      (if (numberp (car (AttValues attribut))) ; la valeur de celui-ci est-elle un nombre ?
-        (until
-          (AND
-            (not (format t "------~&~S~%------~%Votre choix (nombre) : " (questionAssociee attribut)))
-            (numberp (setq valeur (read))))) ; Redemande tant que son choix n'est pas valide
-        (until
-          (AND
-            ; liste les valeurs possibles de l'attribut et fait lire un choix à l'utilisateur
-            (not (format t "------~&~S~%------~%~%~S~%~%Votre choix : " (questionAssociee attribut) (afficherchoix (delete-duplicates (AttValues attribut)))))
-            (member (setq valeur (read)) (delete-duplicates (AttValues attribut))))))
-            ; Redemande tant que son choix n'est pas valide
-      (error "Nous n'avons rien pu trouver."))
-    (sleep 1)
-    (pushnew (list attribut 'EQ valeur) *faits*)))
+  (or (cdr (assoc attribut *valeurs*)) (symbol-name attribut)))

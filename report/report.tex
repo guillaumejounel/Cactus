@@ -128,31 +128,32 @@ Tous les programmeurs sont un jour confrontés au problème suivant :
 
     Pour pallier à ce problème, nous allons concevoir un système expert qui propose différentes possibilités les plus adaptées selon l'usage.
 
-    Pour cela, nous prendrons en compte de multiples critères tels que le domaine d'application (calcul numérique, intelligence artificielle...), l'expérience de l'utilisateur ou encore les caractéristiques de sa machine (Linux, MacOS...).
+    Pour cela, nous prendrons en compte de multiples critères tels que le besoin (traiter de l'information, découvrir des concepts informatiques...), ou encore les caractéristiques de sa machine (Linux, MacOS...).
 
 \subsection{Sources de connaissances sur le sujet}
 
-    Les sources d'expertise ne manquent pas : il existe de nombreux sites et ressources sur le Net qui donnent les avantages et inconvénients de tous les langages de programmation existants selon les cas d'utilisation. En voici quelques uns :
+    Les sources d'expertise ne manquent pas : il existe de nombreux sites et ressources sur le Net qui donnent les avantages et inconvénients de toutes les technologies existantes selon les cas d'utilisation. En voici quelques uns :
     \begin{itemize}
         \item Wikipédia : Liste des langages de programmations par type :\\ \href{https://en.wikipedia.org/wiki/List_of_programming_languages_by_type}{\texttt{https://en.wikipedia.org/wiki/List\_of\_programming\_languages\_by\_type}} ;
         \item Learneroo: The Different Programming Languages :\\ \href{https://www.learneroo.com/modules/12/nodes/94}{\texttt{https://www.learneroo.com/modules/12/nodes/94}} ;
         \item WhoIsHostingThis: What Code Should You Learn?\\ \href{http://www.whoishostingthis.com/blog/2014/09/04/learn-to-code/}{\texttt{http://www.whoishostingthis.com/blog/2014/09/04/learn-to-code/}}.
     \end{itemize}
 
+	En tant qu'étudiants ingénieurs en informatique, nous avons aussi sollicité certaines de nos connaissances dans le domaine.
 
 \section{Architecture}
 
 \subsection{Rappels sur l'architecture}
 Rappelons rapidement l'architecture d'un système expert.
-Un système expert est constitué de trois parties principales dissociées les unes des autres : une \textit{base de faits}, une \textit{base de règles}, et un \textit{moteur d'inférences}.\\
+Un système expert est constitué de trois parties principales dissociées les unes des autres : une \textit{base de faits}, une \textit{base de règles}, et un \textit{moteur d'inférence}.\\
 
 La base de faits est une base d'informations qui comprend les faits initiaux et déduits au cours du programme.\\
 
 La base de règles contient les différentes règles (connaissances implicites de l'expert rendues explicites pour être représentées informatiquement) utilisées pour déduire d'autres faits.\\
 
-Les inférences au cours du processus sont réalisées par le moteur d'inférences. C'est lui qui fait le lien entre les deux précédentes bases. Il exécute les règles contenues dans la base de règles au regard des faits présents dans la base de faits ; les règles étant déclenchables en fonction des faits avérés. À la fin de l'exécution d'une règle, le résultat retourné qui est aussi un fait est stocké dans la base de faits.\\
+Les inférences au cours du processus sont réalisées par le moteur d'inférence. C'est lui qui fait le lien entre les deux précédentes bases. Il exécute les règles contenues dans la base de règles au regard des faits présents dans la base de faits ; les règles étant déclenchables en fonction des faits avérés. À la fin de l'exécution d'une règle, le résultat retourné qui est aussi un fait est stocké dans la base de faits.\\
 
-Il existe de type de fonctionnement pour les moteurs d'inférences : le \textit{chaînage avant} et le \textit{chaînage arrière}.
+Il existe deux types de fonctionnement pour les moteurs d'inférence : le \textit{chaînage avant} et le \textit{chaînage arrière}.
 
 Le chaînage avant consiste à regarder les faits présents et à choisir une règle qui peut être exécutée : on cherche les résultats que l'on peut obtenir en se basant sur les résultats déjà obtenus.
 
@@ -188,12 +189,12 @@ Voici quelques exemples d'attributs que nous utiliserons pour modéliser les fai
     		Attributs & Signification\\
     		\hline
     		\hline
+    		\mintinline{lisp}{UserStory} & scénario initial de l'utilisateur \\
     		\mintinline{lisp}{Application} & le type d'application à développer  \\
     		\mintinline{lisp}{Machine} & le type d'OS utilisé pour développer \\
     		\mintinline{lisp}{Cible} & le type d'OS visé pour l'application \\
     		\mintinline{lisp}{Budget} & le budget du développeur \\
-    		\mintinline{lisp}{Precision} & pour préciser l'utilisation \\
-    		\mintinline{lisp}{Utilisation} & précise le type d'utilisation \\
+    		\mintinline{lisp}{Paradigme} & précise le paradigme des bases de données\\
     		\hline
 		\end{tabular}}
 		\caption{Exemple d'attributs pour les faits}
@@ -202,7 +203,7 @@ Voici quelques exemples d'attributs que nous utiliserons pour modéliser les fai
 \mintinline{lisp}{Propositions} sera l'attribut du faits utilisé pour stocker les différentes propositions inférées par \textit{Cactus}.
 
 \subsection{Base de règles}
-Nous avons décidé d'implémenter notre base de règle de cette façon :
+Nous avons décidé d'implémenter les règles dans notre base de cette façon :
 
 \begin{minted}{lisp}
 	(((Premisse1 operateur valeur)...(PremisseN operateur valeur))
@@ -211,48 +212,114 @@ Nous avons décidé d'implémenter notre base de règle de cette façon :
 où $\mintinline{lisp}{operateur} \in \{\mintinline{lisp}{=},\mintinline{lisp}{<},\mintinline{lisp}{>},\mintinline{lisp}{EQ}\} $.
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,lastline=50]{lisp}{../regles.lisp}
+	\inputminted[breaklines=true,linenos,lastline=43]{lisp}{../regles.lisp}
 \end{listing}
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,firstline=51]{lisp}{../regles.lisp}
+	\inputminted[breaklines=true,linenos,firstline=44,lastline=88]{lisp}{../regles.lisp}
+\end{listing}
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=89,lastline=126]{lisp}{../regles.lisp}
+\end{listing}
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=127,lastline=171]{lisp}{../regles.lisp}
+\end{listing}
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=172,lastline=211]{lisp}{../regles.lisp}
+\end{listing}
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=212,lastline=254]{lisp}{../regles.lisp}
+\end{listing}
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=255,lastline=294]{lisp}{../regles.lisp}
+\end{listing}
+
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=295]{lisp}{../regles.lisp}
 	\caption{Base de règles \mintinline{lisp}{*regles*}}
 \end{listing}
 
+\newpage
 \subsection{Bases de connaissances}
-Pour donner les informations concernant les technologies choisies par \textit{Cactus} nous avons décider d'implémenter une base de connaissances. Celle-ci contient pour chaque technologie une brève description de celle-ci.
 
-Les éléments des cette base sont représentés sous la forme de \textit{liste pointée} ainsi :
+Nous avons construit 3 bases de connaissances pour notre système : une première pour les attributs, une seconde pour les questions, et une troisième pour les technologies. Celles-ci contiennent, pour chaque élément, une brève description de celui-ci.
+
+Les éléments des ces bases sont représentés sous la forme de \textit{liste pointée} ainsi :
 
 \begin{quotation}
-	\mintinline{lisp}{(technologie . "La description de la technologie")}
+	\mintinline{lisp}{(élément . "La description de l'élément")}
 \end{quotation}
+ 
+ Voici la première base de connaissances sur les attributs \mintinline{lisp}{*valeurs*} pour les valeurs des attributs que l'on peut choisir dans les questions : cela permettra à l'utilisateur d'avoir une idée plus précise sur les possibilités de réponses proposées.
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,lastline=26]{lisp}{../technologies.lisp}
-	\caption{Base de connaissances \mintinline{lisp}{*technologies*}}
+	\inputminted[breaklines=true,linenos,lastline=32]{lisp}{../valeurs.lisp}
 \end{listing}
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,firstline=27]{lisp}{../technologies.lisp}
-	\caption{Base de connaissances \mintinline{lisp}{*technologies*}}
+	\inputminted[breaklines=true,linenos,firstline=33,lastline=69]{lisp}{../valeurs.lisp}
 \end{listing}
-
-Nous utiliserons cette base de connaissances dans la fonction \mintinline{lisp}{afficherPropositions()} que nous détaillerons plus bas : l'idée est d'avoir un petit descriptif des technologies proposées pour comprendre en quoi elles sont pertinentes.
-
-De même, nous avons définie une base de connaissances \mintinline{lisp}{*questions*} pour les questions à poser : l'idée est d'avoir une question adaptée pour chaque attribut lorsque l'on veut connaître la valeur du fait associé. Les éléments de cette base sont aussi représentés sous forme de liste pointée.
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,firstline=27]{lisp}{../questions.lisp}
+	\inputminted[breaklines=true,linenos,firstline=70]{lisp}{../valeurs.lisp}
+	\caption{Base de connaissances \mintinline{lisp}{*valeurs*}}
+\end{listing}
+ 
+
+De même, nous avons défini une base de connaissances \mintinline{lisp}{*questions*} pour les questions à poser :cela permettra d'avoir une question adaptée pour chaque attribut lorsque l'on veut connaître la valeur du fait associé.
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,lastline=23]{lisp}{../questions.lisp}
+\end{listing}
+
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=24]{lisp}{../questions.lisp}
 	\caption{Base de connaissances \mintinline{lisp}{*questions*}}
 \end{listing}
 
+ Enfin, voici la base de connaissances sur les technologies. Nous utiliserons cette base de connaissances dans la fonction \mintinline{lisp}{afficherPropositions()} que nous détaillerons plus bas : l'idée est d'avoir un petit descriptif des technologies proposées pour comprendre en quoi elles sont pertinentes.
 
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,lastline=28]{lisp}{../technologies.lisp}
+\end{listing}
 
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=29,lastline=50]{lisp}{../technologies.lisp}
+\end{listing}
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=51,lastline=77]{lisp}{../technologies.lisp}
+\end{listing}
+
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos,firstline=78]{lisp}{../technologies.lisp}
+	\caption{Base de connaissances \mintinline{lisp}{*technologies*}}
+\end{listing}
+
+\newpage
 \section{Fonctionnement du système}
 
 Comme nous l'avons évoqué au début, il existe plusieurs moyens de réaliser le moteur d'inférence : le chaînage avant et le chaînage arrière. De même pour chacune de ces façons de procéder, on peut choisir de parcourir l'arbre de déduction en profondeur ou en largeur.
@@ -264,8 +331,7 @@ Le chaînage avant a pour avantage d'être facilement implémentable et ne repos
 
 Voici un algorithme itératif pour le chaînage avant.
 \begin{algorithm}
-%\KwData{$[y_k]_{k\in I_n}$, le signal échantilloné (avec $I_n := \{1, \cdots, n\}$)}
-%\KwResult{$[z_k]_{k\in I_n}$, }
+
 \Begin{
 	\doWhile{{\bf il n'y a pas de propositions dans $BF$\ }}{
 		\For{{\bf chaque règle} $r$ {\bf de la base de règle $BR$}}{
@@ -331,47 +397,64 @@ Afin d'abstraire les raisonnements, nous avons mis au point des fonctions outils
 	\caption{Fonctions outils pour les faits}
 \end{listing}
 
+\newpage
 \subsection{Poser une question : fonction \mintinline{lisp}{askQuestion()}}
 
 Une possibilité lorsque le système n'arrive plus à tirer de conclusions et de poser des questions à l'utilisateur pour apporter de nouveaux faits. C'est ici le rôle réalisé par la fonction \mintinline{lisp}{askQuestion()}.
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos, firstline = 15]{lisp}{../askQuestion.lisp}
+	\inputminted[breaklines=true,linenos, lastline = 21]{lisp}{../askQuestion.lisp}
 	\caption{Fonction \mintinline{lisp}{askQuestion()} permettant de récupérer des informations}
 \end{listing}
 
-Nous utilisons d'autres fonctions pour réaliser certaines tâches.
+Nous utilisons d'autres fonctions pour réaliser certaines tâches ; les voici : 
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos, lastline = 13]{lisp}{../askQuestion.lisp}
+	\inputminted[breaklines=true,linenos, firstline = 24,lastline = 71]{lisp}{../askQuestion.lisp}
 	\caption{Fonctions outils pour \mintinline{lisp}{askQuestion()}}
 \end{listing}
 
-\mintinline{lisp}{listAttFaits()} récupère la liste des attributs .
-\mintinline{lisp}{askQuestion()}.
-\mintinline{lisp}{askQuestion()}.
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos, firstline = 73]{lisp}{../askQuestion.lisp}
+	\caption{Fonctions outils pour \mintinline{lisp}{askQuestion()}}
+\end{listing}
+
+\mintinline{lisp}{listAttFaits()} récupère la liste des attributs sur présents dans la base de faits.\\
+
+\mintinline{lisp}{listeAttRegles()} récupère quant à elle la liste des attributs sur lesquels il faut poser des questions.\\
+
+\mintinline{lisp}{AttValues()} se charge de trouver les valeurs que les différents attributs peuvent prendre.\\
+
+\mintinline{lisp}{questionAssociee()} retourne la question associée à un attribut.
+\mintinline{lisp}{afficherChoix()} retourne une string comportant les descriptions des différentes valeurs que l'utilisateur peut saisir ; elle utilise la fonction
+\mintinline{lisp}{descriptionAttribut()} qui retourne pour chaque valeur dans la base \mintinline{lisp}{*valeurs*} la description associée à celle-ci.
+
 
 
 \subsection{Afficher les propositions du système : fonction \mintinline{lisp}{afficherPropositions()}}
 
-	C'est dans cette fonction que nous utilisons la base de connaissances \mintinline{lisp}{**technologies**}.
+	C'est dans cette fonction que nous utilisons la base de connaissances \mintinline{lisp}{*technologies*}. Elle signe la fin de l'exécution du système expert.
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos]{lisp}{../afficherPropositions.lisp}
+	\inputminted[breaklines=true,linenos,lastline=9]{lisp}{../afficherPropositions.lisp}
 	\caption{Fonction \mintinline{lisp}{afficherPropositions()} qui affiche les propositions du système expert}
 \end{listing}
 
+Cette fonction utilise la fonction outils \mintinline{lisp}{descriptionTechno()}.
+
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos]{lisp}{../afficherPropositions.lisp}
+	\inputminted[breaklines=true,linenos,firstline=12]{lisp}{../afficherPropositions.lisp}
 	\caption{Fonction \mintinline{lisp}{descriptionTechno()} : retourne la description d'une technologie}
 \end{listing}
 
 
+On remarquera que le système affichera qu'il n'y a pas de solutions possibles lorsque \mintinline{lisp}{Impossible} est présent comme propositions dans la base de faits. En effet, il existe des situations qui ne peuvent pas être vérifiée dans la vie réelle ; par exemple, on ne peut pas développer des applications \textit{iPhone} si l'on a pas de machine sous \textit{MacOSX} (cf. règles présentes au lignes 102 et 103 dans la base de règles \mintinline{lisp}{*règles*}).
 
 \[ \star \quad \star \quad \star \]
 \newpage

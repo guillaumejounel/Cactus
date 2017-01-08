@@ -41,4 +41,4 @@
   (Prefere . "Que préférez-vous entre les jeux PC et les jeux smartphone ?")
   (ControleAcces . "Avez-vous besoin de contrôler l'accès de différents utilisateurs sur cette plateforme ?")
   (ChoixProjet . "Quel est votre projet ?")
-  (IntellienceArtificielle . "Quel paradigme d'IA souhaitez-vous utilisez ?")))
+  (IntelligenceArtificielle . "Quel paradigme d'IA souhaitez-vous utilisez ?")))

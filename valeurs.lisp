@@ -1,4 +1,4 @@
-(defparameter *descriptions*
+(defparameter *Valeurs*
   '(
     (OUI . "Oui.")
     (NON . "Non.")

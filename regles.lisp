@@ -14,10 +14,10 @@
   (((UserStory EQ Modeliser) (SystemeComplexe EQ Non) (ModeliserDonnee EQ Oui))
     ((UserStoryPrec EQ ModeliserDonnee)))
 
-    (((UserStoryPrec EQ ModeliserDonnee) (IntellienceArtificielle EQ Symbolique))
+    (((UserStoryPrec EQ ModeliserDonnee) (IntelligenceArtificielle EQ Symbolique))
       ((Application EQ Systeme-Expert)))
 
-    (((UserStoryPrec EQ ModeliserDonnee) (IntellienceArtificielle EQ Numerique))
+    (((UserStoryPrec EQ ModeliserDonnee) (IntelligenceArtificielle EQ Numerique))
       ((Application EQ Machine-Learning)))
 
     (((UserStoryPrec EQ ModeliserSystemeComplexe) (PrecisionSystemeComplexe EQ Equations))

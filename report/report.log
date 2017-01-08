@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  7 JAN 2017 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  8 JAN 2017 23:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1691,6 +1691,25 @@ port.out.pyg" "report.pyg" )...executed.
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
 
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+
+(./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
  (./report.out.pyg))
 \tf@lol=\write9
 \openout9 = `report.lol'.
@@ -1703,28 +1722,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [3]
-Overfull \hbox (26.38434pt too wide) in paragraph at lines 131--132
-\T1/lmr/m/n/12 (calcul numérique, intelligence artificielle...), l'expérience d
-e l'utilisateur ou encore les caractéristiques
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--148
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--152
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
@@ -1799,7 +1812,7 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
 
  (./report.out.pyg)
-Underfull \hbox (badness 10000) in paragraph at lines 179--180
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
@@ -1889,7 +1902,7 @@ port.out.pyg" "../regles.lisp" )...executed.
 
  (./report.out.pyg
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 5.
+(Font)              <5> on input line 15.
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1898,7 +1911,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
-Overfull \vbox (190.7634pt too high) has occurred while \output is active []
+Overfull \vbox (16.7635pt too high) has occurred while \output is active []
 
 
 
@@ -1912,17 +1925,10 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "../regles.lisp" )...executed.
 
  (./report.out.pyg)
-Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
-t line 220.
-\openout6 = `report.pyg'.
-
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
-port.out.pyg" "report.pyg" )...executed.
+port.out.pyg" "../regles.lisp" )...executed.
 
  (./report.out.pyg)
-Overfull \vbox (825.19594pt too high) has occurred while \output is active []
-
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1930,20 +1936,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [7]
-\openout6 = `report.pyg'.
-
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
-port.out.pyg" "report.pyg" )...executed.
-
- (./report.out.pyg)
-runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
-port.out.pyg" "../technologies.lisp" )...executed.
-
- (./report.out.pyg)
-\openout6 = `report.pyg'.
-
-runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
-port.out.pyg" "report.pyg" )...executed.
+port.out.pyg" "../regles.lisp" )...executed.
 
  (./report.out.pyg)
 
@@ -1953,7 +1947,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Overfull \vbox (56.6969pt too high) has occurred while \output is active []
+Overfull \vbox (16.76347pt too high) has occurred while \output is active []
 
 
 
@@ -1964,16 +1958,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [9]
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
-port.out.pyg" "../technologies.lisp" )...executed.
+port.out.pyg" "../regles.lisp" )...executed.
 
  (./report.out.pyg)
-\openout6 = `report.pyg'.
-
-runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
-port.out.pyg" "report.pyg" )...executed.
-
- (./report.out.pyg)
-Overfull \vbox (941.1965pt too high) has occurred while \output is active []
+Overfull \vbox (16.76355pt too high) has occurred while \output is active []
 
 
 
@@ -1983,12 +1971,196 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../regles.lisp" )...executed.
+
+ (./report.out.pyg)
+Overfull \vbox (2.2635pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../regles.lisp" )...executed.
+
+ (./report.out.pyg)
+Overfull \vbox (31.26355pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12]
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../regles.lisp" )...executed.
+
+ (./report.out.pyg)
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
+t line 252.
 \openout6 = `report.pyg'.
 
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
 
  (./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13]
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg)
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../valeurs.lisp" )...executed.
+
+ (./report.out.pyg)
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../valeurs.lisp" )...executed.
+
+ (./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14]
+Overfull \vbox (2.2636pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15]
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../valeurs.lisp" )...executed.
+
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg)
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../questions.lisp" )...executed.
+
+ (./report.out.pyg)
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../questions.lisp" )...executed.
+
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16]
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg)
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../technologies.lisp" )...executed.
+
+ (./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17]
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../technologies.lisp" )...executed.
+
+ (./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[18]
+Overfull \vbox (16.76382pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[19]
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../technologies.lisp" )...executed.
+
+ (./report.out.pyg)
+Overfull \vbox (16.76375pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20]
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../technologies.lisp" )...executed.
+
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21]
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "../chainageAvantLarg.lisp" )...executed.
 
@@ -1999,7 +2171,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[11]
+[22]
 \openout6 = `report.pyg'.
 
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
@@ -2028,7 +2200,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12]
+[23]
 \openout6 = `report.pyg'.
 
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
@@ -2063,9 +2235,9 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "../fonctionsOutilsRegles.lisp" )...executed.
 
  (./report.out.pyg)
-Overfull \hbox (8.18596pt too wide) in paragraph at lines 310--315
-[]\T1/lmr/m/n/12 Afin d'abstraire les raisonnements nous avons mis au point des
- fonctions outils. [],
+Overfull \hbox (11.45126pt too wide) in paragraph at lines 385--390
+[]\T1/lmr/m/n/12 Afin d'abstraire les raisonnements, nous avons mis au point de
+s fonctions outils. [],
  []
 
 
@@ -2074,7 +2246,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[13]
+[24]
 \openout6 = `report.pyg'.
 
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
@@ -2097,6 +2269,13 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "../fonctionsOutilsFaits.lisp" )...executed.
 
  (./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25]
 \openout6 = `report.pyg'.
 
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
@@ -2108,7 +2287,7 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <14.4> not available
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mintinline' on input line 325.
+(hyperref)                removing `\mintinline' on input line 401.
 
 \openout6 = `report.pyg'.
 
@@ -2126,13 +2305,34 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
 
  (./report.out.pyg)
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../askQuestion.lisp" )...executed.
+
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+
+(./report.out.pyg)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[14]
+[26]
+Overfull \vbox (27.36322pt too high) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27]
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "../askQuestion.lisp" )...executed.
 
@@ -2143,13 +2343,42 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
 
  (./report.out.pyg)
+\openout6 = `report.pyg'.
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
 
-[15]
+ (./report.out.pyg)
+Underfull \hbox (badness 10000) in paragraph at lines 1--426
+
+ []
+
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+(./report.out.pyg)
+Underfull \hbox (badness 10000) in paragraph at lines 1--428
+
+ []
+
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+(./report.out.pyg)
+Underfull \hbox (badness 10000) in paragraph at lines 1--430
+
+ []
+
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+(./report.out.pyg)
 \openout6 = `report.pyg'.
 
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
@@ -2168,19 +2397,23 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
 
  (./report.out.pyg)
+Overfull \hbox (2.28064pt too wide) in paragraph at lines 1--434
+[][] \T1/lmr/m/n/12 retourne la question associée à un attribut. [] retourne
+ []
+
 \openout6 = `report.pyg'.
 
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
 
- (./report.out.pyg)
-Overfull \hbox (40.512pt too wide) in paragraph at lines 348--348
+(./report.out.pyg)
+Overfull \hbox (40.512pt too wide) in paragraph at lines 437--437
 []\T1/lmr/bx/n/14.4 Afficher les propositions du système : fonction [] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\mintinline' on input line 348.
+(hyperref)                removing `\mintinline' on input line 437.
 
 \openout6 = `report.pyg'.
 
@@ -2204,68 +2437,101 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
 
  (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+
+(./report.out.pyg)
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../afficherPropositions.lisp" )...executed.
+
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+
+(./report.out.pyg)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[16] <sujet.pdf, id=197, 597.55246pt x 845.07718pt>
+[28]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29] <sujet.pdf, id=257, 597.55246pt x 845.07718pt>
 File: sujet.pdf Graphic file (type pdf)
  <use sujet.pdf>
-Package pdftex.def Info: sujet.pdf used on input line 361.
+Package pdftex.def Info: sujet.pdf used on input line 461.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: sujet.pdf Graphic file (type pdf)
 
 <use sujet.pdf>
-Package pdftex.def Info: sujet.pdf used on input line 361.
+Package pdftex.def Info: sujet.pdf used on input line 461.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
- <sujet.pdf, id=200, page=1, 597.55246pt x 845.07718pt>
+ <sujet.pdf, id=260, page=1, 597.55246pt x 845.07718pt>
 File: sujet.pdf Graphic file (type pdf)
 
 <use sujet.pdf, page 1>
-Package pdftex.def Info: sujet.pdf, page1 used on input line 361.
+Package pdftex.def Info: sujet.pdf, page1 used on input line 461.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: sujet.pdf Graphic file (type pdf)
  <use sujet.pdf, page 1>
-Package pdftex.def Info: sujet.pdf, page1 used on input line 361.
+Package pdftex.def Info: sujet.pdf, page1 used on input line 461.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: sujet.pdf Graphic file (type pdf)
  <use sujet.pdf, page 1>
-Package pdftex.def Info: sujet.pdf, page1 used on input line 361.
+Package pdftex.def Info: sujet.pdf, page1 used on input line 461.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: sujet.pdf Graphic file (type pdf)
 
 <use sujet.pdf, page 1>
-Package pdftex.def Info: sujet.pdf, page1 used on input line 361.
+Package pdftex.def Info: sujet.pdf, page1 used on input line 461.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: sujet.pdf Graphic file (type pdf)
  <use sujet.pdf, page 1>
-Package pdftex.def Info: sujet.pdf, page1 used on input line 361.
+Package pdftex.def Info: sujet.pdf, page1 used on input line 461.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [17 <./sujet.pdf>]
+ [30 <./sujet.pdf>]
 runsystem(rm "report.pyg")...executed.
 
 runsystem(rm "report.out.pyg")...executed.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 362.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 362.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 462.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 462.
 
 (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 362.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 362.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 462.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 462.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 43150195C7F9998D2155EF28977ABF1A;1124.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 36DC1C70DC033ACAD7AA403F1FE13A94;1125.
  ) 
 Here is how much of TeX's memory you used:
- 26431 strings out of 495003
- 460584 string characters out of 6181405
- 643313 words of memory out of 5000000
- 28918 multiletter control sequences out of 15000+600000
+ 26506 strings out of 495003
+ 461590 string characters out of 6181405
+ 640311 words of memory out of 5000000
+ 28917 multiletter control sequences out of 15000+600000
  80250 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  54i,20n,64p,853b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2283,10 +2549,10 @@ onts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/lm/lmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtk10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on report.pdf (17 pages, 409270 bytes).
+Output written on report.pdf (30 pages, 431615 bytes).
 PDF statistics:
- 302 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
+ 366 PDF objects out of 1000 (max. 8388607)
+ 305 compressed objects within 4 object streams
+ 67 named destinations out of 1000 (max. 500000)
  158 words of extra memory for PDF output out of 10000 (max. 10000000)
 
