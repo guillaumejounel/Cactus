@@ -1,10 +1,9 @@
-(defparameter *descriptions*
+(defparameter *Valeurs*
   '(
     (OUI . "Oui.")
     (NON . "Non.")
     (RESOUDREPROBMATH . "Je souhaite résoudre un problème mathématique.")
     (MODELISER . "Je souhaite modéliser un problème.")
-    (MODELISERDONNEE . "Je souhaite modéliser un problème basée sur des données.")
     (MODELISERSYSTEMECOMPLEXE . "Je souhaite modéliser un système complexe.")
     (JEUX . "Oui j'aime les jeux")
     (DECOUVRIR . "Je souhaite découvrir des choses.")
@@ -31,7 +30,7 @@
     (INTERACTION . "Je souhaite créer des fenêtres d'interactions entre l'utilisateur et la machine.")
     (SYSTEME . "Je souhaite définir des processus dans le système et/ou parametrer au mieux ma machine, planifier des tâches ...")
     (DIY . "Je veux bricoler un truc electronique.")
-    (LINUX . "Cela a pour visée Linux.")
+    (LINUX . "Un environnement Linux")
     (2D . "Mon jeu sera un jeu 2D.")
     (RPG-2D . "Mon jeu sera un RPG-2D.")
     (3D . "Le joueur évoluera dans un environnement 3D.")
@@ -48,7 +47,7 @@
     (CALCUL-NUMERIQUE . "Je veux résoudre ce problème par des méthode numériques.")
     (NUMERIQUE . "Je veux résoudre ce problème par des méthode numériques.")
     (FORMELLE . "Je veux résoudre ce problème formellement.")
-    (WINDOWS . "Cela a pour visée un environnement Windows.")
+    (WINDOWS . "Un environnement Windows")
     (COMPLEXE . "Le document est un travail important.")
     (LOGICIEL . "Je veux développer un logiciel.")
     (ANDROID . "Je veux développer des app Android.")

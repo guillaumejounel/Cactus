@@ -16,17 +16,13 @@
       ; ',';
       ;,' ';")
 
-(defun chargement()
+(defun intro ()
   (format t "~%~%")
   (dotimes (x 20)
     (sleep (- 0.2 (* 0.01 x)))
     (format t "=="))
   (format t "~%~s" *cactus*)
-  (format t "~%~%"))
-
-
-(defun intro ()
-  (chargement)
+  (format t "~%~%")
   (format t "Bienvenue sur l'interface d'interaction du système expert Cactus !~%")
   (sleep 3)
   (format t "Celui-ci va vous poser des questions concernant ce que vous souhaitez réaliser~%")
