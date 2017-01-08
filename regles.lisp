@@ -164,7 +164,7 @@
     ((Propositions EQ (Arduino EthernetShield))))
 
   (((Application EQ DIY) (AccesAInternet EQ NON) (CommunicationAvecAutres EQ OUI))
-    ((Propositions EQ (Arduino Bluetooth RadioTransmitter)))
+    ((Propositions EQ (Arduino Bluetooth RadioTransmitter))))
 
   (((Application EQ DIY) (AccesAInternet EQ NON) (CommunicationAvecAutres EQ NON))
     ((ObjetConnecte EQ NON)))
