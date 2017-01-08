@@ -59,6 +59,18 @@
   (((UserStoryPrec EQ TraitementDInfos) (PrecisionInfo EQ FaireDesModeles))
     ((Application EQ Machine-Learning)))
 
+  (((UserStory EQ Programmer) (ChoixProjet EQ Site-web))
+    ((Application EQ Site-web)))
+
+  (((UserStory EQ Programmer) (ChoixProjet EQ Logiciel))
+    ((Application EQ Logiciel)))
+
+  (((UserStory EQ Programmer) (ChoixProjet EQ Applet))
+    ((Application EQ Logiciel)))
+
+  (((UserStory EQ Programmer) (ChoixProjet EQ Jeu-video))
+    ((Application EQ Jeu-video)))
+
   ; Site web
   (((Application EQ Site-Web) (PrecisionSite EQ Simple) (Interaction-Dynamique EQ OUI))
     ((Propositions EQ (HTML PHP MySQL Symfony JavaScript AJAX))))
@@ -81,9 +93,6 @@
   ; Application Mobile
   (((Application EQ Mobile)(Machine EQ Mac)(Cible EQ iPhone) (Budget > 100))
     ((Propositions EQ (Swift))))
-
-  (((Application EQ Mobile) (Cible EQ Android))
-    ((Propositions EQ (JAVA Android-Studio SDK-Android))))
 
   (((Application EQ Mobile) (Cible EQ Android))
     ((Propositions EQ (JAVA Android-Studio SDK-Android))))
