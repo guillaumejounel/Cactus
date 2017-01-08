@@ -71,6 +71,9 @@
   (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Jeu-video))
     ((Application EQ Jeu-video)))
 
+  (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Machine-Learning))
+    ((Application EQ Machine-Learning)))
+
   ; Site web
   (((Application EQ Site-Web) (PrecisionSite EQ Simple) (Interaction-Dynamique EQ OUI))
     ((Propositions EQ (HTML PHP MySQL Symfony JavaScript AJAX))))
@@ -231,8 +234,6 @@
   (((Application EQ Dataware) (QuantiteDonnee < 100001))
     ((Paradigme EQ Relationnel)))
 
-  (((Application EQ Dataware) (AccesLecture < 1001))
-    ((Paradigme EQ Relationnel)))
 
   (((Application EQ Dataware) (Paradigme EQ Relationnel) (AccesLecture > 1000) (Usage EQ GrandPublic) (ControleAcces EQ OUI))
     ((Propositions EQ (HTML Django Rest PLSQL))))
