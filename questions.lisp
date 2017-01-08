@@ -42,8 +42,3 @@
   (ControleAcces . "Avez-vous besoin de contrôler l'accès de différents utilisateurs sur cette plateforme ?")
   (ChoixProjet . "Quel est votre projet ?")
   (IntellienceArtificielle . "Quel paradigme d'IA souhaitez-vous utilisez ?")))
-
-;(setq attBR nil)
-; (dolist (r *regles*) (dolist (y (car (last (assoc 'propositions (conclusion r))))) (pushnew y attBR)))
-; (setq attBF (loop for a in *technologies* collect (car a)))
-; (delete-duplicates (set-difference attBF attBr))
