@@ -91,8 +91,15 @@
     ((Propositions EQ (HTML JavaScript Ruby Ruby-on-Rails AJAX))))
 
   ; Application Mobile
-  (((Application EQ Mobile)(Machine EQ Mac)(Cible EQ iPhone) (Budget > 100))
+  (((Application EQ Mobile)(Machine EQ Mac)(Cible EQ iPhone) (Budget > 99))
     ((Propositions EQ (Swift))))
+  (((Application EQ Mobile)(Machine EQ Mac)(Cible EQ iPhone) (Budget < 100))
+    ((Propositions EQ (Impossible))))
+
+  (((Application EQ Mobile)(Machine EQ Linux)(Cible EQ iPhone))
+    ((Propositions EQ (Impossible))))
+  (((Application EQ Mobile)(Machine EQ Windows)(Cible EQ iPhone))
+    ((Propositions EQ (Impossible))))
 
   (((Application EQ Mobile) (Cible EQ Android))
     ((Propositions EQ (JAVA Android-Studio))))
@@ -145,11 +152,15 @@
     ((Propositions EQ (Prolog))))
 
   ; Applet
-  (((Application EQ Mobile) (Machine EQ Mac) (Cible EQ Mac))
+  (((Application EQ Applet) (Machine EQ Mac))
     ((Propositions EQ (Swift))))
 
-  (((Application EQ Applet) (UsageApp EQ Individuel))
+  (((Application EQ Applet) (Machine EQ Linux))
     ((Propositions EQ (Pygame Tkinter))))
+
+  (((Application EQ Applet) (Machine EQ Windows))
+    ((Propositions EQ (Pygame Tkinter))))
+
 
   ; Jeu-Video
   (((Application EQ Jeu-Video) (PrecisionJeu EQ 3D))
