@@ -11,7 +11,7 @@
   (((UserStory EQ Modeliser) (SystemeComplexe EQ Oui))
     ((UserStoryPrec EQ ModeliserSystemeComplexe)))
 
-  (((UserStory EQ Modeliser) (SystemeComplexe EQ Non) (ModeliserDonnee EQ Oui))
+  (((UserStory EQ Modeliser) (SystemeComplexe EQ Non))
     ((UserStoryPrec EQ ModeliserDonnee)))
 
     (((UserStoryPrec EQ ModeliserDonnee) (IntellienceArtificielle EQ Symbolique))
@@ -125,7 +125,7 @@
     ((Propositions EQ (Python MathPlotLib Numpy))))
 
   ; Calcul-Numerique
-  (((Application EQ Calcul-Formel) (Budget < 100))
+  (((Application EQ Calcul-Formel) (Budget < 91))
     ((Propositions EQ (Sage))))
 
   (((Application EQ Calcul-Formel) (Budget > 90))
@@ -138,14 +138,12 @@
   (((Application EQ Machine-Learning) (PrecisionML EQ Prototypage-Rapide) (Budget < 101) (ManipulationMatrice EQ NON))
     ((Propositions EQ (Python Sci-kit MathPlotLib Numpy))))
 
-  (((Application EQ Machine-Learning) (PrecisionML EQ Prototypage-Rapide) (Budget > 100))
+  (((Application EQ Machine-Learning) (Budget > 100))
     ((Propositions EQ (Matlab))))
 
   (((Application EQ Machine-Learning) (PrecisionML EQ Modele-Complexe) (Budget < 101))
     ((Propositions EQ (R))))
 
-  (((Application EQ Machine-Learning) (PrecisionML EQ Modele-Complexe) (Budget > 100))
-    ((Propositions EQ (Matlab))))
 
   ; Système-expert
   (((Application EQ Systeme-Expert) (Parenthese EQ Oui))
