@@ -165,13 +165,13 @@
     ((Propositions EQ (C++ Unity3D OpenGL))))
 
   (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Windows) (Budget < 35))
-    ((Propositions EQ (Pygame))))
+    ((Propositions EQ (Pygame)))) 
 
   (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Windows) (Budget > 34))
-    ((Propositions EQ (Pygame))))
+    ((Propositions EQ (C++ Unity3D OpenGL))))
 
   (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Linux) (Budget < 35))
-    ((Propositions EQ (C++ Unity3D OpenGL))))
+    ((Propositions EQ (Pygame))))
 
   (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Linux) (Budget > 34))
     ((Propositions EQ (C++ Unity3D OpenGL))))
