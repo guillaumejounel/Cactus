@@ -41,7 +41,7 @@
   (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Oui) (Programmation EQ Non) (ParentheseDec EQ Non))
     ((Application EQ Site-Web)))
 
-  (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Non) (Programmation EQ Non) (ParentheseDec EQ Oui))
+  (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Non) (ParentheseDec EQ Oui))
     ((Propositions EQ (LISP))))
 
   (((UserStory EQ MiseEnFormeInfos) (BeaucoupInfo EQ NON))
