@@ -35,13 +35,13 @@
     (((UserStoryPrec EQ Jeux) (Prefere EQ PCetConsoles))
       ((Application EQ Jeu-video)))
 
-  (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Non) (Parenthese EQ Non) (Programmation EQ Oui))
+  (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Non) (ParentheseDec EQ Non) (Programmation EQ Oui))
     ((Application EQ Apprentissage)))
 
-  (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Oui) (Programmation EQ Non) (Parenthese EQ Non))
+  (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Oui) (Programmation EQ Non) (ParentheseDec EQ Non))
     ((Application EQ Site-Web)))
 
-  (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Non) (Programmation EQ Non) (Parenthese EQ Oui))
+  (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Non) (Programmation EQ Non) (ParentheseDec EQ Oui))
     ((Propositions EQ (LISP))))
 
   (((UserStory EQ MiseEnFormeInfos) (BeaucoupInfo EQ NON))
