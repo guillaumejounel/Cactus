@@ -8,72 +8,75 @@
   (((UserStory EQ ResoudreProbMath) (Methode EQ Formelle))
     ((Application EQ Calcul-Formel)))
 
-  (((UserStory EQ Modeliser) (SystemeComplexe EQ Oui))
-    ((UserStory EQ ModeliserSystemeComplexe)))
+  (((UserStory EQ Modeliser) (ModeliserDonnee EQ Non) (SystemeComplexe EQ Oui))
+    ((UserStoryPrec EQ ModeliserSystemeComplexe)))
 
-  (((UserStory EQ Modeliser) (ModeliserDonnee EQ Oui))
-    ((UserStory EQ ModeliserDonnee)))
+  (((UserStory EQ Modeliser) (SystemeComplexe EQ Non) (ModeliserDonnee EQ Oui))
+    ((UserStoryPrec EQ ModeliserDonnee)))
 
-    (((UserStory EQ ModeliserDonnee) (IntellienceArtificielle EQ Symbolique))
+    (((UserStoryPrec EQ ModeliserDonnee) (IntellienceArtificielle EQ Symbolique))
       ((Application EQ Systeme-Expert)))
 
-    (((UserStory EQ ModeliserDonnee) (IntellienceArtificielle EQ Numerique))
+    (((UserStoryPrec EQ ModeliserDonnee) (IntellienceArtificielle EQ Numerique))
       ((Application EQ Machine Learning)))
 
-    (((UserStory EQ ModeliserSystemeComplexe) (PrecisionSystemeComplexe EQ Equations))
+    (((UserStoryPrec EQ ModeliserSystemeComplexe) (PrecisionSystemeComplexe EQ Equations))
       ((Application EQ Calcul-Numerique)))
 
-    (((UserStory EQ ModeliserSystemeComplexe) (PrecisionSystemeComplexe EQ Interraction))
+    (((UserStoryPrec EQ ModeliserSystemeComplexe) (PrecisionSystemeComplexe EQ InteractionSys))
       ((Application EQ SMA)))
 
   (((UserStory EQ Decouvrir) (AimeJeu EQ Oui))
-    ((UserStory EQ Jeux)))
+    ((UserStoryPrec EQ Jeux)))
 
-    (((UserStory EQ Jeux) (Prefere EQ Smartphone))
+    (((UserStoryPrec EQ Jeux) (Prefere EQ Smartphone))
       ((Application EQ Mobile)))
 
-    (((UserStory EQ Jeux) (Prefere EQ PCetConsoles))
+    (((UserStoryPrec EQ Jeux) (Prefere EQ PCetConsoles))
       ((Application EQ Jeu-video)))
 
-    (((UserStory EQ Decouvrir) (Programmation EQ Oui))
-      ((Application EQ Apprentissage)))
+  (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Non) (Parenthese EQ Non) (Programmation EQ Oui))
+    ((Application EQ Apprentissage)))
 
-    (((UserStory EQ Decouvrir) (Internet EQ Oui))
-      ((Application EQ Site-Web)))
+  (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Oui) (Programmation EQ Non) (Parenthese EQ Non))
+    ((Application EQ Site-Web)))
 
-  (((UserStory EQ Decouvrir) (AimeParentheses EQ Oui))
+  (((UserStory EQ Decouvrir) (AimeJeu EQ Non) (Internet EQ Non) (Programmation EQ Non) (Parenthese EQ Oui))
     ((Propositions EQ (LISP))))
 
   (((UserStory EQ MiseEnFormeInfos) (BeaucoupInfo EQ NON))
     ((Application EQ Redaction)))
 
   (((UserStory EQ MiseEnFormeInfos) (BeaucoupInfo EQ OUI))
-    ((UserStory EQ TraitementDInfos)))
+    ((UserStoryPrec EQ TraitementDInfos)))
 
-  (((UserStory EQ TraitementDInfos) (PrecisionInfo EQ FiltrerTexte))
+  (((UserStoryPrec EQ TraitementDInfos) (PrecisionInfo EQ FiltrerTexte))
     ((Application EQ Expression-Reguliere)))
 
-  (((UserStory EQ TraitementDInfos) (PrecisionInfo EQ Organiser))
+  (((UserStoryPrec EQ TraitementDInfos) (PrecisionInfo EQ Organiser))
     ((Application EQ Dataware)))
 
-  (((UserStory EQ TraitementDInfos) (PrecisionInfo EQ FaireDesModeles))
+  (((UserStoryPrec EQ TraitementDInfos) (PrecisionInfo EQ FaireDesModeles))
     ((Application EQ Machine-Learning)))
 
   ; Site web
   (((Application EQ Site-Web) (PrecisionSite EQ Simple) (Interaction-Dynamique EQ OUI))
-    ((Propositions EQ (HTML PHP MySQL JavaScript))))
+    ((Propositions EQ (HTML PHP MySQL Symfony JavaScript AJAX))))
 
   (((Application EQ Site-Web) (PrecisionSite EQ Simple) (Interaction-Dynamique EQ NON))
     ((Propositions EQ (HTML PHP MySQL))))
 
   (((Application EQ Site-Web) (PrecisionSite EQ Responsive))
-    ((Propositions EQ (HTML PHP MySQL BootStrap JavaScript))))
+    ((Propositions EQ (HTML PHP MySQL BootStrap JavaScript AJAX))))
+
+  (((Application EQ Site-Web) (PrecisionSite EQ Bonne))
+    ((Propositions EQ (HTML PHP MySQL Symfony))))
 
   (((Application EQ Site-Web) (PrecisionSite EQ Efficace) (RoRvsDjango EQ Configurable))
-    ((Propositions EQ (HTML Django))))
+    ((Propositions EQ (HTML JavaScript Django AJAX))))
 
   (((Application EQ Site-Web) (PrecisionSite EQ Efficace) (RoRvsDjango EQ Populaire))
-    ((Propositions EQ (HTML Ruby-on-Rails))))
+    ((Propositions EQ (HTML JavaScript Ruby Ruby-on-Rails AJAX))))
 
   ; Application Mobile
   (((Application EQ Mobile)(Machine EQ Mac)(Cible EQ iPhone) (Budget > 100))
@@ -126,17 +129,17 @@
     ((Propositions EQ (Matlab))))
 
   ; Système-expert
-  (((Application EQ Systeme-Expert) (Parenthese EQ Supportee))
+  (((Application EQ Systeme-Expert) (Parenthese EQ Oui))
     ((Propositions EQ (LISP))))
 
-  (((Application EQ Systeme-Expert) (Parenthese EQ Non-Supportee))
+  (((Application EQ Systeme-Expert) (Parenthese EQ Non))
     ((Propositions EQ (Prolog))))
 
   ; Applet
   (((Application EQ Mobile) (Machine EQ Mac) (Cible EQ Mac))
     ((Propositions EQ (Swift))))
 
-  (((Application EQ Applet) (Usage EQ Personnel))
+  (((Application EQ Applet) (Usage EQ Individuel))
     ((Propositions EQ (Pygame Tkinter))))
 
   ; Jeu-Video
@@ -146,22 +149,22 @@
   (((Application EQ Jeu-Video) (PrecisionJeu EQ RPG-2D))
     ((Propositions EQ (RPG-Maker))))
 
-  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Mac) (Budget < 35))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Mac) (Budget < 35))
     ((Propositions EQ (SpriteKit Swift Pygame))))
 
-  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Mac) (Budget > 34))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Mac) (Budget > 34))
     ((Propositions EQ (C++ Unity3D OpenGL))))
 
-  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Windows) (Budget < 35))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Windows) (Budget < 35))
     ((Propositions EQ (Pygame))))
 
-  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Windows) (Budget > 34))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Windows) (Budget > 34))
     ((Propositions EQ (Pygame))))
 
-  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Linux) (Budget < 35))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Linux) (Budget < 35))
     ((Propositions EQ (C++ Unity3D OpenGL))))
 
-  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (Cible EQ Linux) (Budget > 34))
+  (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Linux) (Budget > 34))
     ((Propositions EQ (C++ Unity3D OpenGL))))
 
   ; DIY

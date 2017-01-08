@@ -1,5 +1,6 @@
 (defparameter *questions*
 '(
+  (UserStory . "Que souhaitez-vous faire ? ")
   (Application . "Quel type d'applications voulez-vous developper ou solliciter ?")
   (PrecisionSite . "Précisez l'usage que vous voulez faire de votre site :")
   (PrecisionSMA . "Précisez l'usage que vous voulez faire de votre système multi-agent :")
@@ -10,9 +11,10 @@
   (PrecisionRedaction . "Dans quel cadre s'inscrit cette rédaction ?")
   (Machine . "Sur quel système d'explotation travaillez-vous ?")
   (Cible . "Pour quel système developpez-vous ?")
+  (CibleJV . "Pour quel système developpez-vous ?")
   (Budget . "Quel budget avez-vous ? Entrez un chiffre.")
   (Usage . "De quel usage avez-vous besoin ?")
-  (Parenthese . "Supportez-vous les parenthèses dans vos scripts ?")
+  (Parenthese . "Voulez-vous découvrir un truc nouveau avec des parenthèses dedans ?")
   (QuantiteDonnee . "Votre projet nécessite-t-il de traiter beaucoup de données ?")
   (Visiteurs . "Précisez le nombre de visiteurs attendus :")
   (LogicielLibre . "Êtes-vous un fervant défenseur du logicel libre ?")
@@ -22,7 +24,14 @@
   (AccesAInternet . "Votre système aura-t-il besoin d'avoir accès à internet ?")
   (ManipulationMatrice . "Aurez-vous besoin de manipuler des matrices ?")
   (RoRvsDjango . "Préferez-vous une solution populaire ou configurable ?")
-  (Interaction-Dynamique ."Le design du site devra-t-il être dynamique ?")))
+  (Interaction-Dynamique ."Le design du site devra-t-il être dynamique ?")
+  (Internet . "Souhaitez-vous en apprendre plus sur Internet et sur comment faire un site-web.")
+  (AimeJeu . "Aimez-vous les jeux ? ")
+  (Recent . "Avez-vous une préférences pour des langages récents ?")
+  (Methode . "Comment souhaitez-vous résoudre ce problème ?")
+  (Programmation . "Voulez-vous apprendre à programmer ?")))
 
-
-; (delete-duplicates (set-difference (listeAttRegles) (listeAttFaits)))
+(setq attBR nil)
+(dolist (r *regles*) (dolist (y (car (last (assoc 'propositions (conclusion r))))) (pushnew y attBR)))
+(setq attBF (loop for a in *technologies* collect (car a)))
+(delete-duplicates (set-difference attBF attBr))

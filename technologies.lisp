@@ -76,7 +76,7 @@
   (C# . "Le langage de programmation orientée objet de Microsoft. Il révèle tout son potentiel s'il est utilisé conjointement au framework .NET. Intéressant uniquement si la développement se fait dans un envirronement Microsoft.")
   (Java . "Le langage de programmation orienté objet")
   (C++ . "Inspiré du C, il en reprend beaucoup de spécificités et est orienté programmation objet. C'est un langage très plebiscité pour la création de logiciel complexe.")
-  (Android-Studio. "Android Studio est l'une des principale plateforme de développement d'applications pour machine sous Android.")
+  (Android-Studio . "Android Studio est l'une des principale plateforme de développement d'applications pour machine sous Android.")
 
   ; Jeu-Video
   (Unity3D . "Le moteur graphique le plus intéressant pour développer des jeux en 3D avec des graphiques époustouflants !")

@@ -39,7 +39,7 @@
   ; sur les différents choix
   (setq stringRetour "")
   (loop for a in listeAttribut
-    do (setq stringRetour (concatenate 'string stringRetour (symbol-name a) " : "(descriptionAttribut a) "~%")))
+    do (setq stringRetour (concatenate 'string stringRetour "~% -» "(symbol-name a) " : "(descriptionAttribut a))))
     (format nil stringRetour))
 
 (defun descriptionAttribut (attribut)
