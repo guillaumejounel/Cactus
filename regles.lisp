@@ -98,19 +98,19 @@
 
   ;Dataware
   (((Application EQ Dataware) (QuantiteDonnee > 100000))
-    ((Paradigme EQ NoSQL)))
+    ((Paradigme EQ (NoSQL))))
   (((Application EQ Dataware) (QuantiteDonnee < 100001))
-    ((Paradigme EQ Relationnel)))
+    ((Paradigme EQ (Relationnel))))
 
   (((Application EQ Dataware) (Paradigme EQ Relationnel) (AccesLecture > 1000))
-    ((Propositions EQ PLSQL)))
+    ((Propositions EQ (PLSQL))))
   (((Application EQ Dataware) (Paradigme EQ Relationnel) (AccesLecture < 1001))
-    ((Propositions EQ PostGreSQL)))
+    ((Propositions EQ (PostGreSQL))))
 
   (((Application EQ Dataware) (Paradigme EQ NoSQL) (Orientation EQ Document))
-    ((Propositions EQ MangoDB)))
+    ((Propositions EQ (MongoDB))))
   (((Application EQ Dataware) (Paradigme EQ NoSQL) (Orientation EQ Graphe))
-    ((Propositions EQ Neo4J)))
+    ((Propositions EQ (Neo4J))))
 
   ;RegExp
   (((Application EQ Expression-Reguliere))

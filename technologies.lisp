@@ -3,6 +3,8 @@
   ; Programmation système
   (C . "Un des langages les plus populaires et très bien structuré ; utilisé pour accéder à la mémoire de la machine, pour la création de système d'exploitation et pour de nombreuses autres choses en programmation système.")
   (Shell . "Interpréteur de commandes : l'interface entre l'OS et l'utilisateur ; il existe différente famille, le plus utilisé restant 'bash'.")
+  (Assembleur . "L'assembleur est un des langage de plus bas niveau qui convertit des instructions en langages machine.")
+
 
   ; Python, framework & bibliothèque
   (Python . "Langage interprété de prototypage. Efficace et très simple d'utilisation ; de nombreuses bibliothèques.")
@@ -52,7 +54,7 @@
 
   ; DIY
   (Arduino . "Cartes électroniques de 'hacking' en license libre. Elles se programment généralement dans un formalisme proche du C et du C++")
-
+  (Raspberry-Pi . "Mini-ordinateur très utilisé pour réaliser des petits serveurs dans des projets DIY.")
 
   ; Web
   (HTML . "Formalisme de représentation de données utilisée par les pages web. La base du développement web depuis toujours. Il peut être aussi utilisé pour créer des documents.")
@@ -65,6 +67,7 @@
     (XML . "Un formalisme plus ancien de représentation simple et lisible d'informations ; standard utilisé par beaucoup de langages.")
     (Ruby . "Un langage polyvalent qui 'rend les developpeur heureux'. Il est proche des langages comme Python mais est surtout utilisé pour le developpement web avec Ruby-on-Rails")
     (Ruby-on-Rails . "Le framework Ruby pour le developpement web. Plus populaire que Django.")
+    (BootStrap . "Des feuilles de style CSS utilisées par les développeurs qui ne veulent rapidement un site beau et Responsive")
 
   ; Programmation de logiciel et d'applications smartphone
   (Swift . "Le dernier langage de programmation d'Apple pour développer des applications iPhone et Mac")
@@ -72,6 +75,13 @@
   (C# . "Le langage de programmation orientée objet de Microsoft. Il révèle tout son potentiel s'il est utilisé conjointement au framework .NET. Intéressant uniquement si la développement se fait dans un envirronement Microsoft.")
   (Java . "Le langage de programmation orienté objet")
   (C++ . "Inspiré du C, il en reprend beaucoup de spécificités et est orienté programmation objet. C'est un langage très plebiscité pour la création de logiciel complexe.")
+  (Android-Studio. "Android Studio est l'une des principale plateforme de développement d'applications pour machine sous Android.")
+
+  ; Jeu-Video
+  (Unity3D . "Le moteur graphique le plus intéressant pour développer des jeux en 3D avec des graphiques époustouflants !")
+  (OpenGL . "Un moteur graphique Open-Source utilisé pour développer beaucoup de jeux.")
+  (RPG-Maker . "L'outil le mieux adapté pour réaliser des jeux RPG en 2D.")
+  (SpriteKit . "L'outil le mieux adapté pour développer des jeux en 2D sous Mac.")
 
   ; Rédaction et versionnage
   (LaTeX . "Langage et un système de composition de documents. Utilisé pour la rédaction de documents scientifique. Beaucoup de bibliothèque (package)")
@@ -80,6 +90,8 @@
   (GoogleDoc . "Solution en ligne de Google. Permet des rédactions de documents à plusieurs très interactive. Nécessite d'être connecté à Internet.")
   (MD . "Une extension de fichier (MD pour 'Markdown Documentation') surtout utilisée pour rédiger des documentations. Les fichiers MD sont facilement interprétable et leur syntaxe est simple d'usage")
   (Etherpad . "Solution libre à GoogleDoc ; est perfectible mais fait le travail.")
+  (ShareLatex . "Un éditeur de document LaTeX gratuit disponible en ligne : très utile pour la rédaction de documents collaborative.")
+  (Overleaf . "Un autre éditeur de document LaTeX en ligne : il propose des templates intéressants.")
 
   ; Autres langages de programmation
   (Fortran . "Vieux langage de programmation utilisé pour le calcul scientifique")
