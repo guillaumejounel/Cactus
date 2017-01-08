@@ -8,15 +8,20 @@
   ; retourne la liste des attributs non valués dans les règles
   ; ayant des attributs déjà valués
   (if *faits*
+    ;pour chaque règle contenant un attribut valué, récupérer les attributs
     (loop for regle in
+      ;constitution de la liste des règles contenant un attribut valué
       (loop for fait in *faits*
         append
           (loop for regle in *regles*
             if (member fait (car regle) :test 'equal)
+              ;si la règle contient un attribut valué, la collecter
               collect regle))
       append
+        ;Récupération des attributs de la règle
         (loop for premisse in (car regle)
           collect (attribut premisse)))
+    ;Si aucun fait n'est valué (présent dans *faits*), sélectionner tous les attributs
     (loop for regle in *regles*
       append (loop for premisse in (car regle)
           collect (attribut premisse)))))
