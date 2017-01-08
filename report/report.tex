@@ -121,7 +121,7 @@ Tous les programmeurs sont un jour confrontés au problème suivant :
 
 \begin{quotation}
 \centering
-« \textit{Quels de programmation et technologies sont les plus adaptés pour le projet que je souhaite développer dans mon cadre d'utilisation ?} »
+« \textit{Quels langages de programmation et technologies sont les plus adaptés pour le projet que je souhaite développer dans mon cadre d'utilisation ?} »
 
 \end{quotation}
 
@@ -136,7 +136,17 @@ Tous les programmeurs sont un jour confrontés au problème suivant :
     \begin{itemize}
         \item Wikipédia : Liste des langages de programmations par type :\\ \href{https://en.wikipedia.org/wiki/List_of_programming_languages_by_type}{\texttt{https://en.wikipedia.org/wiki/List\_of\_programming\_languages\_by\_type}} ;
         \item Learneroo: The Different Programming Languages :\\ \href{https://www.learneroo.com/modules/12/nodes/94}{\texttt{https://www.learneroo.com/modules/12/nodes/94}} ;
-        \item WhoIsHostingThis: What Code Should You Learn?\\ \href{http://www.whoishostingthis.com/blog/2014/09/04/learn-to-code/}{\texttt{http://www.whoishostingthis.com/blog/2014/09/04/learn-to-code/}}.
+        \item WhoIsHostingThis: What Code Should You Learn?\\ \href{http://www.whoishostingthis.com/blog/2014/09/04/learn-to-code/}{\texttt{http://www.whoishostingthis.com/blog/2014/09/04/learn-to-code/}} ;
+        \item Which language do you prefer while studying machine learning, R, Python, or MATLAB/Octave? - Quora : \href{https://www.quora.com/Which-language-do-you-prefer-while-studying-machine-learning-R-Python-or-MATLAB-Octave}{\texttt{https://www.quora.com/Which-language-do-you-prefer-while-studying\\-machine-learning-R-Python-or-MATLAB-Octave}} ;
+       \item SpriteKit vs Unity3D : \href{https://www.raywenderlich.com/145318/spritekit-swift-3-tutorial-beginners}{\texttt{https://www.raywenderlich.com/145318/spritekit-swift-3\\-tutorial-beginners}} ;
+       \item Unity -- Services : \href{https://unity3d.com/fr/services}{\texttt{https://unity3d.com/fr/services}}
+       \item Apple -- Developer Site : \href{https://developer.apple.com/programs/}{\texttt{https://developer.apple.com/programs/}}
+       \item Metatrader4 : \href{http://www.metatrader4.com/fr/download}{\texttt{http://www.metatrader4.com/fr/download}}
+       \item Massive : \href{http://www.massivesoftware.com}{\texttt{http://www.massivesoftware.com}}
+       \item MathLab : \href{https://fr.mathworks.com}{\texttt{https://fr.mathworks.com}}
+       \item Maple : \href{https://www.maplesoft.com/products/}{\texttt{https://www.maplesoft.com/products/}}
+       \item Site de l'UV NF17 (\textit{Conception de bases de données}) \href{https://stph.scenari-\\community.org/nf17/co/nf17.html}{\texttt{https://stph.scenari-community.org/nf17/co/nf17.html}}
+                            
     \end{itemize}
 
 	En tant qu'étudiants ingénieurs en informatique, nous avons aussi sollicité certaines de nos connaissances dans le domaine.
@@ -167,7 +177,7 @@ Le chaînage arrière examine les règles à exécuter pour arriver à un certai
 		\item un opérateur, qui permet de préciser la valeur de l'attribut
 	\end{enumerate}
 	
-	Ainsi \mintinline{lisp}{(temperature >= 30)} et \mintinline{lisp}{(saison EQ été)} sont des faits vus sous l'angle d'un système-expert d'ordre $0+$ dont les attributs, les opérateurs et les valeurs sont respectivement 	\mintinline{lisp}{temperature} et \mintinline{lisp}{saison}, \mintinline{lisp}{>=} et \mintinline{lisp}{EQ}, et \mintinline{lisp}{30} et \mintinline{lisp}{été}.
+	Ainsi \mintinline{lisp}{(temperature >= 30)} et \mintinline{lisp}{(saison EQ hiver)} sont des faits vus sous l'angle d'un système-expert d'ordre $0+$ dont les attributs, les opérateurs et les valeurs sont respectivement 	\mintinline{lisp}{temperature} et \mintinline{lisp}{saison}, \mintinline{lisp}{>=} et \mintinline{lisp}{EQ}, et \mintinline{lisp}{30} et \mintinline{lisp}{hiver}.
 
 \subsection{Base de faits}
 
@@ -200,7 +210,7 @@ Voici quelques exemples d'attributs que nous utiliserons pour modéliser les fai
 		\caption{Exemple d'attributs pour les faits}
 \end{table}
 
-\mintinline{lisp}{Propositions} sera l'attribut du faits utilisé pour stocker les différentes propositions inférées par \textit{Cactus}.
+\mintinline{lisp}{Propositions} sera l'attribut du fait utilisé pour stocker les différentes propositions inférées par \textit{Cactus}.
 
 \subsection{Base de règles}
 Nous avons décidé d'implémenter les règles dans notre base de cette façon :
@@ -260,7 +270,7 @@ Nous avons construit 3 bases de connaissances pour notre système : une premièr
 Les éléments des ces bases sont représentés sous la forme de \textit{liste pointée} ainsi :
 
 \begin{quotation}
-	\mintinline{lisp}{(élément . "La description de l'élément")}
+	\mintinline{lisp}{(element . "La description de l'element")}
 \end{quotation}
  
  Voici la première base de connaissances sur les attributs \mintinline{lisp}{*valeurs*} pour les valeurs des attributs que l'on peut choisir dans les questions : cela permettra à l'utilisateur d'avoir une idée plus précise sur les possibilités de réponses proposées.
@@ -457,6 +467,19 @@ Cette fonction utilise la fonction outils \mintinline{lisp}{descriptionTechno()}
 On remarquera que le système affichera qu'il n'y a pas de solutions possibles lorsque \mintinline{lisp}{Impossible} est présent comme propositions dans la base de faits. En effet, il existe des situations qui ne peuvent pas être vérifiée dans la vie réelle ; par exemple, on ne peut pas développer des applications \textit{iPhone} si l'on a pas de machine sous \textit{MacOSX} (cf. règles présentes au lignes 102 et 103 dans la base de règles \mintinline{lisp}{*règles*}).
 
 \newpage
+	\subsection{Arbre de déduction}
+	
+	Voici une partie de l'arbre de déduction du système expert \textit{Cactus}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{graph_deduction.pdf}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{graph_deduction2.pdf}
+		\caption{Arbre de déduction du système expert}
+	\end{figure}
 
 \section{Scénarios d'utilisation}
 
@@ -482,12 +505,12 @@ On remarquera que le système affichera qu'il n'y a pas de solutions possibles l
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,lastline=29]{text}{../scenarioGregoire.txt}
+	\inputminted[breaklines=true,linenos,lastline=29]{text}{../scenarioGreg.txt}
 \end{listing}
 	
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,firstline=30]{text}{../scenarioGregoire.txt}
+	\inputminted[breaklines=true,linenos,firstline=30]{text}{../scenarioGreg.txt}
 	\caption{Premier scénario : Tim, fan-boy d'Apple.}
 \end{listing}
 
@@ -499,12 +522,12 @@ On remarquera que le système affichera qu'il n'y a pas de solutions possibles l
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,lastline=29]{text}{../scenarioTim.txt}
+	\inputminted[breaklines=true,linenos,lastline=29]{text}{../scenarioPeter.txt}
 \end{listing}
 	
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,firstline=30]{text}{../scenarioTim.txt}
+	\inputminted[breaklines=true,linenos,firstline=30]{text}{../scenarioPeter.txt}
 	\caption{Premier scénario : Tim, fan-boy d'Apple.}
 \end{listing}
 
