@@ -105,7 +105,7 @@
     ((Propositions EQ (C# Git))))
 
   ; Calcul-Numerique
-  (((Application EQ Calcul-Numerique) (Usage EQ Individuel) (Budget > 100))
+  (((Application EQ Calcul-Numerique) (Budget > 100))
     ((Propositions EQ (Matlab))))
 
   (((Application EQ Calcul-Numerique) (Budget < 120) (ManipulationMatrice EQ OUI))
