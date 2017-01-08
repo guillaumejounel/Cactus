@@ -59,9 +59,6 @@
   (((UserStory EQ TraitementDInfos) (PrecisionInfo EQ FaireDesModeles))
     ((Application EQ Machine-Learning)))
 
-  (((UserStory EQ TraitementDInfos) (PrecisionInfo))
-    ((Application EQ Dataware)))
-
   ; Site web
   (((Application EQ Site-Web) (PrecisionSite EQ Simple) (Interaction-Dynamique EQ OUI))
     ((Propositions EQ (HTML PHP MySQL JavaScript))))

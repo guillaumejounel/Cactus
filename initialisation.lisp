@@ -1,5 +1,5 @@
-(defun init (choix moteur)
-  (let (path)
+(defun init (choix introduction moteur)
+  (let (path (startAtt 'UserStory) valeur)
   (if (= choix 1)
     (setq path "~/Cloud/WORK/UTC/GI01/IA01/Cactus/")
     (setq path "~/Documents/UTC/GI01/IA01/Cactus/"))
@@ -14,7 +14,14 @@
   (load (concatenate 'string path "afficherPropositions.lisp"))
   (load (concatenate 'string path "intro.lisp"))
   (defparameter *faits* nil)
-  (intro)
+  (if introduction
+    (intro))
+  (until
+    (AND
+      ; liste les valeurs possibles de l'attribut et fait lire un choix à l'utilisateur
+      (not (format t "------~&~S~%------~%~%~S~%~%Votre choix : " (questionAssociee startAtt) (afficherchoix (delete-duplicates (AttValues startAtt)))))
+      (member (setq valeur (read)) (delete-duplicates (AttValues startAtt)))))
+  (pushnew (list startAtt 'EQ valeur) *faits*)
   (if (= moteur 1)
     (ChainageAvantLarg)
     (ChainageAvantProf))))

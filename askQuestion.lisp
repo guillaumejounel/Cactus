@@ -5,11 +5,19 @@
     collect (attribut fait)))
 
 (defun listeAttRegles ()
-  ; retourne la liste des attributs
-  ; présents dans la base de règles
-  (loop for regle in *regles*
-    append (loop for premisse in (car regle)
-      collect (attribut premisse))))
+  (if *faits*
+    (loop for regle in
+      (loop for fait in *faits*
+        append
+          (loop for regle in *regles*
+            if (member fait (car regle) :test 'equal)
+              collect regle))
+      append
+        (loop for premisse in (car regle)
+          collect (attribut premisse)))
+    (loop for regle in *regles*
+      append (loop for premisse in (car regle)
+          collect (attribut premisse)))))
 
 (defun AttValues (attribut)
   ; retourne la liste des valeurs
@@ -23,6 +31,17 @@
   ; à un attribut dans la base *questions*
   ; ou celui-ci si cette dernière n'est pas présente
   (or (cdr (assoc attribut *questions*)) attribut))
+
+(defun afficherChoix (listeAttribut)
+  (setq stringRetour "")
+  (loop for a in listeAttribut do (setq stringRetour (concatenate 'string stringRetour (symbol-name a) " : "(descriptionAttribut a) "~%")))
+    (format nil stringRetour))
+
+(defun descriptionAttribut (attribut)
+  ; retourne la description associée
+  ; à un attribut dans la base *descriptions*
+  ; ou celle-ci si cette dernière n'est pas présente
+  (or (cdr (assoc attribut *descriptions*)) (symbol-name attribut)))
 
 (defun askQuestion ()
   (let ((attribut (car (set-difference (listeAttRegles) (listeAttFaits))) valeur))
@@ -39,7 +58,7 @@
         (until
           (AND
             ; liste les valeurs possibles de l'attribut et fait lire un choix à l'utilisateur
-            (not (format t "------~&~S~%------~%~%~S~%~%Votre choix : " (questionAssociee attribut) (delete-duplicates (AttValues attribut))))
+            (not (format t "------~&~S~%------~%~%~S~%~%Votre choix : " (questionAssociee attribut) (afficherchoix (delete-duplicates (AttValues attribut)))))
             (member (setq valeur (read)) (delete-duplicates (AttValues attribut))))))
             ; Redemande tant que son choix n'est pas valide
       (error "Nous n'avons rien pu trouver."))
