@@ -35,6 +35,7 @@
   (BeaucoupInfo . "Disposez-vous de beaucoup d'informations ? ")
   (Prefere . "Que préférez-vous entre les jeux PC et les jeux smartphone ?")
   (ControleAcces . "Avez-vous besoin de contrôler l'accès de différents utilisateurs sur cette plateforme ?")
+  (ChoixProjet . "Quel est votre projet ?")
 ))
 
 (setq attBR nil)

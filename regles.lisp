@@ -59,16 +59,16 @@
   (((UserStoryPrec EQ TraitementDInfos) (PrecisionInfo EQ FaireDesModeles))
     ((Application EQ Machine-Learning)))
 
-  (((UserStory EQ Programmer) (ChoixProjet EQ Site-web))
+  (((UserStory EQ DEJAIDEEDEV) (ChoixProjet EQ Site-web))
     ((Application EQ Site-web)))
 
-  (((UserStory EQ Programmer) (ChoixProjet EQ Logiciel))
+  (((UserStory EQ DEJAIDEEDEV) (ChoixProjet EQ Logiciel))
     ((Application EQ Logiciel)))
 
-  (((UserStory EQ Programmer) (ChoixProjet EQ Applet))
-    ((Application EQ Logiciel)))
+  (((UserStory EQ DEJAIDEEDEV) (ChoixProjet EQ Applet))
+    ((Application EQ Applet)))
 
-  (((UserStory EQ Programmer) (ChoixProjet EQ Jeu-video))
+  (((UserStory EQ DEJAIDEEDEV) (ChoixProjet EQ Jeu-video))
     ((Application EQ Jeu-video)))
 
   ; Site web
