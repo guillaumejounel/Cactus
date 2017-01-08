@@ -14,6 +14,8 @@
   (CibleJV . "Pour quel système developpez-vous ?")
   (Budget . "Quel budget avez-vous ? Entrez un chiffre.")
   (Usage . "De quel usage avez-vous besoin ?")
+  (UsageApp . "De quel usage avez-vous besoin pour votre applet ?")
+  (UsageRedac . "De quel usage avez-vous besoin pour la rédaction ?")
   (ParentheseDec . "Voulez-vous découvrir un langage symbolique fondateur ?")
   (Parenthese . "Voulez-vous découvrir un langage symbolique fondateur ?")
   (QuantiteDonnee . "Votre projet nécessite-t-il de traiter beaucoup de données ?")
@@ -37,7 +39,7 @@
   (Prefere . "Que préférez-vous entre les jeux PC et les jeux smartphone ?")
   (ControleAcces . "Avez-vous besoin de contrôler l'accès de différents utilisateurs sur cette plateforme ?")
   (ChoixProjet . "Quel est votre projet ?")
-))
+  (IntellienceArtificielle . "Quel paradigme d'IA souhaitez-vous utilisez ?")))
 
 (setq attBR nil)
 (dolist (r *regles*) (dolist (y (car (last (assoc 'propositions (conclusion r))))) (pushnew y attBR)))

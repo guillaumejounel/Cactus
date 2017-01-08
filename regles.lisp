@@ -8,7 +8,7 @@
   (((UserStory EQ ResoudreProbMath) (Methode EQ Formelle))
     ((Application EQ Calcul-Formel)))
 
-  (((UserStory EQ Modeliser) (ModeliserDonnee EQ Non) (SystemeComplexe EQ Oui))
+  (((UserStory EQ Modeliser) (SystemeComplexe EQ Oui))
     ((UserStoryPrec EQ ModeliserSystemeComplexe)))
 
   (((UserStory EQ Modeliser) (SystemeComplexe EQ Non) (ModeliserDonnee EQ Oui))
@@ -18,7 +18,7 @@
       ((Application EQ Systeme-Expert)))
 
     (((UserStoryPrec EQ ModeliserDonnee) (IntellienceArtificielle EQ Numerique))
-      ((Application EQ Machine Learning)))
+      ((Application EQ Machine-Learning)))
 
     (((UserStoryPrec EQ ModeliserSystemeComplexe) (PrecisionSystemeComplexe EQ Equations))
       ((Application EQ Calcul-Numerique)))
@@ -59,16 +59,16 @@
   (((UserStoryPrec EQ TraitementDInfos) (PrecisionInfo EQ FaireDesModeles))
     ((Application EQ Machine-Learning)))
 
-  (((UserStory EQ DEJAIDEEDEV) (ChoixProjet EQ Site-web))
+  (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Site-web))
     ((Application EQ Site-web)))
 
-  (((UserStory EQ DEJAIDEEDEV) (ChoixProjet EQ Logiciel))
+  (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Logiciel))
     ((Application EQ Logiciel)))
 
-  (((UserStory EQ DEJAIDEEDEV) (ChoixProjet EQ Applet))
+  (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Applet))
     ((Application EQ Applet)))
 
-  (((UserStory EQ DEJAIDEEDEV) (ChoixProjet EQ Jeu-video))
+  (((UserStory EQ DejaIdeeDev) (ChoixProjet EQ Jeu-video))
     ((Application EQ Jeu-video)))
 
   ; Site web
@@ -95,7 +95,7 @@
     ((Propositions EQ (Swift))))
 
   (((Application EQ Mobile) (Cible EQ Android))
-    ((Propositions EQ (JAVA Android-Studio SDK-Android))))
+    ((Propositions EQ (JAVA Android-Studio))))
 
   ; Logiciel
   (((Application EQ Logiciel) (PrecisionLogiciel EQ Complexe))
@@ -148,7 +148,7 @@
   (((Application EQ Mobile) (Machine EQ Mac) (Cible EQ Mac))
     ((Propositions EQ (Swift))))
 
-  (((Application EQ Applet) (Usage EQ Individuel))
+  (((Application EQ Applet) (UsageApp EQ Individuel))
     ((Propositions EQ (Pygame Tkinter))))
 
   ; Jeu-Video
@@ -266,25 +266,25 @@
 
 
   ; Redaction
-  (((Application EQ Redaction) (PrecisionRedaction EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ OUI))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Prototypage-Rapide) (UsageRedac EQ Collaboratif) (LogicielLibre EQ OUI))
     ((Propositions EQ (Git MD Etherpad))))
 
-  (((Application EQ Redaction) (PrecisionRedaction EQ Prototypage-Rapide) (Usage EQ Collaboratif) (LogicielLibre EQ PasForcement))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Prototypage-Rapide) (UsageRedac EQ Collaboratif) (LogicielLibre EQ PasForcement))
     ((Propositions EQ (GoogleDoc))))
 
-  (((Application EQ Redaction) (PrecisionRedaction EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ PasForcement))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Complexe) (UsageRedac EQ Individuel) (LogicielLibre EQ PasForcement))
     ((Propositions EQ (GoogleDoc Word))))
 
-  (((Application EQ Redaction) (PrecisionRedaction EQ Complexe) (Usage EQ Individuel) (LogicielLibre EQ OUI))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Complexe) (UsageRedac EQ Individuel) (LogicielLibre EQ OUI))
     ((Propositions EQ (LaTeX))))
 
-  (((Application EQ Redaction) (PrecisionRedaction EQ Complexe) (Usage EQ Collaboratif))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Complexe) (UsageRedac EQ Collaboratif))
     ((Propositions EQ (Git LaTeX ShareLatex Overleaf))))
 
-  (((Application EQ Redaction) (PrecisionRedaction EQ Scientifique) (Usage EQ Individuel))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Scientifique) (UsageRedac EQ Individuel))
     ((Propositions EQ (LaTeX))))
 
-  (((Application EQ Redaction) (PrecisionRedaction EQ Scientifique) (Usage EQ Collaboratif))
+  (((Application EQ Redaction) (PrecisionRedaction EQ Scientifique) (UsageRedac EQ Collaboratif))
     ((Propositions EQ (Git LaTeX))))
 
   ; Apprentissage

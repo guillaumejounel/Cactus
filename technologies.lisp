@@ -54,6 +54,9 @@
 
   ; DIY
   (Arduino . "Cartes électroniques de 'hacking' en license libre. Elles se programment généralement dans un formalisme proche du C et du C++")
+  (EthernetShield . "Module qui permet à un Arduino de ce connecter à Internet.")
+  (Bluetooth . "Protocole de communication qui peut être facilement utilisé pour des connexions avec d'autres objets via des modules.")
+  (RadioTransmitter . "Une solution simple pour communiquer entre des objets, moins onéreuse que le Bluetooth.")
   (Raspberry-Pi . "Mini-ordinateur très utilisé pour réaliser des petits serveurs dans des projets DIY.")
 
   ; Web
@@ -68,7 +71,7 @@
     (Ruby . "Un langage polyvalent qui 'rend les developpeur heureux'. Il est proche des langages comme Python mais est surtout utilisé pour le developpement web avec Ruby-on-Rails")
     (Ruby-on-Rails . "Le framework Ruby pour le developpement web. Plus populaire que Django.")
     (BootStrap . "Des feuilles de style CSS utilisées par les développeurs qui ne veulent rapidement un site beau et Responsive")
-    (RestAPI . "Technologie très utilisée pour faire des API.")
+    (Rest . "Technologie très utilisée pour faire des API.")
     (OAuth2 . "Protocole d'authentification utilisé pour les sites web.")
   ; Programmation de logiciel et d'applications smartphone
   (Swift . "Le dernier langage de programmation d'Apple pour développer des applications iPhone et Mac")
