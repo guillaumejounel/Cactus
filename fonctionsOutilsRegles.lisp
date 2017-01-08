@@ -19,5 +19,5 @@
   ; Ajoute un résultat à la base de faits *faits*
   (dolist (triplet resultats)
     (if (assoc (attribut triplet) *faits*) ; si l'attribut est déjà présent dans la base
-      (setf (valeur (assoc (attribut triplet) *faits*)) (valeur triplet)) ; on remplace sa valeur
+      (setf (caddr (assoc (attribut triplet) *faits*)) (valeur triplet)) ; on remplace sa valeur
       (push triplet *faits*)))) ; sinon on rajoute triplet à la base de faits
