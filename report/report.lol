@@ -11,3 +11,6 @@
 \contentsline {listing}{\numberline {11}{\ignorespaces Fonctions outils pour \mintinline {lisp}{askQuestion()}}}{28}{listing.11}
 \contentsline {listing}{\numberline {12}{\ignorespaces Fonction \mintinline {lisp}{afficherPropositions()} qui affiche les propositions du syst\IeC {\`e}me expert}}{28}{listing.12}
 \contentsline {listing}{\numberline {13}{\ignorespaces Fonction \mintinline {lisp}{descriptionTechno()} : retourne la description d'une technologie}}{28}{listing.13}
+\contentsline {listing}{\numberline {14}{\ignorespaces Premier sc\IeC {\'e}nario : Tim, fan-boy d'Apple.}}{31}{listing.14}
+\contentsline {listing}{\numberline {15}{\ignorespaces Premier sc\IeC {\'e}nario : Tim, fan-boy d'Apple.}}{33}{listing.15}
+\contentsline {listing}{\numberline {16}{\ignorespaces Premier sc\IeC {\'e}nario : Tim, fan-boy d'Apple.}}{35}{listing.16}

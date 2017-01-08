@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  8 JAN 2017 23:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  9 JAN 2017 00:02
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1572,7 +1572,7 @@ LaTeX Info: Redefining \nameref on input line 66.
 \@outlinefile=\write7
 \openout7 = `report.out'.
 
- <UTC_logo.png, id=67, 501.875pt x 175.65625pt>
+ <UTC_logo.png, id=83, 501.875pt x 175.65625pt>
 File: UTC_logo.png Graphic file (type png)
 
 <use UTC_logo.png>
@@ -1902,7 +1902,7 @@ port.out.pyg" "../regles.lisp" )...executed.
 
  (./report.out.pyg
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 15.
+(Font)              <5> on input line 18.
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1911,7 +1911,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
-Overfull \vbox (16.7635pt too high) has occurred while \output is active []
+Overfull \vbox (2.2635pt too high) has occurred while \output is active []
 
 
 
@@ -1947,7 +1947,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [8]
-Overfull \vbox (16.76347pt too high) has occurred while \output is active []
+Overfull \vbox (31.26347pt too high) has occurred while \output is active []
 
 
 
@@ -1961,9 +1961,10 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "../regles.lisp" )...executed.
 
  (./report.out.pyg)
-Overfull \vbox (16.76355pt too high) has occurred while \output is active []
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../regles.lisp" )...executed.
 
-
+ (./report.out.pyg)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1971,10 +1972,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [10]
-runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
-port.out.pyg" "../regles.lisp" )...executed.
-
- (./report.out.pyg)
 Overfull \vbox (2.2635pt too high) has occurred while \output is active []
 
 
@@ -2480,79 +2477,156 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29] <sujet.pdf, id=257, 597.55246pt x 845.07718pt>
+[29]
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../scenarioTim.txt" )...executed.
+
+ (./report.out.pyg)
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../scenarioTim.txt" )...executed.
+
+ (./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 481.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../scenarioGregoire.txt" )...executed.
+
+ (./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31]
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../scenarioGregoire.txt" )...executed.
+
+ (./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32]
+Overfull \hbox (0.69453pt too wide) in paragraph at lines 497--498
+[]\T1/lmr/m/n/12 Peter souhaite réaliser un long métrage dans lequel une batail
+le épique aurait lieu comportant
+ []
+
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../scenarioTim.txt" )...executed.
+
+(./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33]
+runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "../scenarioTim.txt" )...executed.
+
+ (./report.out.pyg)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[35] <sujet.pdf, id=310, 597.55246pt x 845.07718pt>
 File: sujet.pdf Graphic file (type pdf)
  <use sujet.pdf>
-Package pdftex.def Info: sujet.pdf used on input line 461.
+Package pdftex.def Info: sujet.pdf used on input line 514.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: sujet.pdf Graphic file (type pdf)
 
 <use sujet.pdf>
-Package pdftex.def Info: sujet.pdf used on input line 461.
+Package pdftex.def Info: sujet.pdf used on input line 514.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
- <sujet.pdf, id=260, page=1, 597.55246pt x 845.07718pt>
+ <sujet.pdf, id=313, page=1, 597.55246pt x 845.07718pt>
 File: sujet.pdf Graphic file (type pdf)
 
 <use sujet.pdf, page 1>
-Package pdftex.def Info: sujet.pdf, page1 used on input line 461.
+Package pdftex.def Info: sujet.pdf, page1 used on input line 514.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: sujet.pdf Graphic file (type pdf)
  <use sujet.pdf, page 1>
-Package pdftex.def Info: sujet.pdf, page1 used on input line 461.
+Package pdftex.def Info: sujet.pdf, page1 used on input line 514.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: sujet.pdf Graphic file (type pdf)
  <use sujet.pdf, page 1>
-Package pdftex.def Info: sujet.pdf, page1 used on input line 461.
+Package pdftex.def Info: sujet.pdf, page1 used on input line 514.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: sujet.pdf Graphic file (type pdf)
 
 <use sujet.pdf, page 1>
-Package pdftex.def Info: sujet.pdf, page1 used on input line 461.
+Package pdftex.def Info: sujet.pdf, page1 used on input line 514.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: sujet.pdf Graphic file (type pdf)
  <use sujet.pdf, page 1>
-Package pdftex.def Info: sujet.pdf, page1 used on input line 461.
+Package pdftex.def Info: sujet.pdf, page1 used on input line 514.
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
- [30 <./sujet.pdf>]
+ [36 <./sujet.pdf>]
 runsystem(rm "report.pyg")...executed.
 
 runsystem(rm "report.out.pyg")...executed.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 462.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 462.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 515.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 515.
 
 (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 462.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 462.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 515.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 515.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 36DC1C70DC033ACAD7AA403F1FE13A94;1125.
+(rerunfilecheck)             Checksum: FC5D71D68C5E0589CBD6E4B9760F58AA;1412.
  ) 
 Here is how much of TeX's memory you used:
- 26506 strings out of 495003
- 461590 string characters out of 6181405
- 640311 words of memory out of 5000000
- 28917 multiletter control sequences out of 15000+600000
- 80250 words of font info for 79 fonts, out of 8000000 for 9000
+ 26572 strings out of 495003
+ 462899 string characters out of 6181405
+ 639308 words of memory out of 5000000
+ 28954 multiletter control sequences out of 15000+600000
+ 80625 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  54i,20n,64p,853b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/t
-exlive/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-di
-st/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/
-lm/lm-rm.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/lm/lmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/lm/lmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtk10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on report.pdf (30 pages, 431615 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texl
+ive/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/
+fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips
+/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr
+/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/lm/lmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/lm/lmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/lm/lmtti10.pfb>
+Output written on report.pdf (36 pages, 442500 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 305 compressed objects within 4 object streams
- 67 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 423 PDF objects out of 1000 (max. 8388607)
+ 356 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

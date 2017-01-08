@@ -9,7 +9,7 @@
  -» MISEENFORMEINFOS : Je souhaite mettre en forme de l'information.
  -» DEJAIDEEDEV : J'ai déjà une idée d'un projet à développer."
 
-Votre choix : dejaideedev
+Votre choix : DejaIdeeDev
 ------
 "Quel est votre projet ?"
 ------
@@ -26,7 +26,7 @@ Votre choix : dejaideedev
  -» SYSTEME-EXPERT : Je veux faire un système-expert.
  -» DIY : Je veux bricoler un truc electronique."
 
-Votre choix : mobile
+Votre choix : Mobile
 ------
 "Pour quel système developpez-vous ?"
 ------
@@ -35,7 +35,7 @@ Votre choix : mobile
  -» IPHONE : Je veux développer des app iPhone.
  -» ANDROID : Je veux développer des app Android."
 
-Votre choix : iphone
+Votre choix : iPhone
 ------
 "Sur quel système d'explotation travaillez-vous ?"
 ------
@@ -45,7 +45,7 @@ Votre choix : iphone
  -» WINDOWS : Un environnement Windows.
  -» LINUX : Un environnement Linux."
 
-Votre choix : mac
+Votre choix : Mac
 ------
 "Quel budget avez-vous ? Entrez un chiffre."
 ------

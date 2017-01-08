@@ -1,0 +1,56 @@
+------
+"Que souhaitez-vous faire ? "
+------
+
+"
+ -» RESOUDREPROBMATH : Je souhaite résoudre un problème mathématique.
+ -» MODELISER : Je souhaite modéliser un problème.
+ -» DECOUVRIR : Je souhaite découvrir des choses.
+ -» MISEENFORMEINFOS : Je souhaite mettre en forme de l'information.
+ -» DEJAIDEEDEV : J'ai déjà une idée d'un projet à développer."
+
+Votre choix : modeliser
+------
+"Voulez-vous modéliser un système complexe ?"
+------
+
+"
+ -» OUI : Oui.
+ -» NON : Non."
+
+Votre choix : non
+------
+"Quel paradigme d'IA souhaitez-vous utilisez ?"
+------
+
+"
+ -» SYMBOLIQUE : Je préfère utilisée une intelligence artificielle symbolique.
+ -» NUMERIQUE : Je veux résoudre ce problème par des méthode numériques."
+
+Votre choix : numerique
+------
+"Quel budget avez-vous ? Entrez un chiffre."
+------
+Votre choix (nombre) : 42
+------
+"Que souhaitez-vous faire ?"
+------
+
+"
+ -» PROTOTYPAGE-RAPIDE : Je veux rapidement avoir quelque chose de fonctionnel et/ou d'expérimental et/ou facilement modifiable.
+ -» MODELE-COMPLEXE : Je veux modéliser un phénomène ou une situation complexe."
+
+Votre choix : prototypage-rapide
+------
+"Aurez-vous besoin de manipuler des matrices ?"
+------
+
+"
+ -» OUI : Oui.
+ -» NON : Non."
+
+Votre choix : oui
+------------------
+Voici les différentes technologies que je vous propose :
+ -» OCTAVE : "Logiciel et langage de programmation de calcul numérique, alternative libre et gratuite à Matlab."
+------------------

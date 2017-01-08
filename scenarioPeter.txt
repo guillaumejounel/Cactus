@@ -1,0 +1,44 @@
+------
+"Que souhaitez-vous faire ? "
+------
+
+"
+ -» RESOUDREPROBMATH : Je souhaite résoudre un problème mathématique.
+ -» MODELISER : Je souhaite modéliser un problème.
+ -» DECOUVRIR : Je souhaite découvrir des choses.
+ -» MISEENFORMEINFOS : Je souhaite mettre en forme de l'information.
+ -» DEJAIDEEDEV : J'ai déjà une idée d'un projet à développer."
+
+Votre choix : Modeliser
+------
+"Voulez-vous modéliser un système complexe ?"
+------
+
+"
+ -» OUI : Oui.
+ -» NON : Non."
+
+Votre choix : Oui
+------
+"De quel type de systeme complexes s'agit-il ?"
+------
+
+"
+ -» EQUATIONS : Je veux résoudre des équations.
+ -» INTERACTIONSYS : Je veux simuler les interractions qu'il peut y avoir dans un système complexe."
+
+Votre choix : interactionsys
+------
+"Précisez l'usage que vous voulez faire de votre système multi-agent :"
+------
+
+"
+ -» SIMULATIONDEFOULE : Je voudrais simuler le comportement de foule lors d'un évènement particulier.
+ -» TRADING : Je veux faire du trading, et/ou utiliser des technologies adaptées à la finance.
+ -» AUTRE : Non, je veux faire autre choses avec les SMA."
+
+Votre choix : simulationdefoule
+------------------
+Voici les différentes technologies que je vous propose :
+ -» MASSIVE : "Logiciel utilisant les Systèmes Multi-agents (SMA) dans le but de simuler des foules. Il est très utilisé dans les industries du cinéma et du jeu vidéo, notamment dans la trilogie Seigneur des Anneaux ainsi que dans la série Games of Thrones."
+------------------

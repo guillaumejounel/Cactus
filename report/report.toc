@@ -14,3 +14,7 @@
 \contentsline {subsection}{\numberline {3.2}Fonctions outils}{24}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Poser une question : fonction \mintinline {lisp}{askQuestion()}}{26}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Afficher les propositions du syst\IeC {\`e}me : fonction \mintinline {lisp}{afficherPropositions()}}{28}{subsection.3.4}
+\contentsline {section}{\numberline {4}Sc\IeC {\'e}narios d'utilisation}{30}{section.4}
+\contentsline {subsection}{\numberline {4.1}Tim, fan-boy d'Apple}{30}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Gr\IeC {\'e}goire, scientifique en herbe}{31}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Peter, r\IeC {\'e}alisateur}{33}{subsection.4.3}
