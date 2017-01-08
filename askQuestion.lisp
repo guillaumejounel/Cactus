@@ -5,6 +5,8 @@
     collect (attribut fait)))
 
 (defun listeAttRegles ()
+  ; retourne la liste des attributs non valués dans les règles
+  ; ayant des attributs déjà valués
   (if *faits*
     (loop for regle in
       (loop for fait in *faits*
@@ -33,8 +35,11 @@
   (or (cdr (assoc attribut *questions*)) attribut))
 
 (defun afficherChoix (listeAttribut)
+  ; renvoie une string pour apporter une précision
+  ; sur les différents choix
   (setq stringRetour "")
-  (loop for a in listeAttribut do (setq stringRetour (concatenate 'string stringRetour (symbol-name a) " : "(descriptionAttribut a) "~%")))
+  (loop for a in listeAttribut
+    do (setq stringRetour (concatenate 'string stringRetour (symbol-name a) " : "(descriptionAttribut a) "~%")))
     (format nil stringRetour))
 
 (defun descriptionAttribut (attribut)
