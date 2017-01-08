@@ -182,10 +182,10 @@
     ((Propositions EQ (Pygame))))
 
   (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Windows) (Budget > 34))
-    ((Propositions EQ (Pygame))))
+    ((Propositions EQ (C++ Unity3D OpenGL))))
 
   (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Linux) (Budget < 35))
-    ((Propositions EQ (C++ Unity3D OpenGL))))
+    ((Propositions EQ (Pygame))))
 
   (((Application EQ Jeu-Video) (PrecisionJeu EQ 2D) (CibleJV EQ Linux) (Budget > 34))
     ((Propositions EQ (C++ Unity3D OpenGL))))
@@ -285,6 +285,12 @@
 
   (((Application EQ Redaction) (PrecisionRedaction EQ Prototypage-Rapide) (UsageRedac EQ Collaboratif) (LogicielLibre EQ PasForcement))
     ((Propositions EQ (GoogleDoc))))
+
+  (((Application EQ Redaction) (PrecisionRedaction EQ Prototypage-Rapide) (UsageRedac EQ Individuel) (LogicielLibre EQ OUI))
+    ((Propositions EQ (MD Etherpad))))
+
+  (((Application EQ Redaction) (PrecisionRedaction EQ Prototypage-Rapide) (UsageRedac EQ Individuel) (LogicielLibre EQ PasForcement))
+    ((Propositions EQ (Word))))
 
   (((Application EQ Redaction) (PrecisionRedaction EQ Complexe) (UsageRedac EQ Individuel) (LogicielLibre EQ PasForcement))
     ((Propositions EQ (GoogleDoc Word))))
