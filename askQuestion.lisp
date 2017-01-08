@@ -5,11 +5,19 @@
     collect (attribut fait)))
 
 (defun listeAttRegles ()
-  ; retourne la liste des attributs
-  ; présents dans la base de règles
-  (loop for regle in *regles*
-    append (loop for premisse in (car regle)
-      collect (attribut premisse))))
+  (if *faits*
+    (loop for regle in
+      (loop for fait in *faits*
+        append
+          (loop for regle in *regles*
+            if (member fait (car regle) :test 'equal)
+              collect regle))
+      append
+        (loop for premisse in (car regle)
+          collect (attribut premisse)))
+    (loop for regle in *regles*
+      append (loop for premisse in (car regle)
+          collect (attribut premisse)))))
 
 (defun AttValues (attribut)
   ; retourne la liste des valeurs

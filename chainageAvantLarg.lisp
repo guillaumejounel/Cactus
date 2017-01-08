@@ -8,9 +8,16 @@
         (dolist (r *regles*) ; sinon on parcourt les règles dans la base de règles
           (when (declenchable? r); si une règle est déclenchable
             (setq EC (append EC (list r))) ; on l'ajoute à l'ensemble contraint EN FIN
-            (setq *regles* (remove r *regles* :test 'equal))))) ; on l'enlève de la base de règles
+            (supprimerRegles r)))); on l'enlève de la base de règles ainsi que les règles qui ne sont plus compatibles
+            ;(setq *regles* (remove r *regles* :test 'equal)))))
+            ; on l'enlève de la base de règles
       (if EC ; si on peut encore déclencher des règles
         (progn
           (setq regleCourante (pop EC)) ; on choisit la dernière obtenue
           (ajouter (conclusion regleCourante))) ; on ajoute son résultat à la base de faits
         (askQuestion))))) ; sinon on pose une question
+
+(defun supprimerRegles (regle)
+  (setq *regles* (remove regle *regles* :test 'equal))
+  (format t "~%TEST : ~a~%" regle)
+)
