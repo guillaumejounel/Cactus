@@ -1,6 +1,13 @@
 (defparameter *regles* '(
 
   ; Analyse du besoin
+
+  (((UserStory EQ ResoudreProbMath) (Methode EQ Numerique))
+    ((Application EQ Calcul-Numerique)))
+
+  (((UserStory EQ ResoudreProbMath) (Methode EQ Formelle))
+    ((Application EQ Calcul-Formel)))
+
   (((UserStory EQ Modeliser) (SystemeComplexe EQ Oui))
     ((UserStory EQ ModeliserSystemeComplexe)))
 
@@ -92,11 +99,18 @@
   (((Application EQ Calcul-Numerique) (Usage EQ Individuel) (Budget > 100))
     ((Propositions EQ (Matlab))))
 
-  (((Application EQ Calcul-Numerique) (Budget < 100) (ManipulationMatrice EQ OUI))
+  (((Application EQ Calcul-Numerique) (Budget < 120) (ManipulationMatrice EQ OUI))
     ((Propositions EQ (Octave Scilab Julia Fortran))))
 
-  (((Application EQ Calcul-Numerique) (Budget < 100) (ManipulationMatrice EQ NON))
+  (((Application EQ Calcul-Numerique) (Budget < 120) (ManipulationMatrice EQ NON))
     ((Propositions EQ (Python MathPlotLib Numpy))))
+
+  ; Calcul-Numerique
+  (((Application EQ Calcul-Formel) (Budget < 100))
+    ((Propositions EQ (Sage))))
+
+  (((Application EQ Calcul-Formel) (Budget > 90))
+    ((Propositions EQ (Maple))))
 
   ; Machine-Learning
   (((Application EQ Machine-Learning) (PrecisionML EQ Prototypage-Rapide) (Budget < 101) (ManipulationMatrice EQ OUI))
