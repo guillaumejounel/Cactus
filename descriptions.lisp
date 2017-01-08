@@ -4,7 +4,6 @@
     (NON . "Non.")
     (RESOUDREPROBMATH . "Je souhaite résoudre un problème mathématique.")
     (MODELISER . "Je souhaite modéliser un problème.")
-    (MODELISERDONNEE . "Je souhaite modéliser un problème basée sur des données.")
     (MODELISERSYSTEMECOMPLEXE . "Je souhaite modéliser un système complexe.")
     (JEUX . "Oui j'aime les jeux")
     (DECOUVRIR . "Je souhaite découvrir des choses.")
