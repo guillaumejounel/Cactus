@@ -1,5 +1,5 @@
 (defun askQuestion ()
-  (let ((attribut (car (set-difference (listeAttRegles) (listeAttFaits))) valeur))
+  (let ((attribut (car (set-difference (listeAttRegles) (listeAttFaits)))) valeur)
     ; "attribut" est le premier élément de la différence entre :
     ; - la liste des attributs dans la base de faits
     ; - la liste des attributs dans la base de règles (prémisses)

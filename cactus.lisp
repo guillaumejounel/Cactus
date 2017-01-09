@@ -1,5 +1,5 @@
 (defun cactus (&optional introduction moteur)
-  (let (path (startAtt 'UserStory) valeur)
+  (let ((startAtt 'UserStory) valeur)
     (defparameter *faits* nil)
     (if (not introduction)
       (intro))
