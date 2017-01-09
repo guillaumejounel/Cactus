@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  9 JAN 2017 11:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  9 JAN 2017 11:27
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1572,7 +1572,7 @@ LaTeX Info: Redefining \nameref on input line 66.
 \@outlinefile=\write7
 \openout7 = `report.out'.
 
- <UTC_logo.png, id=87, 501.875pt x 175.65625pt>
+ <UTC_logo.png, id=95, 501.875pt x 175.65625pt>
 File: UTC_logo.png Graphic file (type png)
 
 <use UTC_logo.png>
@@ -1704,7 +1704,19 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
 
 
-(./report.out.pyg))
+(./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+ (./report.out.pyg))
 \tf@lol=\write9
 \openout9 = `report.lol'.
 
@@ -2482,14 +2494,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30] <graph_deduction.pdf, id=302, 845.04686pt x 597.50786pt>
+[30] <graph_deduction.pdf, id=316, 845.04686pt x 597.50786pt>
 File: graph_deduction.pdf Graphic file (type pdf)
 
 <use graph_deduction.pdf>
 Package pdftex.def Info: graph_deduction.pdf used on input line 475.
 (pdftex.def)             Requested size: 422.5224pt x 298.75319pt.
 
-<graph_deduction2.pdf, id=303, 845.04686pt x 597.50786pt>
+<graph_deduction2.pdf, id=317, 845.04686pt x 597.50786pt>
 File: graph_deduction2.pdf Graphic file (type pdf)
 
 <use graph_deduction2.pdf>
@@ -2643,7 +2655,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39] <sujet.pdf, id=589, 597.55246pt x 845.07718pt>
+[39] <sujet.pdf, id=599, 597.55246pt x 845.07718pt>
 File: sujet.pdf Graphic file (type pdf)
  <use sujet.pdf>
 Package pdftex.def Info: sujet.pdf used on input line 587.
@@ -2653,7 +2665,7 @@ File: sujet.pdf Graphic file (type pdf)
 <use sujet.pdf>
 Package pdftex.def Info: sujet.pdf used on input line 587.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
- <sujet.pdf, id=592, page=1, 597.55246pt x 845.07718pt>
+ <sujet.pdf, id=602, page=1, 597.55246pt x 845.07718pt>
 File: sujet.pdf Graphic file (type pdf)
 
 <use sujet.pdf, page 1>
@@ -2694,14 +2706,14 @@ Package rerunfilecheck Warning: File `report.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: 90114E413203277C982DE6C34FE01478;1483
-(rerunfilecheck)             After:  D872C930F4C11DE8B2E09EB0FBF8B2A0;1606.
+(rerunfilecheck)             Before: D872C930F4C11DE8B2E09EB0FBF8B2A0;1606
+(rerunfilecheck)             After:  B23C82FB9D402ECCA7B0C1731C59486D;1605.
  ) 
 Here is how much of TeX's memory you used:
- 26606 strings out of 495003
- 463436 string characters out of 6181405
+ 26612 strings out of 495003
+ 463523 string characters out of 6181405
  639311 words of memory out of 5000000
- 28965 multiletter control sequences out of 15000+600000
+ 28967 multiletter control sequences out of 15000+600000
  80625 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  54i,20n,64p,853b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2720,10 +2732,10 @@ lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/lm/lmtti10.pfb>
-Output written on report.pdf (40 pages, 522433 bytes).
+Output written on report.pdf (40 pages, 523233 bytes).
 PDF statistics:
- 706 PDF objects out of 1000 (max. 8388607)
- 520 compressed objects within 6 object streams
+ 716 PDF objects out of 1000 (max. 8388607)
+ 530 compressed objects within 6 object streams
  89 named destinations out of 1000 (max. 500000)
- 208 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 224 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -18,7 +18,7 @@
 
 (defun intro ()
   (format t "~%~%")
-  (dotimes (x 20)
+  (dotimes (x 20) ;Simulation d'une barre de chargement.
     (sleep (- 0.2 (* 0.01 x)))
     (format t "=="))
   (format t "~%~s" *cactus*)

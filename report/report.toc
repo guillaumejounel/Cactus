@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {3.3}Poser une question : fonction \mintinline {lisp}{askQuestion()}}{27}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Afficher les propositions du syst\IeC {\`e}me : fonction \mintinline {lisp}{afficherPropositions()}}{29}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Arbre de d\IeC {\'e}duction}{31}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}D\IeC {\'e}mmarrage du syst\IeC {\`e}me}{32}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.6}D\IeC {\'e}marrage du syst\IeC {\`e}me}{32}{subsection.3.6}
 \contentsline {section}{\numberline {4}Sc\IeC {\'e}narios d'utilisation}{34}{section.4}
 \contentsline {subsection}{\numberline {4.1}Tim, fan-boy d'Apple}{34}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Gr\IeC {\'e}goire, scientifique en herbe}{35}{subsection.4.2}
