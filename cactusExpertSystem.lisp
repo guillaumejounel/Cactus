@@ -1,3 +1,4 @@
+(defparameter *faits* nil)
 (defparameter *technologies*
 '(
   ; Programmation système
@@ -171,50 +172,50 @@
     (DEJAIDEEDEV . "J'ai déjà une idée d'un projet à développer.")))
 
 
-    (defparameter *questions*
-    '(
-      (UserStory . "Que souhaitez-vous faire ? ")
-      (Application . "Quel type d'applications voulez-vous developper ou solliciter ?")
-      (PrecisionSite . "Précisez l'usage que vous voulez faire de votre site :")
-      (PrecisionSMA . "Précisez l'usage que vous voulez faire de votre système multi-agent :")
-      (PrecisionSysteme . "Précisez ce que vous souhaitez faire en programmation système :")
-      (PrecisionMachineLearning . "Précisez ce que vous voulez faire en machine learning :")
-      (PrecisionLogiciel . "Précisez l'usage que vous voulez faire de votre application :")
-      (PrecisionJeu . "Précisez l'usage que vous voulez faire de votre application :")
-      (PrecisionRedaction . "Dans quel cadre s'inscrit cette rédaction ?")
-      (PrecisionML . "Que souhaitez-vous faire ?")
-      (Machine . "Sur quel système d'explotation travaillez-vous ?")
-      (Cible . "Pour quel système developpez-vous ?")
-      (CibleJV . "Pour quel système developpez-vous ?")
-      (Budget . "Quel budget avez-vous ? Entrez un chiffre.")
-      (Usage . "De quel usage avez-vous besoin ?")
-      (UsageApp . "De quel usage avez-vous besoin pour votre applet ?")
-      (UsageRedac . "De quel usage avez-vous besoin pour la rédaction ?")
-      (ParentheseDec . "Voulez-vous découvrir un langage symbolique fondateur ?")
-      (Parenthese . "Voulez-vous découvrir un langage symbolique fondateur ?")
-      (ModeliserDonnee . "Voulez-vous modéliser un problème basée sur des données ?")
-      (QuantiteDonnee . "Votre projet nécessite-t-il de traiter beaucoup de données ?")
-      (Visiteurs . "Précisez le nombre de visiteurs attendus :")
-      (LogicielLibre . "Êtes-vous un fervant défenseur du logicel libre ?")
-      (Orientation . "Préfèreriez-vous que votre base de données soit orientée selon :")
-      (AccesLecture . "Combien d'accès en lecture se feront sur vos données ? Donnez le nombre d'accès aux données par heure.")
-      (Paradigme . "De quel paradigme de stockage de données s'agit-il ?")
-      (AccesAInternet . "Votre système aura-t-il besoin d'avoir accès à internet ?")
-      (ManipulationMatrice . "Aurez-vous besoin de manipuler des matrices ?")
-      (RoRvsDjango . "Préferez-vous une solution populaire ou configurable ?")
-      (Interaction-Dynamique ."Le design du site devra-t-il être dynamique ?")
-      (Internet . "Souhaitez-vous en apprendre plus sur Internet et sur comment faire un site-web ?")
-      (AimeJeu . "Souhaitez-vous développer un jeu ?")
-      (Recent . "Avez-vous une préférence pour des langages récents ?")
-      (Methode . "Comment souhaitez-vous résoudre ce problème ?")
-      (Programmation . "Voulez-vous apprendre à programmer ?")
-      (SystemeComplexe . "Voulez-vous modéliser un système complexe ?")
-      (PrecisionSystemeComplexe . "De quel type de système complexe s'agit-il ?")
-      (BeaucoupInfo . "Disposez-vous de beaucoup d'informations ? ")
-      (Prefere . "Que préférez-vous entre les jeux PC et les jeux smartphone ?")
-      (ControleAcces . "Avez-vous besoin de contrôler l'accès de différents utilisateurs sur cette plateforme ?")
-      (ChoixProjet . "Quel est votre projet ?")
-      (IntelligenceArtificielle . "Quel paradigme d'IA souhaitez-vous utilisez ?")))
+(defparameter *questions*
+'(
+  (UserStory . "Que souhaitez-vous faire ? ")
+  (Application . "Quel type d'applications voulez-vous developper ou solliciter ?")
+  (PrecisionSite . "Précisez l'usage que vous voulez faire de votre site :")
+  (PrecisionSMA . "Précisez l'usage que vous voulez faire de votre système multi-agent :")
+  (PrecisionSysteme . "Précisez ce que vous souhaitez faire en programmation système :")
+  (PrecisionMachineLearning . "Précisez ce que vous voulez faire en machine learning :")
+  (PrecisionLogiciel . "Précisez l'usage que vous voulez faire de votre application :")
+  (PrecisionJeu . "Précisez l'usage que vous voulez faire de votre application :")
+  (PrecisionRedaction . "Dans quel cadre s'inscrit cette rédaction ?")
+  (PrecisionML . "Que souhaitez-vous faire ?")
+  (Machine . "Sur quel système d'explotation travaillez-vous ?")
+  (Cible . "Pour quel système developpez-vous ?")
+  (CibleJV . "Pour quel système developpez-vous ?")
+  (Budget . "Quel budget avez-vous ? Entrez un chiffre.")
+  (Usage . "De quel usage avez-vous besoin ?")
+  (UsageApp . "De quel usage avez-vous besoin pour votre applet ?")
+  (UsageRedac . "De quel usage avez-vous besoin pour la rédaction ?")
+  (ParentheseDec . "Voulez-vous découvrir un langage symbolique fondateur ?")
+  (Parenthese . "Voulez-vous découvrir un langage symbolique fondateur ?")
+  (ModeliserDonnee . "Voulez-vous modéliser un problème basée sur des données ?")
+  (QuantiteDonnee . "Votre projet nécessite-t-il de traiter beaucoup de données ?")
+  (Visiteurs . "Précisez le nombre de visiteurs attendus :")
+  (LogicielLibre . "Êtes-vous un fervant défenseur du logicel libre ?")
+  (Orientation . "Préfèreriez-vous que votre base de données soit orientée selon :")
+  (AccesLecture . "Combien d'accès en lecture se feront sur vos données ? Donnez le nombre d'accès aux données par heure.")
+  (Paradigme . "De quel paradigme de stockage de données s'agit-il ?")
+  (AccesAInternet . "Votre système aura-t-il besoin d'avoir accès à internet ?")
+  (ManipulationMatrice . "Aurez-vous besoin de manipuler des matrices ?")
+  (RoRvsDjango . "Préferez-vous une solution populaire ou configurable ?")
+  (Interaction-Dynamique ."Le design du site devra-t-il être dynamique ?")
+  (Internet . "Souhaitez-vous en apprendre plus sur Internet et sur comment faire un site-web ?")
+  (AimeJeu . "Souhaitez-vous développer un jeu ?")
+  (Recent . "Avez-vous une préférence pour des langages récents ?")
+  (Methode . "Comment souhaitez-vous résoudre ce problème ?")
+  (Programmation . "Voulez-vous apprendre à programmer ?")
+  (SystemeComplexe . "Voulez-vous modéliser un système complexe ?")
+  (PrecisionSystemeComplexe . "De quel type de système complexe s'agit-il ?")
+  (BeaucoupInfo . "Disposez-vous de beaucoup d'informations ? ")
+  (Prefere . "Que préférez-vous entre les jeux PC et les jeux smartphone ?")
+  (ControleAcces . "Avez-vous besoin de contrôler l'accès de différents utilisateurs sur cette plateforme ?")
+  (ChoixProjet . "Quel est votre projet ?")
+  (IntelligenceArtificielle . "Quel paradigme d'IA souhaitez-vous utilisez ?")))
 
 (defparameter *regles* '(
 
@@ -547,42 +548,6 @@
     ((Propositions EQ (Perl Pascal))))
 ))
 
-
-(defun chainageAvantLarg () ; Moteur chaînage avant en largeur
-  (let (EC regleCourante)
-    (loop ; on boucle
-      (if (valeur (assoc 'Propositions *faits*)) ; si le but est présent dans la base de faits avec une valeur non nulle
-        (progn
-          (funcall 'afficherPropositions) ; on affiche les propositions
-          (return nil)) ; et on arrête
-        (dolist (r *regles*) ; sinon on parcourt les règles dans la base de règles
-          (when (declenchable? r); si une règle est déclenchable
-            (setq EC (append EC (list r))) ; on l'ajoute à l'ensemble contraint EN FIN
-            (setq *regles* (remove r *regles* :test 'equal))))); on l'enlève de la base de règles
-      (if EC ; si on peut encore déclencher des règles
-        (progn
-          (setq regleCourante (pop EC)) ; on choisit la dernière obtenue
-          (ajouter (conclusion regleCourante))) ; on ajoute son résultat à la base de faits
-        (askQuestion))))) ; sinon on pose une question
-
-(defun chainageAvantProf () ; Moteur chaînage avant en profondeur
-  (let (EC regleCourante)
-    (loop ; on boucle
-      (if (valeur (assoc 'Propositions *faits*)) ; si le but est présent dans la base de faits avec une valeur non nulle
-        (progn
-          (funcall 'afficherPropositions) ; on affiche les propositions
-          (return nil)) ; et on arrête
-        (dolist (r *regles*) ; sinon on parcourt les règles dans la base de règles
-          (when (declenchable? r); si une règle est déclenchable
-            (push r EC) ; on l'ajoute à l'ensemble contraint EN TÊTE
-            (setq *regles* (remove r *regles* :test 'equal))))) ; on l'enlève de la base de règles
-      (if EC ; si on peut encore déclencher des règles
-        (progn
-          (setq regleCourante (pop EC)) ; on choisit la dernière obtenue
-          (ajouter (conclusion regleCourante))) ; on ajoute son résultat à la base de faits
-        (askQuestion))))) ; sinon on pose une question
-
-
 (defun attribut (triplet)
   (car triplet))
 
@@ -591,7 +556,6 @@
 
 (defun valeur (triplet)
   (caddr triplet))
-
 
 (defun conclusion (r)
   ; Renvoie les conclusions d'une règle
@@ -705,17 +669,48 @@
       (format t "~& -» ~A : ~S" x (descriptionTechno x)))
     (format t "~&~A~&" overlay))))
 
-
 (defun descriptionTechno (techno)
   ; retourne la description associée
   ; à une technologie dans la base *technologies*
   ; ou celle-ci si cette dernière n'est pas présente
   (or (cdr (assoc techno *technologies*)) techno))
 
+(defun chainageAvantLarg () ; Moteur chaînage avant en largeur
+  (let (EC regleCourante)
+    (loop ; on boucle
+      (if (valeur (assoc 'Propositions *faits*)) ; si le but est présent dans la base de faits avec une valeur non nulle
+        (progn
+          (funcall 'afficherPropositions) ; on affiche les propositions
+          (return nil)) ; et on arrête
+        (dolist (r *regles*) ; sinon on parcourt les règles dans la base de règles
+          (when (declenchable? r); si une règle est déclenchable
+            (setq EC (append EC (list r))) ; on l'ajoute à l'ensemble contraint EN FIN
+            (setq *regles* (remove r *regles* :test 'equal))))); on l'enlève de la base de règles
+      (if EC ; si on peut encore déclencher des règles
+        (progn
+          (setq regleCourante (pop EC)) ; on choisit la dernière obtenue
+          (ajouter (conclusion regleCourante))) ; on ajoute son résultat à la base de faits
+        (askQuestion))))) ; sinon on pose une question
+
+(defun chainageAvantProf () ; Moteur chaînage avant en profondeur
+  (let (EC regleCourante)
+    (loop ; on boucle
+      (if (valeur (assoc 'Propositions *faits*)) ; si le but est présent dans la base de faits avec une valeur non nulle
+        (progn
+          (funcall 'afficherPropositions) ; on affiche les propositions
+          (return nil)) ; et on arrête
+        (dolist (r *regles*) ; sinon on parcourt les règles dans la base de règles
+          (when (declenchable? r); si une règle est déclenchable
+            (push r EC) ; on l'ajoute à l'ensemble contraint EN TÊTE
+            (setq *regles* (remove r *regles* :test 'equal))))) ; on l'enlève de la base de règles
+      (if EC ; si on peut encore déclencher des règles
+        (progn
+          (setq regleCourante (pop EC)) ; on choisit la dernière obtenue
+          (ajouter (conclusion regleCourante))) ; on ajoute son résultat à la base de faits
+        (askQuestion))))) ; sinon on pose une question
 
 (defun cactus (&optional introduction moteur)
   (let (path (startAtt 'UserStory) valeur)
-    (defparameter *faits* nil)
     (if (not introduction)
       (intro))
     (until
