@@ -145,7 +145,7 @@ Tous les programmeurs sont un jour confrontés au problème suivant :
        \item Massive : \href{http://www.massivesoftware.com}{\texttt{http://www.massivesoftware.com}}
        \item MathLab : \href{https://fr.mathworks.com}{\texttt{https://fr.mathworks.com}}
        \item Maple : \href{https://www.maplesoft.com/products/}{\texttt{https://www.maplesoft.com/products/}}
-       \item Site de l'UV NF17 (\textit{Conception de bases de données}) \href{https://stph.scenari-\\community.org/nf17/co/nf17.html}{\texttt{https://stph.scenari-community.org/nf17/co/nf17.html}}
+       \item Site de l'UV NF17 (\textit{Conception de bases de données}) \href{https://stph.scenari-community.org/nf17/co/nf17.html}{\texttt{https://stph.scenari-community.\\org/nf17/co/nf17.html}}
                             
     \end{itemize}
 
@@ -361,7 +361,7 @@ Voici l'algorithme itératif que nous avons utilisé pour le chaînage avant.
 \caption{Chaînage avant \label{algoChainageAvant}}
 \end{algorithm}
 
-Cet algorithme permet de poser des questions à l'utilisateur lorsque le système ne peut plus inférer. L'utilisateur sera amené a préciser des valeurs d'attributs pour que le moteur puisse ainsi construire de nouveaux faits. On remarquera que le système s'arrêtera dès que des propositions auront été inférées par le moteur.
+Cet algorithme permet de poser des questions à l'utilisateur lorsque le système ne peut plus inférer. L'utilisateur sera amené à préciser des valeurs d'attributs pour que le moteur puisse ainsi construire de nouveaux faits. On remarquera que le système s'arrêtera dès que des propositions auront été inférées par le moteur.
 
 \newpage
 \subsubsection{En largeur}
@@ -379,7 +379,7 @@ On remarquera l'importance des lignes 10 et 14 pour le parcours en largeur : l'a
 \newpage
 \subsubsection{En profondeur}
 
-En modifiant légèrement le programme, on passe facilement du parcours en largeur au parcours en largeur.
+En modifiant légèrement le programme, on passe facilement du parcours en largeur au parcours en profondeur.
 
 \begin{listing}[H]
 	\centering
@@ -432,7 +432,7 @@ Nous utilisons d'autres fonctions pour réaliser certaines tâches ; les voici :
 	\caption{Fonctions outils pour \mintinline{lisp}{askQuestion()}}
 \end{listing}
 
-\mintinline{lisp}{listAttFaits()} récupère la liste des attributs sur présents dans la base de faits.\\
+\mintinline{lisp}{listAttFaits()} récupère la liste des attributs présents dans la base de faits.\\
 
 \mintinline{lisp}{listeAttRegles()} récupère quant à elle la liste des attributs sur lesquels il faut poser des questions.\\
 
@@ -464,7 +464,7 @@ Cette fonction utilise la fonction outils \mintinline{lisp}{descriptionTechno()}
 \end{listing}
 
 
-On remarquera que le système affichera qu'il n'y a pas de solutions possibles lorsque \mintinline{lisp}{Impossible} est présent comme propositions dans la base de faits. En effet, il existe des situations qui ne peuvent pas être vérifiée dans la vie réelle ; par exemple, on ne peut pas développer des applications \textit{iPhone} si l'on a pas de machine sous \textit{MacOSX} (cf. règles présentes au lignes 102 et 103 dans la base de règles \mintinline{lisp}{*règles*}).
+On remarquera que le système affichera qu'il n'y a pas de solutions possibles lorsque \mintinline{lisp}{Impossible} est présent comme propositions dans la base de faits. En effet, il existe des situations qui ne peuvent pas être vérifiée dans la vie réelle ; par exemple, on ne peut pas développer des applications \textit{iPhone} si l'on a pas de machine sous \textit{MacOS} (cf. règles présentes au lignes 102 et 103 dans la base de règles \mintinline{lisp}{*regles*}).
 
 \newpage
 	\subsection{Arbre de déduction}
@@ -503,7 +503,7 @@ On remarquera que le système affichera qu'il n'y a pas de solutions possibles l
 		\item \mintinline{lisp}{moteur} : si renseigné et non nul, passe sur le moteur de chaînage avant en profondeur.
 	\end{itemize}
 	
-	Par défaut, le système embraye sur le moteur de chaînage avant en largeur après avoir afficher l'introduction.
+	Par défaut, le système embraye sur le moteur de chaînage avant en largeur après avoir affiché l'introduction.
 	
 \begin{listing}[H]
 	\centering
@@ -547,7 +547,7 @@ On remarquera que le système affichera qu'il n'y a pas de solutions possibles l
 
 	\subsection{Peter, réalisateur}
 	
-	Peter souhaite réaliser un long métrage dans lequel une bataille épique ,comportant des orcs, des elfes et beaucoup d'autres créatures fantastiques, aurait lieu. Il se rappelle d'une conversation qu'il a pu avoir avec son ami informaticien il y a quelque temps de cela dans laquelle il lui avait fait part d'une technologie intéressante pour mettre en place des systèmes complexes : les \textit{systèmes multi-agents}. Pour réaliser son film, l'argent ne manque pas : Peter dispose d'une enveloppe de 285 millions de dollars ; il ne lui suffit plus que d'utiliser \textit{Cactus} pour trouve ce qui lui correspond !
+	Peter souhaite réaliser un long métrage dans lequel aurait lieu une bataille épique comportant des orcs, des elfes et beaucoup d'autres créatures fantastiques. Il se rappelle d'une conversation qu'il a pu avoir avec son ami informaticien il y a quelque temps de cela dans laquelle il lui avait fait part d'une technologie intéressante pour mettre en place des systèmes complexes : les \textit{systèmes multi-agents}. Pour réaliser son film, l'argent ne manque pas : Peter dispose d'une enveloppe de 285 millions de dollars ; il ne lui suffit plus que d'utiliser \textit{Cactus} pour trouver ce qui lui correspond !
 
 
 \begin{listing}[H]
@@ -564,9 +564,9 @@ On remarquera que le système affichera qu'il n'y a pas de solutions possibles l
 \newpage
 \section{Conclusion}
 
-	Ce TP nous a permis de découvrir en profondeur (\textit{et en largeur !})la conception d'un système expert d'ordre 0+. La conception d'un système expert de cet ordre est plus ardue que celle de système expert d'ordre 0, particulièrement au niveau de la modélisation de l'expertise et l'élaboration de la base de règles.
+	Ce TP nous a permis de découvrir en profondeur (\textit{et en largeur !}) la conception d'un système expert d'ordre 0+. La conception d'un système expert de cet ordre est plus ardue que celle de système expert d'ordre 0, particulièrement au niveau de la modélisation de l'expertise et l'élaboration de la base de règles.
 
-	Notre système expert possède un bon fonctionnement. Cependant il y a plusieurs choses que l'on pourrait améliorer :
+	\textit{Cactus} fonctionne bien, cependant il y a plusieurs choses que l'on pourrait améliorer :
 	\begin{itemize}
 		\item \textit{Au niveau de la base de règles} : on pourrait éventuellement réarranger des règles et en rajouter pour affiner l'expertise de \textit{Cactus}. De plus, on pourrait diversifier nos sources pour trouver des règles plus adaptées.
 		\item \textit{Au niveau du moteur d'inférence} : on pourrait implémenter un moteur en chaînage arrière et comparer son fonctionnement avec celui en chaînage avant.

@@ -16,7 +16,7 @@ Votre choix : Modeliser
 
 "
  -» OUI : Oui.
- -» NON : Non."
+ -» NON : Non."expert possède un bon fonctionnement.
 
 Votre choix : Oui
 ------
@@ -25,7 +25,7 @@ Votre choix : Oui
 
 "
  -» EQUATIONS : Je veux résoudre des équations.
- -» INTERACTIONSYS : Je veux simuler les interractions qu'il peut y avoir dans un système complexe."
+ -» INTERACTIONSYS : Je veux simuler les interactions qu'il peut y avoir dans un système complexe."
 
 Votre choix : interactionsys
 ------

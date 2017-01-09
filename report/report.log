@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  9 JAN 2017 11:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  9 JAN 2017 13:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1740,10 +1740,9 @@ lich.com/145318/spritekit-swift-3
  []
 
 
-Overfull \hbox (137.12018pt too wide) in paragraph at lines 148--149
+Overfull \hbox (7.44511pt too wide) in paragraph at lines 148--149
 []\T1/lmr/m/n/12 Site de l'UV NF17 (\T1/lmr/m/it/12 Conception de bases de donn
-ées\T1/lmr/m/n/12 ) []\T1/lmtt/m/n/12 https://stph.scenari-community.org/nf17/c
-o/nf17.html[] 
+ées\T1/lmr/m/n/12 ) []\T1/lmtt/m/n/12 https://stph.scenari-community. 
  []
 
 
@@ -1757,17 +1756,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--161
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
@@ -1881,20 +1880,14 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
 
  (./report.out.pyg)
-\openout4 = `report.pyg'.
-
-runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
-port.out.pyg" "report.pyg" )...executed.
-
- (./report.out.pyg
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5])
-\openout6 = `report.pyg'.
+[5]
+\openout4 = `report.pyg'.
 
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
@@ -1918,6 +1911,12 @@ runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "report.pyg" )...executed.
 
  (./report.out.pyg)
+\openout6 = `report.pyg'.
+
+runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
+port.out.pyg" "report.pyg" )...executed.
+
+(./report.out.pyg)
 runsystem(pygmentize -l lisp -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "../regles.lisp" )...executed.
 
@@ -2494,14 +2493,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[30] <graph_deduction.pdf, id=316, 845.04686pt x 597.50786pt>
+[30] <graph_deduction.pdf, id=317, 845.04686pt x 597.50786pt>
 File: graph_deduction.pdf Graphic file (type pdf)
 
 <use graph_deduction.pdf>
 Package pdftex.def Info: graph_deduction.pdf used on input line 475.
 (pdftex.def)             Requested size: 422.5224pt x 298.75319pt.
 
-<graph_deduction2.pdf, id=317, 845.04686pt x 597.50786pt>
+<graph_deduction2.pdf, id=318, 845.04686pt x 597.50786pt>
 File: graph_deduction2.pdf Graphic file (type pdf)
 
 <use graph_deduction2.pdf>
@@ -2627,10 +2626,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [36]
+Overfull \hbox (0.69453pt too wide) in paragraph at lines 550--551
+[]\T1/lmr/m/n/12 Peter souhaite réaliser un long métrage dans lequel aurait lie
+u une bataille épique comportant
+ []
+
 runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "../scenarioPeter.txt" )...executed.
 
- (./report.out.pyg)
+(./report.out.pyg)
 runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -o "re
 port.out.pyg" "../scenarioPeter.txt" )...executed.
 
@@ -2655,7 +2659,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[39] <sujet.pdf, id=599, 597.55246pt x 845.07718pt>
+[39] <sujet.pdf, id=600, 597.55246pt x 845.07718pt>
 File: sujet.pdf Graphic file (type pdf)
  <use sujet.pdf>
 Package pdftex.def Info: sujet.pdf used on input line 587.
@@ -2665,7 +2669,7 @@ File: sujet.pdf Graphic file (type pdf)
 <use sujet.pdf>
 Package pdftex.def Info: sujet.pdf used on input line 587.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
- <sujet.pdf, id=602, page=1, 597.55246pt x 845.07718pt>
+ <sujet.pdf, id=603, page=1, 597.55246pt x 845.07718pt>
 File: sujet.pdf Graphic file (type pdf)
 
 <use sujet.pdf, page 1>
@@ -2709,7 +2713,7 @@ Here is how much of TeX's memory you used:
  28967 multiletter control sequences out of 15000+600000
  80625 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 54i,20n,64p,853b,658s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,20n,64p,853b,656s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texl
 ive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texlive/texmf-dist/font
 s/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/
@@ -2725,10 +2729,10 @@ lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/lm/lmtti10.pfb>
-Output written on report.pdf (40 pages, 523292 bytes).
+Output written on report.pdf (40 pages, 522984 bytes).
 PDF statistics:
- 716 PDF objects out of 1000 (max. 8388607)
- 530 compressed objects within 6 object streams
+ 717 PDF objects out of 1000 (max. 8388607)
+ 531 compressed objects within 6 object streams
  89 named destinations out of 1000 (max. 500000)
  224 words of extra memory for PDF output out of 10000 (max. 10000000)
 
