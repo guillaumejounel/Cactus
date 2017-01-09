@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  9 JAN 2017 11:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2016/dev) (preloaded format=pdflatex 2016.8.16)  9 JAN 2017 11:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -2699,15 +2699,8 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 588.
 (./report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 588.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 588.
-
-
-Package rerunfilecheck Warning: File `report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report.out':
-(rerunfilecheck)             Before: D872C930F4C11DE8B2E09EB0FBF8B2A0;1606
-(rerunfilecheck)             After:  B23C82FB9D402ECCA7B0C1731C59486D;1605.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: B23C82FB9D402ECCA7B0C1731C59486D;1605.
  ) 
 Here is how much of TeX's memory you used:
  26612 strings out of 495003
@@ -2732,7 +2725,7 @@ lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/lm/lmtti10.pfb>
-Output written on report.pdf (40 pages, 523233 bytes).
+Output written on report.pdf (40 pages, 523292 bytes).
 PDF statistics:
  716 PDF objects out of 1000 (max. 8388607)
  530 compressed objects within 6 object streams
