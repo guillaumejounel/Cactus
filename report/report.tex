@@ -219,7 +219,7 @@ Nous avons décidé d'implémenter les règles dans notre base de cette façon :
 	(((Premisse1 operateur valeur)...(PremisseN operateur valeur))
   	  ((Resultat1 operateur valeur)...(Resultat1M operateur valeur)))
 \end{minted}
-où $\mintinline{lisp}{operateur} \in \{\mintinline{lisp}{=},\mintinline{lisp}{<},\mintinline{lisp}{>},\mintinline{lisp}{EQ}\} $.
+où $\mintinline{lisp}{operateur} \in \{\mintinline{lisp}{<},\mintinline{lisp}{>},\mintinline{lisp}{EQ}\} $.
 \begin{listing}[H]
 	\centering
 	\inputminted[breaklines=true,linenos,lastline=43]{lisp}{../regles.lisp}
@@ -339,7 +339,7 @@ Comme nous l'avons évoqué au début, il existe plusieurs moyens de réaliser l
 Le chaînage avant a pour avantage d'être facilement implémentable et ne repose pas sur la recherche d'une réponse particulière contrairement au chaînage arrière dont l'algorithme peut se construire sur la recherche d'un but spécifique (comme nous avons pu le voir en TD dans le cas du chaînage arrière en profondeur d'abord avec les fonctions \texttt{verifier()} et \texttt{verifierET()}).
 
 
-Voici un algorithme itératif pour le chaînage avant.
+Voici l'algorithme itératif que nous avons utilisé pour le chaînage avant.
 \begin{algorithm}
 
 \Begin{
@@ -363,20 +363,20 @@ Voici un algorithme itératif pour le chaînage avant.
 
 Cet algorithme permet de poser des questions à l'utilisateur lorsque le système ne peut plus inférer. L'utilisateur sera amené a préciser des valeurs d'attributs pour que le moteur puisse ainsi construire de nouveaux faits. On remarquera que le système s'arrêtera dès que des propositions auront été inférées par le moteur.
 
+\newpage
 \subsubsection{En largeur}
 
-	Nous avons tout d'abord réalisé un moteur d'inférence en chaînage avant et en profondeur d'abord.
-
-Nous l'avons implémenté sous LISP de cette façon :
+	Nous avons tout d'abord réalisé un moteur d'inférence en chaînage avant et en profondeur d'abord. Nous l'avons implémenté sous LISP de cette façon :
 
 \begin{listing}[H]
 	\centering
 	\inputminted[breaklines=true,linenos]{lisp}{../chainageAvantLarg.lisp}
-	\caption{Chainage avant -- Parcours en largeur}
+	\caption{Chaînage avant -- Parcours en largeur}
 \end{listing}
 
 On remarquera l'importance des lignes 10 et 14 pour le parcours en largeur : l'ajout ligne 10 de \mintinline{lisp}{r} en fin de l'ensemble contraint \mintinline{lisp}{EC} et l'exécution ligne 14 de la règle en tête de \mintinline{lisp}{EC} permettent d'ordonner les règles afin que les premières ajoutées soient les premières utilisées. On utilise ainsi \textit{une structure de file} (aussi appelée FIFO pour "\textit{First In, First Out}").
 
+\newpage
 \subsubsection{En profondeur}
 
 En modifiant légèrement le programme, on passe facilement du parcours en largeur au parcours en largeur.
@@ -384,12 +384,13 @@ En modifiant légèrement le programme, on passe facilement du parcours en large
 \begin{listing}[H]
 	\centering
 	\inputminted[breaklines=true,linenos]{lisp}{../chainageAvantProf.lisp}
-	\caption{Chainage avant -- Parcours en profondeur}
+	\caption{Chaînage avant -- Parcours en profondeur}
 \end{listing}
 
 
 Ce qui fait la différence ici se trouve à la ligne 10 : on ajoute cette fois-ci \mintinline{lisp}{r} en tête de \mintinline{lisp}{EC}. On passe alors d'une structure de file à une structure de pile (aussi appelée LIFO pour "\textit{Last In, First Out}".
 
+\newpage
 \subsection{Fonctions outils}
 
 Afin d'abstraire les raisonnements, nous avons mis au point des fonctions outils. \mintinline{lisp}{conclusion()}, \mintinline{lisp}{declenchable?()} et \mintinline{lisp}{ajouter()} sont celles mises en place pour les règles.
@@ -423,7 +424,6 @@ Nous utilisons d'autres fonctions pour réaliser certaines tâches ; les voici :
 \begin{listing}[H]
 	\centering
 	\inputminted[breaklines=true,linenos, firstline = 24,lastline = 71]{lisp}{../askQuestion.lisp}
-	\caption{Fonctions outils pour \mintinline{lisp}{askQuestion()}}
 \end{listing}
 
 \begin{listing}[H]
@@ -472,20 +472,50 @@ On remarquera que le système affichera qu'il n'y a pas de solutions possibles l
 	Voici une partie de l'arbre de déduction du système expert \textit{Cactus}.
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.6]{graph_deduction.pdf}
+		\includegraphics[scale=0.5]{graph_deduction.pdf}
 	\end{figure}
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[scale=0.6]{graph_deduction2.pdf}
+		\includegraphics[scale=0.5]{graph_deduction2.pdf}
 		\caption{Arbre de déduction du système expert}
 	\end{figure}
 
+	\subsection{Démmarrage du système}
+	
+	Pour démarrer notre système, nous avons créé la fonction \mintinline{lisp}{cactus()}. Celle-ci peut être lancé directement avec :
+	
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos]{lisp}{../cactus.lisp}
+	\caption{Fonction \mintinline{lisp}{cactus()} pour le démarrage du système}
+\end{listing}
+
+	
+	\begin{quotation}
+	\mintinline{lisp}{(cactus)}
+	\end{quotation}
+
+	\mintinline{lisp}{cactus()} dispose de paramètres facultatifs que l'on peut renseigner pour changer le fonctionnement du système :
+	
+	\begin{itemize}
+		\item \mintinline{lisp}{introduction} : si renseigné et non nul, permet de passer l'introduction ;
+		\item \mintinline{lisp}{moteur} : si renseigné et non nul, passe sur le moteur de chaînage avant en profondeur.
+	\end{itemize}
+	
+	Par défaut, le système embraye sur le moteur de chaînage avant en largeur après avoir afficher l'introduction.
+	
+\begin{listing}[H]
+	\centering
+	\inputminted[breaklines=true,linenos]{lisp}{../intro.lisp}
+	\caption{Fonction \mintinline{lisp}{introduction()} : affiche l'introduction au démarrage du système.}
+\end{listing}
+	
 \section{Scénarios d'utilisation}
 
 	\subsection{Tim, fan-boy d'Apple}
 	
-	Tim est un fan d'\textit{Apple}, il collectionne tous les produits de la firme depuis qu'il a 8 ans. Depuis l'été dernier, il s'intéresse au développement d'applications sur les machines de ce constructeur. Ainsi, il décide dans sa quête d'utiliser \textit{Cactus} dont il a entendu parler. Il espère obtenir les langages qu'Apple utilise pour créer les chouettes applications dont les utilisateurs d'\textit{iPhone} jouissent tous les jours.
+	Tim est un fan d'\textit{Apple}, il collectionne tous les produits de la firme depuis qu'il a 8 ans. Depuis l'été dernier, il s'intéresse au développement d'applications sur les machines de ce constructeur. Ainsi, il décide dans sa quête d'utiliser \textit{Cactus} dont il a entendu parler. Il espère obtenir les langages qu'Apple utilise pour créer les chouettes applications dont les utilisateurs d'\textit{iPhone} jouissent tous les jours. Il possède un peu plus de 100 € pour réaliser son projet.
 
 \begin{listing}[H]
 	\centering
@@ -505,32 +535,52 @@ On remarquera que le système affichera qu'il n'y a pas de solutions possibles l
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,lastline=29]{text}{../scenarioGreg.txt}
+	\inputminted[breaklines=true,linenos,lastline=42]{text}{../scenarioGreg.txt}
 \end{listing}
 	
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,firstline=30]{text}{../scenarioGreg.txt}
-	\caption{Premier scénario : Tim, fan-boy d'Apple.}
+	\inputminted[breaklines=true,linenos,firstline=43]{text}{../scenarioGreg.txt}
+	\caption{Premier scénario : Grégoire, scientifique en herbe.}
 \end{listing}
 
 
 	\subsection{Peter, réalisateur}
 	
-	Peter souhaite réaliser un long métrage dans lequel une bataille épique comportant des orcs, des elfes et beaucoup d'autres créatures fantastiques aurait lieu . Il se rappelle d'une conversation qu'il a pu avoir avec son ami informaticien il y a quelque temps de cela dans laquelle il lui avait fait part d'une technologie intéressante pour mettre en place des systèmes complexes : les \textit{systèmes multi-agents}. Pour réaliser son film, l'argent ne manque pas : Peter dispose d'un enveloppe de 285 millions de dollars ; il ne lui suffit plus que d'utiliser \textit{Cactus} pour trouve ce qui lui correspond !
+	Peter souhaite réaliser un long métrage dans lequel une bataille épique ,comportant des orcs, des elfes et beaucoup d'autres créatures fantastiques, aurait lieu. Il se rappelle d'une conversation qu'il a pu avoir avec son ami informaticien il y a quelque temps de cela dans laquelle il lui avait fait part d'une technologie intéressante pour mettre en place des systèmes complexes : les \textit{systèmes multi-agents}. Pour réaliser son film, l'argent ne manque pas : Peter dispose d'une enveloppe de 285 millions de dollars ; il ne lui suffit plus que d'utiliser \textit{Cactus} pour trouve ce qui lui correspond !
 
 
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,lastline=29]{text}{../scenarioPeter.txt}
+	\inputminted[breaklines=true,linenos,lastline=12]{text}{../scenarioPeter.txt}
 \end{listing}
 	
 \begin{listing}[H]
 	\centering
-	\inputminted[breaklines=true,linenos,firstline=30]{text}{../scenarioPeter.txt}
-	\caption{Premier scénario : Tim, fan-boy d'Apple.}
+	\inputminted[breaklines=true,linenos,firstline=13]{text}{../scenarioPeter.txt}
+	\caption{Premier scénario : Peter, réalisateur.}
 \end{listing}
 
+\newpage
+\section{Conclusion}
+
+	Ce TP nous a permis de découvrir en profondeur la conception d'un système expert d'ordre 0+. La conception d'un système expert de cet ordre est plus ardue que celle de système expert d'ordre 0, particulièrement au niveau de la modélisation de l'expertise et l'élaboration de la base de règles.
+
+	Notre système expert possède un bon fonctionnement. Cependant il y a plusieurs choses que l'on pourrait améliorer :
+	\begin{itemize}
+		\item Au niveau de la base de règles : on pourrait éventuellement réarranger des règles et en rajouter pour affiner l'expertise de \textit{Cactus}. De plus, on pourrait diversifier nos sources pour trouver des règles plus adaptées.
+		\item Au niveau du moteur d'inférence : on pourrait implémenter un moteur en chaînage arrière et comparer son fonctionnement avec celui en chaînage avant.
+		\item Au niveau de l'interaction : on pourrait créer une interface graphique pour que l'interface homme-machine soit la plus attractive possible.
+	\end{itemize}
+	
+	Notre dossier distant de notre projet est disponible sur GitHub à l'adresse suivante :
+	
+	\begin{quote}
+		\href{https://github.com/guillaumejounel/Cactus}{\texttt{https://github.com/guillaumejounel/Cactus}}
+	\end{quote}
+	
+	
+	Si vous souhaitez contribuez n'hésitez-pas !	
 
 \[ \star \quad \star \quad \star \]
 \newpage

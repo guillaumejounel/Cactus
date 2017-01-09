@@ -9,13 +9,15 @@
 \contentsline {subsection}{\numberline {2.4}Bases de connaissances}{15}{subsection.2.4}
 \contentsline {section}{\numberline {3}Fonctionnement du syst\IeC {\`e}me}{23}{section.3}
 \contentsline {subsection}{\numberline {3.1}Cha\IeC {\^\i }nage avant}{23}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}En largeur}{23}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}En profondeur}{24}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Fonctions outils}{25}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.1.1}En largeur}{24}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}En profondeur}{25}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {3.2}Fonctions outils}{26}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Poser une question : fonction \mintinline {lisp}{askQuestion()}}{27}{subsection.3.3}
 \contentsline {subsection}{\numberline {3.4}Afficher les propositions du syst\IeC {\`e}me : fonction \mintinline {lisp}{afficherPropositions()}}{29}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Arbre de d\IeC {\'e}duction}{31}{subsection.3.5}
-\contentsline {section}{\numberline {4}Sc\IeC {\'e}narios d'utilisation}{32}{section.4}
-\contentsline {subsection}{\numberline {4.1}Tim, fan-boy d'Apple}{32}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Gr\IeC {\'e}goire, scientifique en herbe}{34}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Peter, r\IeC {\'e}alisateur}{36}{subsection.4.3}
+\contentsline {subsection}{\numberline {3.6}D\IeC {\'e}mmarrage du syst\IeC {\`e}me}{32}{subsection.3.6}
+\contentsline {section}{\numberline {4}Sc\IeC {\'e}narios d'utilisation}{34}{section.4}
+\contentsline {subsection}{\numberline {4.1}Tim, fan-boy d'Apple}{34}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Gr\IeC {\'e}goire, scientifique en herbe}{35}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Peter, r\IeC {\'e}alisateur}{37}{subsection.4.3}
+\contentsline {section}{\numberline {5}Conclusion}{39}{section.5}

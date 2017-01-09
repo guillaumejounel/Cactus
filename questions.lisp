@@ -36,7 +36,7 @@
   (Methode . "Comment souhaitez-vous résoudre ce problème ?")
   (Programmation . "Voulez-vous apprendre à programmer ?")
   (SystemeComplexe . "Voulez-vous modéliser un système complexe ?")
-  (PrecisionSystemeComplexe . "De quel type de systèmes complexes s'agit-il ?")
+  (PrecisionSystemeComplexe . "De quel type de système complexe s'agit-il ?")
   (BeaucoupInfo . "Disposez-vous de beaucoup d'informations ? ")
   (Prefere . "Que préférez-vous entre les jeux PC et les jeux smartphone ?")
   (ControleAcces . "Avez-vous besoin de contrôler l'accès de différents utilisateurs sur cette plateforme ?")
