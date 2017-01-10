@@ -258,10 +258,10 @@
     ((Propositions EQ (HTML Django PostGreSQL))))
 
   (((Application EQ Dataware) (Paradigme EQ Relationnel) (AccesLecture > 1000) (Usage EQ GrandPublic) (ControleAcces EQ NON))
-    ((Propositions EQ (HTML Django Rest PLSQL OAuth2))))
+    ((Propositions EQ (HTML Django Rest PLSQL))))
 
   (((Application EQ Dataware) (Paradigme EQ Relationnel) (AccesLecture < 1001) (Usage EQ Prive) (ControleAcces EQ NON))
-    ((Propositions EQ (HTML Django PostGreSQL OAuth2))))
+    ((Propositions EQ (HTML Django PostGreSQL))))
 
   (((Application EQ Dataware) (Paradigme EQ NoSQL) (Orientation EQ Document) (Usage EQ GrandPublic) (ControleAcces EQ OUI))
     ((Propositions (HTML MongoDB Json Django Rest OAuth2))))
